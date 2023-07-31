@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "6b775fd84e79d641",
+    "type": "split",
+    "children": [
+      {
+        "id": "12ea3ed42862ac1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "825ce9174de576e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Método por Sustitución.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7127acb5e6e5f6d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc8dd74009e9d8d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29983de58513f56f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd6b6a742864f784",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6182cd71837aa025",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "373509d1f3e4634d",
+    "type": "split",
+    "children": [
+      {
+        "id": "efad5b07bc3775cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51e3f9c26a3fe366",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Método por Sustitución.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "61f2767d531d921e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Método por Sustitución.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d8a06025a355c920",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c1a0f4f76aa9665e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Método por Sustitución.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "825ce9174de576e2",
+  "lastOpenFiles": [
+    "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
+    "Ecuaciones Diferenciales/Método de Separación de Variables.md",
+    "Ecuaciones Diferenciales/Ejemplos.md",
+    "Ecuaciones Diferenciales/EDO Lineal.md",
+    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md"
+  ]
+}
