@@ -80,15 +80,23 @@ $$
 
 Resolver:
 $$
-(e^{2y}-y\cos xy)dx+(2xe^{2y}-x\cos xy+2y)dy=0\\
-\frac{\delta M}{dy} =2e^{2y}-(\cos xy-yx\sin xy)\\
+(e^{2y}-y\cos xy)dx+(2xe^{2y}-x\cos xy+2y)dy=0
+$$
+$$
+\frac{\delta M}{dy} =2e^{2y}-(\cos xy-yx\sin xy)
+$$
+$$
 \frac{\delta N}{dx} = 2e^{2y}-(\cos xy -yx\sin xy)\\
 $$
 
 Sí es exacta, por lo que se puede seguir con el algoritmo:
 $$
-f(x,y)=\int Ndy+h(x)=\int(2xe^{2y}-x\cos xy+2y)dy+h(x)\\
-=xe^{2y}+y^2-x\int\cos xy\ dy+h(x)\\
+f(x,y)=\int Ndy+h(x)=\int(2xe^{2y}-x\cos xy+2y)dy+h(x)
+$$
+$$
+=xe^{2y}+y^2-x\int\cos xy\ dy+h(x)
+$$
+$$
 =xe^{2y}+y^2-\sin xy+h(x)\\
 $$
 
@@ -105,7 +113,9 @@ $$
 
 Y la función resultante es:
 $$
-f(x,y)=xe^{2y}+y^2-\sin xy+ C=0\\
+f(x,y)=xe^{2y}+y^2-\sin xy+ C=0
+$$
+$$
 I:(-\infty, \infty)
 $$
 
@@ -118,15 +128,23 @@ $$
 
 Primero se verifica si es exacta:
 $$
-\frac{\delta M}{\delta y} = x\\
+\frac{\delta M}{\delta y} = x
+$$
+$$
 \frac{\delta N}{\delta x} = 4x
 $$
 
 No es exacta, por lo que es necesario volverla exacta:
 $$
-\frac{M_y-N_x}{N}=f(x)\rightarrow Factor\ Integrante=e^{\int \frac{M_y-N_x}{N}dx}\\
-\int \frac{x-4x}{2x^2+3y^2-20}dx\ Esta\ no\ sirve\\
-\frac{N_x-M_y}{M}=f(y)\rightarrow Factor\ Integrante=e^{\int\frac{N_x-M_y}{M}dy}\\
+\frac{M_y-N_x}{N}=f(x)\rightarrow Factor\ Integrante=e^{\int \frac{M_y-N_x}{N}dx}
+$$
+$$
+\int \frac{x-4x}{2x^2+3y^2-20}dx\ Esta\ no\ sirve
+$$
+$$
+\frac{N_x-M_y}{M}=f(y)\rightarrow Factor\ Integrante=e^{\int\frac{N_x-M_y}{M}dy}
+$$
+$$
 \int \frac{4x-x}{xy}dy=\int\frac{3}{y}dy=3\ln y+C\ Esta\ sí\ sirve
 $$
 
@@ -137,20 +155,28 @@ $$
 
 Entonces:
 $$
-y^3( xy\ dx+(2x^2+3y^2-20)dy=0 )\\
-xy^4dx+(2x^2y^3+3y^5-20y^3)dy=0\\
+y^3( xy\ dx+(2x^2+3y^2-20)dy=0 )
+$$
+$$
+xy^4dx+(2x^2y^3+3y^5-20y^3)dy=0
 $$
 
 Esta ecuación ya es exacta, por lo que se puede seguir con el algoritmo anterior:
 $$
-\int Ndy+h(x)=\int 2x^2y^3+3y^5-20y^3dy+h(x)\\
+\int Ndy+h(x)=\int 2x^2y^3+3y^5-20y^3dy+h(x)
+$$
+$$
 f(x,y)=\frac{x^2y^4}{2}+\frac{y^6}{2}-5y^4+h(x)
 $$
 
 Se encuentra $h(x)$:
 $$
-\frac{\delta f}{\delta x}=xy^4+h'(x)=M=xy^4\\
-h'(x)=0\\
+\frac{\delta f}{\delta x}=xy^4+h'(x)=M=xy^4
+$$
+$$
+h'(x)=0
+$$
+$$
 \int h'(x)dx=C
 $$
 
