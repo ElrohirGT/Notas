@@ -47,7 +47,9 @@ $$
 
 Por lo tanto $d\vec{E}$:
 $$
-\int d\vec{E}=\frac{Q}{4\pi\epsilon_0 L}\int\frac{x\vec{i}-y\vec{j}}{(x^2+y^2)^{\frac{3}{2}}}dy\\
+\int d\vec{E}=\frac{Q}{4\pi\epsilon_0 L}\int\frac{x\vec{i}-y\vec{j}}{(x^2+y^2)^{\frac{3}{2}}}dy
+$$
+$$
 \frac{Q}{4\pi\epsilon_0 L}\left[x\vec{i}\int_{-\frac{L}{2}}^{\frac{L}{2}}\frac{dy}{(x^2+y^2)^{\frac{3}{2}}}-\vec{j}\int_{-\frac{L}{2}}^{\frac{L}{2}}\frac{ydy}{(x^2+y^2)^{\frac{3}{2}}}\right]
 $$
 Como la función dentro de la integral de $\vec{j}$ es impar, esa integral es 0, pues sus límites se cancelan.
@@ -59,11 +61,14 @@ $$
 
 Esta integral se resuelve usando triángulo y se obtiene:
 $$
-\vec{E}=\frac{Q\vec{i}}{2x\pi\epsilon_0 L}\left[\frac{y}{\sqrt{x^2+y^2}}\right]_{0}^{\frac{L}{2}}\\
-\vec{E}=\frac{Q\vec{i}}{2x\pi\epsilon_0 L}\cdot\frac{\frac L2}{\sqrt{x^2+(\frac L2)^2}}\\
+\vec{E}=\frac{Q\vec{i}}{2x\pi\epsilon_0 L}\left[\frac{y}{\sqrt{x^2+y^2}}\right]_{0}^{\frac{L}{2}}
+$$
+$$
+\vec{E}=\frac{Q\vec{i}}{2x\pi\epsilon_0 L}\cdot\frac{\frac L2}{\sqrt{x^2+(\frac L2)^2}}
+$$
+$$
 \vec{E}=\frac{Q}{4\pi\epsilon_0 x\sqrt{x^2+(\frac L2)^2}}\cdot\vec{i}
 $$
-
 ### Línea de carga infinita
 Igual a la anterior pero se reemplaza $Q=\lambda L$.
 $$

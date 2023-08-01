@@ -62,8 +62,12 @@ $$
 
 Encontrar la solución explícita particular: $y=\frac{1}{x^2+c}$. En donde: $y'+2xy^2=0 \land y(0) = -1$
 $$
-y(0) = -1 = \frac{1}{c}\\
-c = -1\\
+y(0) = -1 = \frac{1}{c}
+$$
+$$
+c = -1
+$$
+$$
 y=\frac{1}{x^2-1}
 $$
 
@@ -76,21 +80,37 @@ Solución de: $x''+16x=0$
 en donde: $x(\pi/2)=-2\ \land x'(\pi/2) = 1$
 
 $$
-x'=-4C_1\cos4t+4C_2\cos4t\\
-x'\left(\frac{\pi}{2}\right)=1=-4C_1\cos(4\cdot\frac{\pi}{2})+4C_2\cos(4\cdot\frac{\pi}{2})\\
-x'\left(\frac{\pi}{2}\right)=1=-4C_1\cos(2\pi)+4C_2\cos(2\pi)\\
-x'\left(\frac{\pi}{2}\right)=1=4C_2\\
+x'=-4C_1\cos4t+4C_2\cos4t
+$$
+$$
+x'\left(\frac{\pi}{2}\right)=1=-4C_1\cos(4\cdot\frac{\pi}{2})+4C_2\cos(4\cdot\frac{\pi}{2})
+$$
+$$
+x'\left(\frac{\pi}{2}\right)=1=-4C_1\cos(2\pi)+4C_2\cos(2\pi)
+$$
+$$
+x'\left(\frac{\pi}{2}\right)=1=4C_2
+$$
+$$
 C_2=\frac{1}{4}
 $$
 
 $$
-x\left(\frac{\pi}{2}\right)=-2=C_1\cos(4\cdot\frac{\pi}{2})+C_2\sin(4\cdot\frac{\pi}{2})\\
-x\left(\frac{\pi}{2}\right)=-2=C_1\cos(2\pi)+C_2\sin(2\pi)\\
-x\left(\frac{\pi}{2}\right)=-2=C_1\\
+x\left(\frac{\pi}{2}\right)=-2=C_1\cos(4\cdot\frac{\pi}{2})+C_2\sin(4\cdot\frac{\pi}{2})
+$$
+$$
+x\left(\frac{\pi}{2}\right)=-2=C_1\cos(2\pi)+C_2\sin(2\pi)
+$$
+$$
+x\left(\frac{\pi}{2}\right)=-2=C_1
+$$
+$$
 C_1=-2
 $$
 
 $$
-y=-2\cos4t+\frac{1}{4}\sin4t\\
+y=-2\cos4t+\frac{1}{4}\sin4t
+$$
+$$
 I(-\infin, \infin)
 $$
