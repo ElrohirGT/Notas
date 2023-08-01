@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"Ecuaciones Diferenciales\"",
@@ -32,7 +32,7 @@
       "query": "path:Física",
       "color": {
         "a": 1,
-        "rgb": 14717522
+        "rgb": 16744730
       }
     }
   ],
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7181119245642333,
-  "close": false
+  "scale": 0.6064860004825743,
+  "close": true
 }
