@@ -71,7 +71,7 @@ $$
 R=\{(a,b)|a-b=3k,k\in Z\}
 $$
 
-a) Liste los elementos del conjunto [0].
+a) Liste los elementos del conjunto $[0]$.
 $$
 [0]=\{0,3,6,9\}
 $$

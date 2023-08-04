@@ -98,7 +98,9 @@ $$
 
 Por lo que la sustitución sería:
 $$
-u=y^{1-n}=y^{1-2}=y^{-1}\\
+u=y^{1-n}=y^{1-2}=y^{-1}
+$$
+$$
 y=u^{-1}
 $$
 

@@ -64,19 +64,32 @@ $$
 
 Se calcula el factor integrante:
 $$
-P(x)=-\frac{4}{x}\\
-\int P(x)dx=-4\ln x\\
-e^{-4\ln x}\\
+P(x)=-\frac{4}{x}
+$$
+$$
+\int P(x)dx=-4\ln x
+$$
+$$
+e^{-4\ln x}
+$$
+$$
 e^{\ln x^{-4}} = x^{-4}
 $$
 
 ahora se integra:
 $$
-
-\int\frac{d}{dx}[ x^{-4}\cdot y ] = \int x^{-4}\cdot x^5e^x dx\\
-x^{-4}\cdot y=\int xe^x dx\\
-x^{-4}\cdot y=xe^x-e^x+C\\
-y=x^5e^x-x^4e^x+x^4C\\
+\int\frac{d}{dx}[ x^{-4}\cdot y ] = \int x^{-4}\cdot x^5e^x dx
+$$
+$$
+x^{-4}\cdot y=\int xe^x dx
+$$
+$$
+x^{-4}\cdot y=xe^x-e^x+C
+$$
+$$
+y=x^5e^x-x^4e^x+x^4C
+$$
+$$
 I:\ (0,\infty)
 $$
 

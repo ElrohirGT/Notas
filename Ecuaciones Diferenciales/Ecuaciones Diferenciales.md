@@ -49,7 +49,15 @@ Las EDO pueden ser lineales ([[Edo Lineal]]).
 * **Autónoma:** $\frac{dy}{dx}=f(y)$
 * **No Autónoma:** $\frac{dy}{dx}=f(x,y)$
 
-## Ejemplos
+## Métodos de Solución
+[[Método por Sustitución]]: Consiste en reemplazar las variables dependientes e independientes por alguna relación entre ellas, el método de bernoulli también es clasificado como uno de sustitución.
+
+[[Método de Solución ED Exacta]]: No todas las ecuaciones que tienen la forma de una exacta pueden ser resueltas con este método, sin embargo, es definitivamente uno de los más tardados y laboriosos.
+
+[[Método de Separación de Variables]]: Este método es el más sencillo al momento de plantear, pero puede que las integrales nos queden muy complicadas.
+## Ejemplos Aplicados
+Ejemplos de aplicación se pueden encontrar en la página de [[Ejemplos]].
+## Problemas de Valor Inicial 
 Determinar que: $x^2+y^2=25$
 es solución de: $\frac{dy}{dx} = - \frac{x}{y}$
 
