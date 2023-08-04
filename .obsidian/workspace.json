@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Teorema de Única Solución.md",
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Teorema de Única Solución.md",
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Teorema de Única Solución.md",
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Teorema de Única Solución.md"
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md"
               }
             }
           }
@@ -143,21 +143,26 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "b4e8b255a68c794d",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+    "Matemática Discreta/Tipos de Relaciones.md",
+    "Diagrama de Hasse.md",
+    "Matemática Discreta/Matriz de Adyacencia.md",
+    "Ecuaciones Diferenciales/Método por Sustitución.md",
+    "Ecuaciones Diferenciales/EDO Lineal.md",
     "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
+    "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Ecuaciones Diferenciales/Ejemplos.md",
-    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Física/Fuerza electromagnética.md",
     "IPC/Fuentes de Información.md",
     "IPC/Lluvia de Ideas.md",
     "IPC/Tarea 1.md",
-    "Física/Ley de Coulomb.md",
-    "Ecuaciones Diferenciales/Método por Sustitución.md",
-    "Ecuaciones Diferenciales/EDO Lineal.md"
+    "Física/Ley de Coulomb.md"
   ]
 }
