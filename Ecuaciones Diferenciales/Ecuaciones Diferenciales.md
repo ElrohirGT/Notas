@@ -1,4 +1,5 @@
 # Ecuaciones Diferenciales
+Se pueden graficar por medio de [[Campos Direccionales]].
 
 $\frac{dy}{dx}+5y=e^x$
 
