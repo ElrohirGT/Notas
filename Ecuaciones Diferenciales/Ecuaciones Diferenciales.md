@@ -13,7 +13,7 @@ $\frac{\delta^2 u}{\delta x^2}+\frac{\delta^2 u}{\delta t^2}=0$
 |---|---|
 |Las ecuaciones diferenciales que tienen solamente diferenciales ordinarios son Ecuaciones Diferenciales Ordinarias (EDO).| Las ecuaciones diferenciales que tienen solamente diferenciales parciales son Ecuaciones Diferenciales Parciales (EDP).|
 
-Para resolver estas ecuaciones se puede usar el método de [[Método de Separación de Variables]]
+Existen varios tipos de ecuaciones diferenciales, las [[ED de Orden Superior]] son aquellas que tienen un orden mayor a 1, es decir, tienen una segunda, tercera o cuarta derivada respecto a una variable.
 
 ## Ecuaciones Diferenciales Ordinarias (EDO)
 Son del mismo orden en el que se encuentra su diferencial más alto.

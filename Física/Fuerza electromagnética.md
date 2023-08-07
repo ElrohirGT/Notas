@@ -1,6 +1,6 @@
 # Fuerza electromagnética
 Es una de las 4 [[Fuerzas del Universo]].
-[[Ley de Coulomb]]
+Se puede utilizar la [[Ley de Coulomb]] para expresar el campo electromagnético, pero una forma alternativa es la [[Ley de Gauss]].
 
 ## Campo Eléctrico
 $$

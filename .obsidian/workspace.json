@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4e8b255a68c794d",
+            "id": "19fb4c17650d47ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md"
+                "file": "Física/Fuerza electromagnética.md"
               }
             }
           }
@@ -147,12 +147,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b4e8b255a68c794d",
+  "active": "19fb4c17650d47ee",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+    "Física/Fuerza electromagnética.md",
+    "Física/Ley de Gauss.md",
+    "Matemática Discreta/Funciones.md",
     "Matemática Discreta/Sets.md",
     "Matemática Discreta/Tipos de Relaciones.md",
+    "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Matemática Discreta/Matriz de Adyacencia.md",
     "Ecuaciones Diferenciales/Campos Direccionales.md",
     "Ecuaciones Diferenciales/ED de Orden Superior.md",
@@ -162,7 +165,6 @@
     "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Ecuaciones Diferenciales/Ejemplos.md",
-    "Física/Fuerza electromagnética.md",
     "IPC/Fuentes de Información.md",
     "IPC/Lluvia de Ideas.md",
     "IPC/Tarea 1.md",

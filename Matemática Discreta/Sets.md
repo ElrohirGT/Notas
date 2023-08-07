@@ -16,7 +16,7 @@ Se pueden realizar [[Set Operations]].
 
 Los conjuntos discretos son todos los conjuntos finitos o infinitos que se pueden contar. Es decir, a los que se les puede asignar un número natural de forma biyectiva.
 
-Los elementos dentro de un set se pueden relacionar entre sí o entre elementos de otros sets, existen varios [[Tipos de Relaciones]], según las propiedades de la relación.
+Los elementos dentro de un set se pueden relacionar entre sí o entre elementos de otros sets, existen varios [[Tipos de Relaciones]], estas se realizan generalmente por medio de [[Funciones]].
 ## Cardinalidad
 El tamaño de un set se le llama cardinalidad. Se representa $|C|$, en donde C es el nombre del set.
 
