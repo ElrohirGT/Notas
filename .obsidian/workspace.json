@@ -11,12 +11,8 @@
             "id": "b4e8b255a68c794d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -150,9 +142,11 @@
   "active": "b4e8b255a68c794d",
   "lastOpenFiles": [
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+    "Ecuaciones Diferenciales/Campos Direccionales.md",
+    "Ecuaciones Diferenciales/ED de Orden Superior.md",
     "Matemática Discreta/Tipos de Relaciones.md",
-    "Diagrama de Hasse.md",
     "Matemática Discreta/Matriz de Adyacencia.md",
+    "Diagrama de Hasse.md",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/EDO Lineal.md",
     "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
