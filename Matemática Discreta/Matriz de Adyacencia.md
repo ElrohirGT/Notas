@@ -37,6 +37,6 @@ M_a^2\preccurlyeq M_a
 $$
 
 ## Multiplicación de Matrices
-Un método sencillo y rápido de multiplicar matrices, es dividirla en vectores. Cada fila de la matriz derecha se divide en sus elementos y cada elemento multiplica a una columna de la matriz izquierda. El resultado se suma y este vector es la columna de la matriz resultado. Se repite por todas las columnas y eso da la matriz total.
+Un método sencillo y rápido de multiplicar matrices, es dividirla en vectores. Cada columna de la matriz derecha se divide en sus elementos y cada elemento multiplica a una columna de la matriz izquierda. El resultado se suma y este vector es la columna n de la matriz resultado, en donde n es igual a la posición de la columna que se usó para muliplicar. Se repite por todas las columnas y eso da la matriz total.
 
 
