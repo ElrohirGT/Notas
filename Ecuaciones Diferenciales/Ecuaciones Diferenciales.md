@@ -51,6 +51,8 @@ Las EDO pueden ser lineales ([[Edo Lineal]]).
 * **No Autónoma:** $\frac{dy}{dx}=f(x,y)$
 
 ## Métodos de Solución
+La forma en la que sabemos si una ecuación diferencial tiene una única solución en el punto dado es debido al [[Teorema de Única Solución]].
+
 [[Método por Sustitución]]: Consiste en reemplazar las variables dependientes e independientes por alguna relación entre ellas, el método de bernoulli también es clasificado como uno de sustitución.
 
 [[Método de Solución ED Exacta]]: No todas las ecuaciones que tienen la forma de una exacta pueden ser resueltas con este método, sin embargo, es definitivamente uno de los más tardados y laboriosos.
