@@ -1,3 +1,4 @@
+Las relaciones que se pueden realizar sobre sets se pueden representar por medio de una [[Matriz de Adyacencia]].
 # Relación de Equivalencia
 Cumple reflectividad, simetría y transitividad. Las equivalencias inducen particiones de conjuntos. Cada uno de estos conjuntos particiones se llaman clases de equivalencia.
 
