@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Física/Fuerza electromagnética.md",
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Física/Fuerza electromagnética.md",
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Física/Fuerza electromagnética.md",
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Física/Fuerza electromagnética.md"
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md"
               }
             }
           }
@@ -149,16 +149,18 @@
   },
   "active": "19fb4c17650d47ee",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/ED de Orden Superior.md",
+    "Ecuaciones Diferenciales/y_p según g(x).png",
+    "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+    "Matemática Discreta/Tipos de Relaciones.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Física/Fuerza electromagnética.md",
     "Física/Ley de Gauss.md",
     "Matemática Discreta/Funciones.md",
     "Matemática Discreta/Sets.md",
-    "Matemática Discreta/Tipos de Relaciones.md",
     "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Matemática Discreta/Matriz de Adyacencia.md",
     "Ecuaciones Diferenciales/Campos Direccionales.md",
-    "Ecuaciones Diferenciales/ED de Orden Superior.md",
     "Diagrama de Hasse.md",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/EDO Lineal.md",

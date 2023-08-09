@@ -23,6 +23,8 @@ $$
 
 Un complejo conjugado tiene la forma de: $\alpha+\beta i$.
 
+Otra forma de resolverlas es por medio del [[Método de Coeficientes Indeterminados]]. 
+
 ## Ejemplos
 Resolver:
 $$
