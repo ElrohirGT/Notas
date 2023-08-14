@@ -11,8 +11,12 @@
             "id": "cec4bd82b0a43ce7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md"
+              }
             }
           }
         ]
@@ -138,8 +146,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "cec4bd82b0a43ce7",
+  "active": "51e3f9c26a3fe366",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Matemática Discreta/4913",
     "Matemática Discreta/Principios Básicos de Conteo.md",
     "Invest like a pro/LEIs.md",
@@ -161,7 +170,6 @@
     "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/y_p según g(x).png",
     "Matemática Discreta/Tipos de Relaciones.md",
-    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Física/Fuerza electromagnética.md",
     "Matemática Discreta/Funciones.md",
     "Matemática Discreta/Sets.md",
