@@ -83,3 +83,64 @@ Por lo que y es:
 $$
 y=y_c+y_p=C_1e^{(-2+\sqrt6)x}+C_1e^{(-2-\sqrt6)x}-x^2-\frac52x-9
 $$
+
+## Caso 2: Algunos términos de $Y_p$ se repiten en $Y_c$
+Se realizan los mismos pasos para el Caso 1 con la excepción de que si hay términos repetidos entonces se multiplpica $y_p$ por $x^{k+1}$ en donde $k$ es la potencia máxima de las x's. Despues de esto ya se puede encontrar los coeficientes y continuar con el algoritmo de solución.
+
+**IMPORTANTE**: Si al multiplicar $y_p$ por el $x^{k+1}$ se encuentra que se repite el término, entonces se debe continuar con el siguiente valor de $k$ dentro de la serie.
+### Ejemplos
+Resolver:
+$$
+y''-5y'+4y=8e^x
+$$
+
+Primero obtenemos la ecuación equivalente:
+$$
+m^2-5m+4=0
+$$
+
+Resolviendo entonces:
+$$
+m_1=4;\ m_2=1
+$$
+
+Por lo que:
+$$
+y_c=C_1 e^{4x}+C_2 e^x
+$$
+
+Ahora necesitamos encontrar $Y_p$:
+$$
+Y_p=Ae^x
+$$
+
+Como podemos ver, se repiten términos, pues:
+$$
+Ae^x==C_2e^x
+$$
+
+Entonces debemos multiplicar $y_p$ por $x^{k+1}$. En este caso el polinomio $g(x)$ es de la forma:
+$$
+8x^0e^x+0xe^x+0x^2e^x+0x^3e^x...
+$$
+
+Por lo que el $k$ máximo encontrado es 0. Entonces se debe multiplicar por $x$. Entonces:
+$$
+y_p=Axe^x
+$$
+$$
+y_p'=Axe^x+Ae^x
+$$
+$$
+y_p''=Axe^x+2Ae^x
+$$
+
+Ahora se puede continuar con el método del caso 1. Resultando en:
+$$
+y_p=-\frac83e^x
+$$
+
+Por lo que:
+$$
+y=C_1e^{4x}+C_2e^x-\frac83xe^x
+$$
