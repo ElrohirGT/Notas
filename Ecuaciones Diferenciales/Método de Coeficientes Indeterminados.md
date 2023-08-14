@@ -13,7 +13,7 @@ En donde $g(x)$ es un polinomio o una constante, aunque puede ser también $e^{a
 3. Sustituir $Y_p^{n}$,$Y_p^{n-1}$,$Y_p^{n-2}$... y $Y_p$ en ED. Encontrar coeficientes
 4. $Y=Y_c+Y_p$
 
-## Ejemplos
+### Ejemplos
 Resolver:
 $$
 y''+4y'-2y=2x^2-3x+6
@@ -143,4 +143,72 @@ $$
 Por lo que:
 $$
 y=C_1e^{4x}+C_2e^x-\frac83xe^x
+$$
+
+---
+Resolver
+$$
+y''-2y'-3y=4x-5+6xe^{2x}
+$$
+
+Primero obtenemos la ecuación característica:
+$$
+m^2-2m-3=0
+$$
+
+Por lo que:
+$$
+m_1=-1;\ m_2=3
+$$
+
+Entonces:
+$$
+y_c=C_1e^{-x}+C_2e^{3x}
+$$
+
+La solución propuesta sería:
+$$
+y_p=Ax+B+Cxe^{2x}+De^{2x}
+$$
+
+ahora tenemos que derivar:
+$$
+y_p'=A+2Cxe^{2x}+Ce^{2x}+2De^{2x}
+$$
+$$
+y_p''=4Cxe^{2x}+4Ce^{2x}+4De^{2x}
+$$
+
+Por lo que ahora se reemplaza:
+$$
+4Cxe^{2x}+4Ce^{2x}+4De^{2x}-2(A+2Cxe^{2x}+Ce^{2x}+2De^{2x})-3(Ax+B+Cxe^{2x}+De^{2x})
+$$
+
+Por lo que agrupando:
+$$
+xe^{2x}(4C-4C-3C)=-3Cxe^{2x}
+$$
+$$
+e^{2x}(4C+4D-2C-4D-3D)=(2C-3D)e^{2x}
+$$
+$$
+-3Ax
+$$
+$$
+-2A-3B
+$$
+
+Resolviendo:
+$$
+A=-\frac43;\ B=\frac{23}{9};\ C=-2;\ D=-\frac43
+$$
+
+Entonces reemplazando en $y_p$:
+$$
+y_p=-\frac43x+\frac{23}{9}-2xe^{2x}-\frac43e^{2x}
+$$
+
+Finalmente:
+$$
+y=C_1e^{-x}+C_2e^{3x}-\frac43x+\frac{23}{9}-2xe^{2x}-\frac43e^{2x}
 $$

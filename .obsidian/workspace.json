@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matemática Discreta/Principios Básicos de Conteo.md"
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,11 +147,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "51e3f9c26a3fe366",
+  "active": "cec4bd82b0a43ce7",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/ED de Orden Superior.md",
+    "Matemática Discreta/Tipos de Relaciones.md",
+    "Diagrama de Hasse.md",
+    "Matemática Discreta/Sets.md",
+    "Matemática Discreta/Principios Básicos de Conteo.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Matemática Discreta/4913",
-    "Matemática Discreta/Principios Básicos de Conteo.md",
     "Invest like a pro/LEIs.md",
     "Física/Ley de Gauss.md",
     "Microprocesadores/Procesos e Hilos.md",
@@ -166,17 +171,13 @@
     "Física/Ejemplo Ley de Gauss 2.png",
     "Física/Ejemplo Ley de Gauss 1.png",
     "Física/Ejemplo Ley de Gauss.png",
-    "Ecuaciones Diferenciales/ED de Orden Superior.md",
     "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/y_p según g(x).png",
-    "Matemática Discreta/Tipos de Relaciones.md",
     "Física/Fuerza electromagnética.md",
     "Matemática Discreta/Funciones.md",
-    "Matemática Discreta/Sets.md",
     "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Matemática Discreta/Matriz de Adyacencia.md",
     "Ecuaciones Diferenciales/Campos Direccionales.md",
-    "Diagrama de Hasse.md",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/EDO Lineal.md",
     "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
