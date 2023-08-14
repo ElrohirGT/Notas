@@ -1,2 +1,0 @@
-# Modelos de Programación Paralela
-

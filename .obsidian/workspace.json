@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a34dd81bf8ec2c1a",
+        "id": "3de926048b3d6fd3",
         "type": "tabs",
         "children": [
           {
-            "id": "19fb4c17650d47ee",
+            "id": "cec4bd82b0a43ce7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,17 +118,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md"
-              }
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,15 +138,31 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "19fb4c17650d47ee",
+  "active": "cec4bd82b0a43ce7",
   "lastOpenFiles": [
+    "Matemática Discreta/4913",
+    "Matemática Discreta/Principios Básicos de Conteo.md",
+    "Invest like a pro/LEIs.md",
+    "Física/Ley de Gauss.md",
+    "Microprocesadores/Procesos e Hilos.md",
+    "Microprocesadores/Modelos de programación paralela.md",
+    "Microprocesadores/Ley de Amdahl.md",
+    "Microprocesadores/Glosario.md",
+    "Microprocesadores/Paralelismo.md",
+    "Untitled.canvas",
+    "Física/Ejercicio Ley de Gaus-1.png",
+    "Física/Ejercicio Ley de Gaus-2.png",
+    "Física/Problema Ley de Gauss.png",
+    "Física/Solución Ejemplo Ley de Gauss.png",
+    "Física/Ejemplo Ley de Gauss 2.png",
+    "Física/Ejemplo Ley de Gauss 1.png",
+    "Física/Ejemplo Ley de Gauss.png",
     "Ecuaciones Diferenciales/ED de Orden Superior.md",
-    "Ecuaciones Diferenciales/y_p según g(x).png",
     "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+    "Ecuaciones Diferenciales/y_p según g(x).png",
     "Matemática Discreta/Tipos de Relaciones.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Física/Fuerza electromagnética.md",
-    "Física/Ley de Gauss.md",
     "Matemática Discreta/Funciones.md",
     "Matemática Discreta/Sets.md",
     "Ecuaciones Diferenciales/Teorema de Única Solución.md",
@@ -167,9 +174,6 @@
     "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Ecuaciones Diferenciales/Ejemplos.md",
-    "IPC/Fuentes de Información.md",
-    "IPC/Lluvia de Ideas.md",
-    "IPC/Tarea 1.md",
-    "Física/Ley de Coulomb.md"
+    "IPC/Fuentes de Información.md"
   ]
 }
