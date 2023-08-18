@@ -1,4 +1,4 @@
-## Método de Separación de Variables
+# Método de Separación de Variables
 Funciona para todas las ecuaciones diferenciales que tengan la forma:
 $$
 \frac{dy}{dx}=g(x)\cdot h(y)
