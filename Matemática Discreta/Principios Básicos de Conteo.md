@@ -78,3 +78,19 @@ En otras palabras si una tarea se tiene que realizar en dos etapas, la primera d
 $$
 \left|\bigtimes_{k=1}^n A_k\right|=\Pi_{k=1}^n|A_k|
 $$
+
+## Principio de Inclusión-Exclusión
+Dados dos conjuntos finitos A y B cuya intersección no es vacía, entonces:
+$$
+|A\cup B| = |A| +|B|-|A\cap B|
+$$
+
+### Ejemplos
+Teniendo una baraja estándar de 52 cartas ¿De cuántas formas podemos elegir una carta roja o uno de los símbolos J, Q o K?
+
+Se tienen dos conjuntos, A=cartas rojas, B=cartas con símbolos J, Q o K. Por lo que la cantidad en las que podemos elegir alguna de estas dos es:
+$$
+|A\cup B| = |A| +|B|-|A\cap B|=26+12-6=32
+$$
+
+---
