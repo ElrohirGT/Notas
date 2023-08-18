@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md"
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "cec4bd82b0a43ce7",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+    "Ecuaciones Diferenciales/Método de Separación de Variables.md",
+    "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
     "Ecuaciones Diferenciales/ED de Orden Superior.md",
     "Matemática Discreta/Tipos de Relaciones.md",
     "Diagrama de Hasse.md",
@@ -171,7 +174,6 @@
     "Física/Ejemplo Ley de Gauss 2.png",
     "Física/Ejemplo Ley de Gauss 1.png",
     "Física/Ejemplo Ley de Gauss.png",
-    "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/y_p según g(x).png",
     "Física/Fuerza electromagnética.md",
     "Matemática Discreta/Funciones.md",
@@ -180,8 +182,6 @@
     "Ecuaciones Diferenciales/Campos Direccionales.md",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/EDO Lineal.md",
-    "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
-    "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Ecuaciones Diferenciales/Ejemplos.md",
     "IPC/Fuentes de Información.md"
   ]
