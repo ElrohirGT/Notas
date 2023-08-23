@@ -58,6 +58,10 @@ La forma en la que sabemos si una ecuación diferencial tiene una única soluci�
 [[Método de Solución ED Exacta]]: No todas las ecuaciones que tienen la forma de una exacta pueden ser resueltas con este método, sin embargo, es definitivamente uno de los más tardados y laboriosos.
 
 [[Método de Separación de Variables]]: Este método es el más sencillo al momento de plantear, pero puede que las integrales nos queden muy complicadas.
+
+[[Método de Variación de Parámetros]]: Este método se utiliza cuando la ecuación no es homogénea. Se necesita plantear una $y_p$ que tendrá la misma forma que la ecuación base de $g(x)$.
+
+[[Método de Cauchy-Euler]]: Este método se utiliza cuando las derivadas de la variable dependiente se encuentran multiplicadas por su respectiva $x^n$. Se puede combinar con el  [[Método de Variación de Parámetros]] para resolver ecuaciones no homogéneas.
 ## Ejemplos Aplicados
 Ejemplos de aplicación se pueden encontrar en la página de [[Ejemplos]].
 ## Problemas de Valor Inicial 
