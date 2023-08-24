@@ -4,15 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "d74424e51d50b180",
+        "id": "1e8c0452cbed4592",
         "type": "tabs",
         "children": [
           {
-            "id": "a9503e81f71d5272",
+            "id": "fa2f01555d3a6e49",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e9ab419e5aaac40c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md"
+              }
             }
           }
         ],
@@ -139,24 +159,25 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "a9503e81f71d5272",
+  "active": "fa2f01555d3a6e49",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Método de Cauchy-Euler.md",
+    "Ecuaciones Diferenciales/ED lineales de Orden Superior.md",
+    "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
-    "Ecuaciones Diferenciales/EDO Lineal.md",
-    "Ecuaciones Diferenciales/ED de Orden Superior.md",
-    "Física/Fuerza electromagnética.md",
-    "Ecuaciones Diferenciales/Método por Sustitución.md",
-    "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
-    "Ecuaciones Diferenciales/Teorema de Única Solución.md",
+    "Física/Fuerza electromagnética.md",
     "Física/Ley de Gauss.md",
-    "Matemática Discreta/Principios Básicos de Conteo.md",
+    "Matemática Discreta/Subsets.md",
+    "Matemática Discreta/Sets.md",
     "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
+    "Ecuaciones Diferenciales/Método de Cauchy-Euler.md",
+    "Ecuaciones Diferenciales/EDO Lineal.md",
+    "Ecuaciones Diferenciales/Método por Sustitución.md",
+    "Ecuaciones Diferenciales/Teorema de Única Solución.md",
+    "Matemática Discreta/Principios Básicos de Conteo.md",
     "Matemática Discreta/Tipos de Relaciones.md",
     "Diagrama de Hasse.md",
-    "Matemática Discreta/Sets.md",
     "Matemática Discreta/4913",
     "Invest like a pro/LEIs.md",
     "Microprocesadores/Procesos e Hilos.md",
@@ -175,7 +196,6 @@
     "Ecuaciones Diferenciales/y_p según g(x).png",
     "Matemática Discreta/Funciones.md",
     "Matemática Discreta/Matriz de Adyacencia.md",
-    "Ecuaciones Diferenciales/Campos Direccionales.md",
-    "Ecuaciones Diferenciales/Ejemplos.md"
+    "Ecuaciones Diferenciales/Campos Direccionales.md"
   ]
 }

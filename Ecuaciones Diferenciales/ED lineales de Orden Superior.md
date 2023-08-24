@@ -1,4 +1,4 @@
-# ED de Orden Superior
+# ED  lineal de Orden Superior
 Tienen la forma de:
 $$
 a_n(x)\frac{d^ny}{dx^n}+a_{n-1}(x)\frac{d^{n-1}y}{dx^{n-1}}+...+a_1(x)y=g(x)

@@ -13,7 +13,7 @@ $\frac{\delta^2 u}{\delta x^2}+\frac{\delta^2 u}{\delta t^2}=0$
 |---|---|
 |Las ecuaciones diferenciales que tienen solamente diferenciales ordinarios son Ecuaciones Diferenciales Ordinarias (EDO).| Las ecuaciones diferenciales que tienen solamente diferenciales parciales son Ecuaciones Diferenciales Parciales (EDP).|
 
-Existen varios tipos de ecuaciones diferenciales, las [[ED de Orden Superior]] son aquellas que tienen un orden mayor a 1, es decir, tienen una segunda, tercera o cuarta derivada respecto a una variable.
+Existen varios tipos de ecuaciones diferenciales, las [[ED lineales de Orden Superior]] son aquellas que tienen un orden mayor a 1, es decir, tienen una segunda, tercera o cuarta derivada respecto a una variable.
 
 ## Ecuaciones Diferenciales Ordinarias (EDO)
 Son del mismo orden en el que se encuentra su diferencial más alto.
@@ -59,7 +59,9 @@ La forma en la que sabemos si una ecuación diferencial tiene una única soluci�
 
 [[Método de Separación de Variables]]: Este método es el más sencillo al momento de plantear, pero puede que las integrales nos queden muy complicadas.
 
-[[Método de Variación de Parámetros]]: Este método se utiliza cuando la ecuación no es homogénea. Se necesita plantear una $y_p$ que tendrá la misma forma que la ecuación base de $g(x)$.
+[[Método de Coeficientes Indeterminados]]: Este método es útil para ecuaciones lineales de segundo orden o mayor, sin embargo, la función $g(x)$ a la que se tienen que igualar estas ED's debe ser de la forma de potencias de $x^n$, trigonométricas o  $e^{nx}$.
+
+[[Método de Variación de Parámetros]]: Este método se utiliza cuando la ecuación no es homogénea. No tiene la limitante del [[Método de Coeficientes Indeterminados]] pues el $y_p$ se define de forma natural en base a bosquianos determinados por el mismo procedimiento.
 
 [[Método de Cauchy-Euler]]: Este método se utiliza cuando las derivadas de la variable dependiente se encuentran multiplicadas por su respectiva $x^n$. Se puede combinar con el  [[Método de Variación de Parámetros]] para resolver ecuaciones no homogéneas.
 ## Ejemplos Aplicados

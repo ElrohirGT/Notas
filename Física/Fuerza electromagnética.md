@@ -91,15 +91,23 @@ d\vec{E}=\frac{dQ\cos\theta}{4\pi\epsilon_0(x^2+R^2)}=\frac{dQ\cdot x}{4\pi\epsi
 $$
 Calculando la densidad lineal para obtener dQ.
 $$
-\lambda=\frac{Q}{2\pi R}=\frac{dQ}{R\cdot d\phi}\\
+\lambda=\frac{Q}{2\pi R}=\frac{dQ}{R\cdot d\phi}
+$$
+$$
 dQ=\frac{Qd\phi}{2\pi}
 $$
 Entonces:
 $$
-d\vec{E}=\frac{\frac{Qd\phi}{2\pi}\cdot x}{4\pi\epsilon_0(x^2+R^2)^{\frac 32}}\cdot\vec{i}\\
-\vec{E}=\frac{Q\cdot x}{8\pi^2\epsilon_0(x^2+R^2)^{\frac 32}}\int_0^{2pi}d\phi\\
-\vec{E}=\frac{Q\cdot x}{8\pi^2\epsilon_0(x^2+R^2)^{\frac 32}}\cdot(2\pi)\\
-\vec{E}=\frac{Q\cdot x}{4\pi\epsilon_0(x^2+R^2)^{\frac 32}}\vec{i}\\
+d\vec{E}=\frac{\frac{Qd\phi}{2\pi}\cdot x}{4\pi\epsilon_0(x^2+R^2)^{\frac 32}}\cdot\vec{i}
+$$
+$$
+\vec{E}=\frac{Q\cdot x}{8\pi^2\epsilon_0(x^2+R^2)^{\frac 32}}\int_0^{2pi}d\phi
+$$
+$$
+\vec{E}=\frac{Q\cdot x}{8\pi^2\epsilon_0(x^2+R^2)^{\frac 32}}\cdot(2\pi)
+$$
+$$
+\vec{E}=\frac{Q\cdot x}{4\pi\epsilon_0(x^2+R^2)^{\frac 32}}\vec{i}
 $$
 
 ### Disco delgado con carga uniforme
@@ -107,15 +115,19 @@ Es sólido y circular. Se obtiene a partir de la fórmula para el aro delgado, p
 $$
 d\vec{E}=\frac{dQ\cdot x}{4\pi\epsilon_0(x^2+y^2)^{\frac 32}}
 $$
-Encontrar la densidad de área:
+Encontrar la densidad de carga en base al área:
 $$
-\sigma=\frac{Q}{\pi R^2}=\frac{dQ}{2\pi ydy}\\
+\sigma=\frac{Q}{\pi R^2}=\frac{dQ}{2\pi ydy}
+$$
+$$
 dQ=\frac{2Qydy}{R^2}
 $$
 
 Entonces:
 $$
-\vec{E}=\frac{Q\cdot x}{4\pi\epsilon_0 R^2}\int\frac{2ydy}{(x^2+y^2)^{\frac 32}}\\
+\vec{E}=\frac{Q\cdot x}{4\pi\epsilon_0 R^2}\int\frac{2ydy}{(x^2+y^2)^{\frac 32}}
+$$
+$$
 \vec{E}=\frac{Q}{2\pi\epsilon_0 R^2}\left[1-\frac{x}{\sqrt{x^2+R^2}}\right]\cdot\vec{i}
 $$
 
@@ -135,7 +147,9 @@ $$
 
 Para reemplazar $dQ$ se necesita un diferencial de densidad para volumen:
 $$
-\rho=\frac{3Q}{\pi R^2H}=\frac{dQ}{\pi y^2dx}\\
+\rho=\frac{3Q}{\pi R^2H}=\frac{dQ}{\pi y^2dx}
+$$
+$$
 dQ=\frac{3Qy^2dx}{R^2H}
 $$
 
