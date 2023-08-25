@@ -23,6 +23,10 @@ $$
     y_c=C_1x\cos(\beta\ln x)+C_2x\sin(\ln \beta\ln x)
     $$
 
+Cuando la ecuación no es homogénea entonces se utiliza:
+1. Resolver ED homogénea asociada.
+2. Construir ED en forma estándar y resolver por variación de parámetros.
+
 ## Ejemplos
 Resolver
 $$

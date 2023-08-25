@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "1e8c0452cbed4592",
+        "id": "1ad0598422790a66",
         "type": "tabs",
         "children": [
           {
-            "id": "fa2f01555d3a6e49",
+            "id": "7b98426260cd29ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e9ab419e5aaac40c",
+            "id": "07def0f768adf24f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
+                "file": "Física/Problemas electromagnetismo.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md"
+                "file": "Física/Fuerza electromagnética.md"
               }
             }
           }
@@ -159,14 +159,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "fa2f01555d3a6e49",
+  "active": "7b98426260cd29ed",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/ED lineales de Orden Superior.md",
+    "Física/Problemas electromagnetismo.md",
+    "Física/Fuerza electromagnética.md",
     "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+    "Ecuaciones Diferenciales/ED lineales de Orden Superior.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
-    "Física/Fuerza electromagnética.md",
     "Física/Ley de Gauss.md",
     "Matemática Discreta/Subsets.md",
     "Matemática Discreta/Sets.md",
@@ -195,7 +196,6 @@
     "Física/Ejemplo Ley de Gauss.png",
     "Ecuaciones Diferenciales/y_p según g(x).png",
     "Matemática Discreta/Funciones.md",
-    "Matemática Discreta/Matriz de Adyacencia.md",
-    "Ecuaciones Diferenciales/Campos Direccionales.md"
+    "Matemática Discreta/Matriz de Adyacencia.md"
   ]
 }
