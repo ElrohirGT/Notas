@@ -21,3 +21,9 @@ $$
 |X|=k|Y|
 $$
 Como mínimo.
+
+## Permutar con elementos repetidos
+Dado un conjunto con n objetos en el que hay $n_1$ elementos del tipo 1 y $n_2$ objetos iguales del tipo 2... Hasta $n_k$. Entonces la cantidad de permutaciones que se pueden realizar es:
+$$
+\frac{n!}{n_1!n_2!n_3!...n_k!}
+$$
