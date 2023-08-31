@@ -49,3 +49,58 @@ y_c=C_1x^{4}+C_2x^{-1}
 $$
 
 Al ser homogénea, no tiene una respectiva $y_p$.
+
+---
+
+Resolver
+$$
+x^2y''-3xy'+3y=2x^4e^x
+$$
+
+Se resuelve la homogénea asociada dando:
+$$
+m^2+(-3-1)m+3=0
+$$
+
+Por lo que:
+$$
+m_1=1;\ m_2=3
+$$
+
+Como son reales y distintas entonces:
+$$
+y_c=C_1x+C_2x^3
+$$
+
+Ahora se coloca la ecuación en su forma estándar:
+$$
+y''-\frac{3}{x}y'+\frac{3}{x^2}y=2x^2e^x
+$$
+
+Esta se resuelve por variación de parámetros, para eso necesitamos los bosquianos:
+$$
+y_1=x;\ y_1'=1
+$$
+$$
+y_2=x^3;\ y_2'=3x^2
+$$
+
+$$
+W=2x^3;\ W_1=-2x^5e^x;\ W_2=2x^3e^x
+$$
+
+Se obtienen los u's:
+$$
+u_1'=-x^2e^x\therefore u_1=-x^2e^x+2xe^x-2e^x
+$$
+$$
+u_2'=e^x\therefore u_2=e^x
+$$
+
+Por lo que la solución final es:
+$$
+y=C_1x+C_2x^3+(-x^2e^x+2xe^x-2e^x)(x)+(e^x)(x^3)
+$$
+$$
+y=C_1x+C_2x^3+2x^2e^x-2xe^x
+$$
