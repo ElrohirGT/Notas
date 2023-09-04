@@ -77,7 +77,9 @@ $$
 
 Luego sacamos el límite cuando L tiene a infinito:
 $$
-\vec{E}=\frac{\lambda}{4\pi\epsilon_0 x}\cdot\lim_{L->\infty}\frac{L}{\sqrt{x^2}{+(\frac L2)^2}}\cdot\vec{i}\\
+\vec{E}=\frac{\lambda}{4\pi\epsilon_0 x}\cdot\lim_{L->\infty}\frac{L}{\sqrt{x^2}{+(\frac L2)^2}}\cdot\vec{i}
+$$
+$$
 \vec{E}=\frac{\lambda}{2\pi\epsilon_0 x}
 $$
 
