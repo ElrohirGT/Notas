@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1ad0598422790a66",
+        "id": "b4855d68f214af70",
         "type": "tabs",
         "children": [
           {
-            "id": "7b98426260cd29ed",
+            "id": "b65cb19bee67f0e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07def0f768adf24f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Física/Problemas electromagnetismo.md",
+                "file": "Física/Líneas Equipotenciales.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md",
+                "file": "Física/Líneas Equipotenciales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md",
+                "file": "Física/Líneas Equipotenciales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md"
+                "file": "Física/Líneas Equipotenciales.md"
               }
             }
           }
@@ -158,15 +146,24 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7b98426260cd29ed",
+  "active": "b65cb19bee67f0e8",
   "lastOpenFiles": [
+    "Física/Capacitancia.md",
+    "Física/Líneas Equipotenciales - Ejemplo 2.png",
+    "Física/Líneas Equipotenciales.md",
+    "Física/Líneas de Campo.png",
+    "Física/Líneas Equipotenciales.png",
+    "Matemática Discreta/Permutaciones.md",
+    "Matemática Discreta/Funciones.md",
+    "Matemática Discreta/r-combinaciones.md",
+    "Física/Potencial Eléctrico.md",
+    "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/ED lineales de Orden Superior.md",
     "Ecuaciones Diferenciales/EDO Lineal.md",
     "Física/Fuerza electromagnética.md",
-    "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Física/Ley de Gauss.md",
     "Matemática Discreta/Subsets.md",
@@ -181,10 +178,6 @@
     "Matemática Discreta/4913",
     "Invest like a pro/LEIs.md",
     "Microprocesadores/Procesos e Hilos.md",
-    "Microprocesadores/Modelos de programación paralela.md",
-    "Microprocesadores/Ley de Amdahl.md",
-    "Microprocesadores/Glosario.md",
-    "Microprocesadores/Paralelismo.md",
     "Untitled.canvas",
     "Física/Ejercicio Ley de Gaus-1.png",
     "Física/Ejercicio Ley de Gaus-2.png",
@@ -192,9 +185,6 @@
     "Física/Solución Ejemplo Ley de Gauss.png",
     "Física/Ejemplo Ley de Gauss 2.png",
     "Física/Ejemplo Ley de Gauss 1.png",
-    "Física/Ejemplo Ley de Gauss.png",
-    "Ecuaciones Diferenciales/y_p según g(x).png",
-    "Matemática Discreta/Funciones.md",
-    "Matemática Discreta/Matriz de Adyacencia.md"
+    "Física/Ejemplo Ley de Gauss.png"
   ]
 }
