@@ -51,6 +51,12 @@ $$
 \Delta V_{AB} = -\int_{r_A}^{r_B} \vec E\cdot d\vec l
 $$
 
+## Electrovoltio (eV)
+Representa la cantidad de energía cuando un electrón se mueve de un punto de pontecial $V_a$ a otro de potencial $V_b$ cuando $\Delta V=1$.
+$$
+1 eV = 1.602 177\cdot 10^{−19} J
+$$
+
 ## Ejemplos
 Potencial de una línea finita con carga uniforme en un punto ubicado a una distancia x del centro de la línea y perpendicular a ella.
 
