@@ -4,47 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "b4855d68f214af70",
+        "id": "ee3aeb1216c5c2c4",
         "type": "tabs",
         "children": [
           {
-            "id": "b65cb19bee67f0e8",
+            "id": "6d41125d2a1cc141",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Física/Líneas Equipotenciales.md",
+                "file": "Matemática Discreta/Permutaciones.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "57e7d435a94ab4ba",
+            "id": "609682cd89bfe274",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Física/Sistema Internacional de Medidas.md",
+                "file": "Matemática Discreta/r-combinaciones.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a3ee70a48b06f631",
+            "id": "2d17390e18d77e7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Física/Potencial Eléctrico.md",
+                "file": "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Física/Sistema Internacional de Medidas.md",
+                "file": "Matemática Discreta/Permutaciones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Física/Sistema Internacional de Medidas.md",
+                "file": "Matemática Discreta/Permutaciones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,11 +149,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Física/Sistema Internacional de Medidas.md"
+                "file": "Matemática Discreta/Permutaciones.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -172,20 +172,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "51e3f9c26a3fe366",
+  "active": "6d41125d2a1cc141",
   "lastOpenFiles": [
-    "Física/Fuerza electromagnética.md",
-    "Física/Sistema Internacional de Medidas.md",
+    "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
+    "Matemática Discreta/r-combinaciones.md",
+    "Matemática Discreta/Permutaciones.md",
     "Física/Líneas Equipotenciales.md",
+    "Física/Sistema Internacional de Medidas.md",
+    "Física/Fuerza electromagnética.md",
     "Física/Potencial Eléctrico.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
     "Física/Capacitancia.md",
     "Física/Líneas Equipotenciales - Ejemplo 2.png",
     "Física/Líneas de Campo.png",
     "Física/Líneas Equipotenciales.png",
-    "Matemática Discreta/Permutaciones.md",
     "Matemática Discreta/Funciones.md",
-    "Matemática Discreta/r-combinaciones.md",
     "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
@@ -202,7 +203,6 @@
     "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Matemática Discreta/Principios Básicos de Conteo.md",
     "Matemática Discreta/Tipos de Relaciones.md",
-    "Diagrama de Hasse.md",
     "Matemática Discreta/4913",
     "Untitled.canvas",
     "Física/Ejercicio Ley de Gaus-1.png",

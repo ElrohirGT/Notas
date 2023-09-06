@@ -33,6 +33,7 @@ L\{\cos kt\}=\frac{s}{s^2+k^2}
 $$
 
 ## Propiedades
+También se cumple para la inversa de Laplace:
 $$
 L\{\alpha f(t)+\beta g(t)\}=\alpha L\{f(t)\}+\beta L\{g(t)\}
 $$
