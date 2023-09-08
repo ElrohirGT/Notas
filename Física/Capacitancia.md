@@ -61,3 +61,58 @@ Ahora la capacitancia es entonces:
 $$
 C=\frac{4\pi\epsilon_0}{\frac1a-\frac1b}=\frac{4\pi\epsilon_0ab}{b-a}
 $$
+
+## Dieléctrico en Capacitores
+Un dieléctrico es también conocido como un aislante. Como $\epsilon_0$ es la permitividad dieléctrica del vacío y es la menor que existe, entonces utilizaremos las demás permitividades en términos de $\epsilon_0$.
+
+Cuando se perfora un dieléctrico debido a que las cargas saltaron de una placa a otra, el capacitor queda inútil.
+
+El agua es un _buen_ dieléctrico, pero solamente cuando es completamente pura.
+
+## Capacitores en Paralelo
+Conectados en paralelo significa que cada terminal esta conectada solamente a otra terminal de otro capacitor. En paralelo el voltaje siempre es el mismo.
+
+$$
+Q_{tot}=Q_1+Q_2+...+Q_n
+$$
+
+$$
+C_{eq}=C_1+C_2+...+C_n
+$$
+
+## Capacitores en Serie
+Cuando se encuentran conectados en serie, solamente comparten una terminal. Cuando se tienen capacitores en serie, las cargas son iguales:
+
+$$
+Q_1=Q_2=...=Q_n
+$$
+
+$$
+\Delta V = \Delta V_1+\Delta V_2+...+\Delta V_n
+$$
+
+Por lo tanto:
+$$
+C_{eq}=\left[\frac{1}{C_1}+\frac{1}{C_2}+...+\frac{1}{C_n}\right]^{-1}
+$$
+
+## Energía almacenada en un capacitor
+$$
+\Delta U =\frac{Q^2}{2C}=\frac12 C (\Delta V^2)
+$$
+
+## Capacitores con varios dieléctricos
+![[Ejemplo Circuito Varios materiales-1.png]]
+![[Ejemplo Circuito Varios Materiales-2.png]]
+![[Ejemplo Circuito Varios materiales-3.png]]
+## Suma de voltajes de Kirchoff
+Se aplica en cualquier circuito cerrado:
+$$
+\sum Voltaje = 0
+$$
+
+## Ejemplos
+![[Ejemplo Circuito-1.png]]
+![[Ejemplo Circuito-2.png]]
+![[Ejemplo Circuito-3.png]]
+Para encontrar el b, se realiza un despeje comenzando desde la carga total hasta el capacitor que nos piden.

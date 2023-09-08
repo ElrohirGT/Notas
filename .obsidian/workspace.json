@@ -4,40 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "ee3aeb1216c5c2c4",
+        "id": "fbb3646eb95c88a8",
         "type": "tabs",
         "children": [
           {
-            "id": "6d41125d2a1cc141",
+            "id": "cb1370f534f37ede",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md",
+                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "609682cd89bfe274",
+            "id": "85b7988b95252749",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática Discreta/r-combinaciones.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d17390e18d77e7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
+                "file": "Física/Fuerza electromagnética.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md",
+                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md",
+                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matemática Discreta/Permutaciones.md"
+                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md"
               }
             }
           }
@@ -172,20 +160,28 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "6d41125d2a1cc141",
+  "active": "cb1370f534f37ede",
   "lastOpenFiles": [
+    "Física/Capacitancia.md",
+    "Física/Fuerza electromagnética.md",
+    "Física/Sistema Internacional de Medidas.md",
+    "Física/Ejemplo Circuito Varios materiales-3.png",
+    "Física/Imágenes/Solución Ejemplo Ley de Gauss.png",
+    "Física/Imágenes/Semicírculo con densidad de carga variable.png",
+    "Física/Imágenes/Problema Ley de Gauss.png",
+    "Física/Imágenes/Problema de Plano Infinito.png",
+    "Física/Imágenes/Líneas Equipotenciales.png",
+    "Física/Imágenes/Líneas Equipotenciales - Ejemplo 2.png",
+    "Física/Imágenes/Líneas de Campo.png",
+    "Física/Imágenes/Ejercicio Ley de Gaus-2.png",
+    "Física/Imágenes/Ejercicio Ley de Gaus-1.png",
+    "Física/Imágenes",
     "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
     "Matemática Discreta/r-combinaciones.md",
     "Matemática Discreta/Permutaciones.md",
     "Física/Líneas Equipotenciales.md",
-    "Física/Sistema Internacional de Medidas.md",
-    "Física/Fuerza electromagnética.md",
     "Física/Potencial Eléctrico.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
-    "Física/Capacitancia.md",
-    "Física/Líneas Equipotenciales - Ejemplo 2.png",
-    "Física/Líneas de Campo.png",
-    "Física/Líneas Equipotenciales.png",
     "Matemática Discreta/Funciones.md",
     "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
@@ -202,15 +198,7 @@
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Matemática Discreta/Principios Básicos de Conteo.md",
-    "Matemática Discreta/Tipos de Relaciones.md",
     "Matemática Discreta/4913",
-    "Untitled.canvas",
-    "Física/Ejercicio Ley de Gaus-1.png",
-    "Física/Ejercicio Ley de Gaus-2.png",
-    "Física/Problema Ley de Gauss.png",
-    "Física/Solución Ejemplo Ley de Gauss.png",
-    "Física/Ejemplo Ley de Gauss 2.png",
-    "Física/Ejemplo Ley de Gauss 1.png",
-    "Física/Ejemplo Ley de Gauss.png"
+    "Untitled.canvas"
   ]
 }
