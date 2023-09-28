@@ -8,30 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c7cfd8f45cfd272c",
+            "id": "ce6977cbff4a1eb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md",
+                "file": "Matemática Discreta/Principios Básicos de Conteo.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ce6977cbff4a1eb0",
+            "id": "d5dff177e59f5c59",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md"
-              }
+              "state": {}
             }
           },
           {
@@ -170,12 +163,18 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c7cfd8f45cfd272c",
+  "active": "d5dff177e59f5c59",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Transformada de Derivadas.md",
-    "Ecuaciones Diferenciales/Traslación en el eje T.md",
-    "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+    "Matemática Discreta/Principios Básicos de Conteo.md",
     "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
+    "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+    "Ecuaciones Diferenciales/Traslación en el eje S.md",
+    "Ecuaciones Diferenciales/Traslación en el eje T.md",
+    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+    "Ecuaciones Diferenciales/Transformada de Derivadas.md",
+    "Pasted image 20230927193437.png",
+    "Física/Líneas Equipotenciales.md",
+    "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Ecuaciones Diferenciales/Traslación en T.md",
     "Ecuaciones Diferenciales/Función Escalón Unitaria-1.jpeg",
@@ -185,7 +184,6 @@
     "Física/Sistema Internacional de Medidas.md",
     "Física/Capacitancia.md",
     "Matemática Discreta/El Algoritmo de Euclides.md",
-    "Ecuaciones Diferenciales/Traslación en el eje S.md",
     "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
     "Física/Ejemplo Circuito Varios materiales-3.png",
     "Física/Imágenes/Solución Ejemplo Ley de Gauss.png",
@@ -194,21 +192,17 @@
     "Física/Imágenes/Problema de Plano Infinito.png",
     "Física/Imágenes/Líneas Equipotenciales.png",
     "Física/Imágenes/Líneas Equipotenciales - Ejemplo 2.png",
-    "Física/Imágenes/Líneas de Campo.png",
     "Física/Imágenes",
     "Matemática Discreta/r-combinaciones.md",
     "Matemática Discreta/Permutaciones.md",
-    "Física/Líneas Equipotenciales.md",
     "Matemática Discreta/Funciones.md",
     "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
-    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Ecuaciones Diferenciales/ED lineales de Orden Superior.md",
     "Ecuaciones Diferenciales/EDO Lineal.md",
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Física/Ley de Gauss.md",
-    "Matemática Discreta/Subsets.md",
     "Matemática Discreta/4913",
     "Untitled.canvas"
   ]

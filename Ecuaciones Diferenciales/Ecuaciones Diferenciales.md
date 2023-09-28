@@ -64,6 +64,8 @@ La forma en la que sabemos si una ecuación diferencial tiene una única soluci�
 [[Método de Variación de Parámetros]]: Este método se utiliza cuando la ecuación no es homogénea. No tiene la limitante del [[Método de Coeficientes Indeterminados]] pues el $y_p$ se define de forma natural en base a bosquianos determinados por el mismo procedimiento.
 
 [[Método de Cauchy-Euler]]: Este método se utiliza cuando las derivadas de la variable dependiente se encuentran multiplicadas por su respectiva $x^n$. Se puede combinar con el  [[Método de Variación de Parámetros]] para resolver ecuaciones no homogéneas.
+
+Otro método de solución de ecuaciones diferenciales es usar las [[Transformadas de Laplace]]. Estas convierten una función de números reales a una de complejos, sin embargo si se utiliza la [[Transformada de Derivadas]] el problema diferencial en números reales se vuelve uno aritmético en los complejos, por lo que simplemente se resuelve el sistema y se realiza una transformada inversa para regresar a la dimensión de los reales.
 ## Ejemplos Aplicados
 Ejemplos de aplicación se pueden encontrar en la página de [[Ejemplos]].
 ## Problemas de Valor Inicial 
