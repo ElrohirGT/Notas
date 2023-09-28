@@ -16,7 +16,7 @@ Se pueden realizar [[Set Operations]].
 
 Los conjuntos discretos son todos los conjuntos finitos o infinitos que se pueden contar. Es decir, a los que se les puede asignar un número natural de forma biyectiva.
 
-Los elementos dentro de un set se pueden relacionar entre sí o entre elementos de otros sets, existen varios [[Tipos de Relaciones]], estas se realizan generalmente por medio de [[Funciones]].
+Los elementos dentro de un set se pueden relacionar entre sí o entre elementos de otros sets, existen varios [[Tipos de Relaciones de Sets]], estas se realizan generalmente por medio de [[Funciones]].
 
 ## Cardinalidad
 El tamaño de un set se le llama cardinalidad. Se representa $|C|$, en donde C es el nombre del set.
@@ -25,7 +25,7 @@ Si hay una biyección entre dos sets, entonces se dice que tienen la misma cardi
 
 Un conjunto infinito enumerable es aquel en el que siempre se puede asignar un número natural a cada elemento del conjunto de forma biyectiva.
 
-Para contar cardinalidades se pueden utilizar los [[Principios Básicos de Conteo]].
+Para contar cardinalidades se pueden utilizar los [[Principios de Conteo]].
 ## Sets comunes
 Número naturales: 
 $\mathbb{N} = \{0,1,2,3,4,...\}$

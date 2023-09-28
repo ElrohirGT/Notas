@@ -92,5 +92,5 @@ Se tienen dos conjuntos, A=cartas rojas, B=cartas con símbolos J, Q o K. Por lo
 $$
 |A\cup B| = |A| +|B|-|A\cap B|=26+12-6=32
 $$
-
----
+## Formas Rápidas de Contar
+Algunas formas rápidas de contar es usar técnicas como las [[R-combinaciones]], las [[Combinaciones con elementos indistinguibles]] o las [[Permutaciones]].

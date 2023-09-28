@@ -29,3 +29,5 @@ Un entero positivo p que solo tiene divisores triviales (los divisores triviales
 **Número Compuesto**
 
 Es un número que no es primo. Es decir, tiene más divisores que los triviales.
+
+En base a estos principios se obtiene [[El Algoritmo de Euclides]], el cual es uno muy eficiente para calcular el mcd entre dos números.
