@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "44829a76927c617c",
+            "id": "c7cfd8f45cfd272c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática Discreta/El Algoritmo de Euclides.md",
+                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce6977cbff4a1eb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matemática Discreta/El Algoritmo de Euclides.md",
+                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matemática Discreta/El Algoritmo de Euclides.md",
+                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matemática Discreta/El Algoritmo de Euclides.md"
+                "file": "Ecuaciones Diferenciales/Derivada de una Transformada.md"
               }
             }
           },
@@ -158,15 +170,23 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "44829a76927c617c",
+  "active": "c7cfd8f45cfd272c",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Transformadas de Laplace.md",
-    "Ecuaciones Diferenciales/Traslación en el eje S.md",
-    "Física/Capacitancia.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
-    "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
+    "Ecuaciones Diferenciales/Traslación en el eje T.md",
+    "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+    "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
+    "Ecuaciones Diferenciales/Traslación en el eje T.md~",
+    "Ecuaciones Diferenciales/Traslación en T.md",
+    "Ecuaciones Diferenciales/Función Escalón Unitaria-1.jpeg",
+    "Ecuaciones Diferenciales/Función Escalón Unitaria-2.jpeg",
     "Física/Fuerza electromagnética.md",
+    "Física/Potencial Eléctrico.md",
     "Física/Sistema Internacional de Medidas.md",
+    "Física/Capacitancia.md",
+    "Matemática Discreta/El Algoritmo de Euclides.md",
+    "Ecuaciones Diferenciales/Traslación en el eje S.md",
+    "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
     "Física/Ejemplo Circuito Varios materiales-3.png",
     "Física/Imágenes/Solución Ejemplo Ley de Gauss.png",
     "Física/Imágenes/Semicírculo con densidad de carga variable.png",
@@ -175,13 +195,10 @@
     "Física/Imágenes/Líneas Equipotenciales.png",
     "Física/Imágenes/Líneas Equipotenciales - Ejemplo 2.png",
     "Física/Imágenes/Líneas de Campo.png",
-    "Física/Imágenes/Ejercicio Ley de Gaus-2.png",
-    "Física/Imágenes/Ejercicio Ley de Gaus-1.png",
     "Física/Imágenes",
     "Matemática Discreta/r-combinaciones.md",
     "Matemática Discreta/Permutaciones.md",
     "Física/Líneas Equipotenciales.md",
-    "Física/Potencial Eléctrico.md",
     "Matemática Discreta/Funciones.md",
     "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
@@ -192,11 +209,6 @@
     "Ecuaciones Diferenciales/Método de Separación de Variables.md",
     "Física/Ley de Gauss.md",
     "Matemática Discreta/Subsets.md",
-    "Matemática Discreta/Sets.md",
-    "Ecuaciones Diferenciales/Método de Solución ED Exacta.md",
-    "Ecuaciones Diferenciales/Método de Cauchy-Euler.md",
-    "Ecuaciones Diferenciales/Método por Sustitución.md",
-    "Ecuaciones Diferenciales/Teorema de Única Solución.md",
     "Matemática Discreta/4913",
     "Untitled.canvas"
   ]
