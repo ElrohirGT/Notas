@@ -4,7 +4,7 @@
 ax+by=mcd(a,b)
 $$
 
-Es en realidad un caso especial de un tipo de ecuaciones llamadas [[Ecuaciones Diofánticas]], las cuales tienen la forma $ax+by=c$. Se puede utilizar esta identidad para encontrar sus soluciones en las que a y b sean enteros.
+Es en realidad un caso especial de un tipo de ecuaciones llamadas [[Ecuaciones Diofanticas]], las cuales tienen la forma $ax+by=c$. Se puede utilizar esta identidad para encontrar sus soluciones en las que a y b sean enteros.
 ## Ejemplos
 $$
 mcd(102,38)=102x+38y

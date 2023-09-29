@@ -16,7 +16,7 @@ $$
 4. Repetir los pasos 2 y 3 hasta que $r=0$.
 5. $mcd(a,b)$ será igual al valor de $b$ al finalizar el algoritmo.
 
-Utilizando este algoritmo es fácil poner en práctica lo propuesto por [[La Identidad de Bézout]].
+Utilizando este algoritmo es fácil poner en práctica lo propuesto por [[La Identidad de Bezout]]
 ## Teorema Fundamental de la Aritmética
 Todo entero positivo $n>1$ es un número primo o bien un único producto de números primos.
 

@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "3f5ce1c4cd68c222",
+        "id": "96c146c445fbfb9e",
         "type": "tabs",
         "children": [
           {
-            "id": "ebfe7babea19cdd0",
+            "id": "cff4b3fa33c61bf4",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -150,12 +150,13 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ebfe7babea19cdd0",
+  "active": "cff4b3fa33c61bf4",
   "lastOpenFiles": [
-    "Matemática Discreta/Divisibilidad.md",
     "Matemática Discreta/El Algoritmo de Euclides.md",
-    "Matemática Discreta/La Identidad de Bézout.md",
-    "Matemática Discreta/Ecuaciones Diofánticas.md",
+    "Matemática Discreta/Divisibilidad.md",
+    "Matemática Discreta/La Identidad de Bezout.md",
+    "Matemática Discreta/Ecuaciones Diofanticas.md",
+    "Ecuaciones Diofánticas.md",
     "Matemática Discreta/Principios de Conteo.md",
     "Matemática Discreta/R-combinaciones.md",
     "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
@@ -189,7 +190,6 @@
     "Matemática Discreta/Funciones.md",
     "Física/Problemas electromagnetismo.md",
     "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
-    "Ecuaciones Diferenciales/Método de Coeficientes Indeterminados.md",
     "Matemática Discreta/4913",
     "Untitled.canvas"
   ]
