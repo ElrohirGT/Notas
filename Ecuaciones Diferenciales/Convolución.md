@@ -50,3 +50,4 @@ Ahora se obtiene la inversa:
 $$
 f(t)=3t^2-t^3+1-2e^{-t}
 $$
+
