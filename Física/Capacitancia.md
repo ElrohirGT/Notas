@@ -70,7 +70,10 @@ Cuando se perfora un dieléctrico debido a que las cargas saltaron de una placa 
 El agua es un _buen_ dieléctrico, pero solamente cuando es completamente pura.
 
 ## Capacitores en Paralelo
-Conectados en paralelo significa que cada terminal esta conectada solamente a otra terminal de otro capacitor. En paralelo el voltaje siempre es el mismo.
+Conectados en paralelo significa que cada terminal esta conectada solamente a otra terminal de otro capacitor.
+$$
+\Delta V_{total}=\Delta V_1=\Delta V_2=\cdots=\Delta V_n
+$$
 
 $$
 Q_{tot}=Q_1+Q_2+...+Q_n
@@ -84,11 +87,11 @@ $$
 Cuando se encuentran conectados en serie, solamente comparten una terminal. Cuando se tienen capacitores en serie, las cargas son iguales:
 
 $$
-Q_1=Q_2=...=Q_n
+Q_{total}=Q_1=Q_2=...=Q_n
 $$
 
 $$
-\Delta V = \Delta V_1+\Delta V_2+...+\Delta V_n
+\Delta V_{total} = \Delta V_1+\Delta V_2+...+\Delta V_n
 $$
 
 Por lo tanto:

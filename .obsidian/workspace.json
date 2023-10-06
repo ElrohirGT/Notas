@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "96c146c445fbfb9e",
+        "id": "ab30b80bf54b8461",
         "type": "tabs",
         "children": [
           {
-            "id": "cff4b3fa33c61bf4",
+            "id": "ec33055262409ede",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Física/Ley de Gauss.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Física/Ley de Gauss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Física/Ley de Gauss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Física/Ley de Gauss.md"
+              }
             }
           },
           {
@@ -150,8 +158,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "cff4b3fa33c61bf4",
+  "active": "ec33055262409ede",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/Convolución.md",
+    "Física/Capacitancia.md",
+    "trans.md",
+    "Ecuaciones Diferenciales/Traslación en el eje S.md",
+    "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+    "Ecuaciones Diferenciales/Traslación en el eje T.md",
+    "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
+    "Física/Sistema Internacional de Medidas.md",
+    "Física/Potencial Eléctrico.md",
+    "Física/Fuerza electromagnética.md",
+    "Física/Problemas electromagnetismo.md",
     "Matemática Discreta/El Algoritmo de Euclides.md",
     "Matemática Discreta/Divisibilidad.md",
     "Matemática Discreta/La Identidad de Bezout.md",
@@ -162,10 +181,6 @@
     "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
     "Matemática Discreta/Permutaciones.md",
     "Matemática Discreta/Tipos de Relaciones de Sets.md",
-    "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
-    "Ecuaciones Diferenciales/Transformadas de Laplace.md",
-    "Ecuaciones Diferenciales/Traslación en el eje S.md",
-    "Ecuaciones Diferenciales/Traslación en el eje T.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
     "Pasted image 20230927193437.png",
@@ -175,10 +190,6 @@
     "Ecuaciones Diferenciales/Traslación en T.md",
     "Ecuaciones Diferenciales/Función Escalón Unitaria-1.jpeg",
     "Ecuaciones Diferenciales/Función Escalón Unitaria-2.jpeg",
-    "Física/Fuerza electromagnética.md",
-    "Física/Potencial Eléctrico.md",
-    "Física/Sistema Internacional de Medidas.md",
-    "Física/Capacitancia.md",
     "Física/Ejemplo Circuito Varios materiales-3.png",
     "Física/Imágenes/Solución Ejemplo Ley de Gauss.png",
     "Física/Imágenes/Semicírculo con densidad de carga variable.png",
@@ -187,9 +198,6 @@
     "Física/Imágenes/Líneas Equipotenciales.png",
     "Física/Imágenes/Líneas Equipotenciales - Ejemplo 2.png",
     "Física/Imágenes",
-    "Matemática Discreta/Funciones.md",
-    "Física/Problemas electromagnetismo.md",
-    "Ecuaciones Diferenciales/Método de Variación de Parámetros.md",
     "Matemática Discreta/4913",
     "Untitled.canvas"
   ]

@@ -41,8 +41,10 @@ $$
 
 dQ: No la conocemos, pero la podemos calcular usando la densidad de carga:
 $$
-\lambda=\frac{Q}{L}=\frac{dQ}{dy}\\
-Q=\frac{dQ}{dy}\cdot L
+\lambda=\frac{Q}{L}=\frac{dQ}{dy}
+$$
+$$
+dQ=\frac{Q}{L}\cdot dy
 $$
 
 Por lo tanto $d\vec{E}$:
