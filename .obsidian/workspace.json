@@ -4,22 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "ab30b80bf54b8461",
+        "id": "3a92f6d73de914d2",
         "type": "tabs",
         "children": [
           {
-            "id": "ec33055262409ede",
+            "id": "278fba7e0c54a777",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Física/Ley de Gauss.md",
+                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "363ccf366d12fc18",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Física/Ley de Gauss.md",
+                "file": "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Física/Ley de Gauss.md",
+                "file": "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Física/Ley de Gauss.md"
+                "file": "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png"
               }
             }
           },
@@ -158,45 +169,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ec33055262409ede",
+  "active": "363ccf366d12fc18",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Convolución.md",
-    "Física/Capacitancia.md",
-    "trans.md",
-    "Ecuaciones Diferenciales/Traslación en el eje S.md",
+    "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
+    "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png",
+    "Pasted image 20231013110639.png",
+    "Ecuaciones Diferenciales/Definición de Ecuación Característica.png",
+    "Pasted image 20231013112921.png",
+    "Pasted image 20231013105545.png",
+    "Física/Ley de Ohm.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
-    "Ecuaciones Diferenciales/Traslación en el eje T.md",
-    "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
-    "Física/Sistema Internacional de Medidas.md",
-    "Física/Potencial Eléctrico.md",
-    "Física/Fuerza electromagnética.md",
-    "Física/Problemas electromagnetismo.md",
-    "Matemática Discreta/El Algoritmo de Euclides.md",
-    "Matemática Discreta/Divisibilidad.md",
-    "Matemática Discreta/La Identidad de Bezout.md",
-    "Matemática Discreta/Ecuaciones Diofanticas.md",
-    "Ecuaciones Diofánticas.md",
-    "Matemática Discreta/Principios de Conteo.md",
-    "Matemática Discreta/R-combinaciones.md",
-    "Matemática Discreta/Combinaciones con elementos indistinguibles.md",
-    "Matemática Discreta/Permutaciones.md",
-    "Matemática Discreta/Tipos de Relaciones de Sets.md",
-    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
-    "Ecuaciones Diferenciales/Transformada de Derivadas.md",
-    "Pasted image 20230927193437.png",
-    "Física/Líneas Equipotenciales.md",
+    "Física/Capacitancia.md",
+    "Física/Imágenes/Ejemplo Ley de Gauss 2.png",
+    "Física/Imágenes/Ejemplo Ley de Gauss 1.png",
+    "Física/Imágenes/Ejemplo Ley de Gauss.png",
+    "Física/Imágenes/Ejemplo de Campos.png",
+    "Física/Imágenes/Ejemplo Circuito-3.png",
+    "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/Derivada de una Transformada.md",
+    "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
+    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
+    "Ecuaciones Diferenciales/Traslación en el eje T.md",
+    "Ecuaciones Diferenciales/Traslación en el eje S.md",
+    "Ecuaciones Diferenciales/Transformadas de funciones periódicas.md",
+    "Matemática Discreta/Artimética Modular.md",
+    "Matemática Discreta/Ecuaciones Diofanticas.md",
+    "Matemática Discreta/El Algoritmo de Euclides.md",
+    "Matemática Discreta/Funciones.md",
+    "Matemática Discreta/La Identidad de Bezout.md",
+    "Matemática Discreta/Power Sets.md",
+    "Matemática Discreta/Principios de Conteo.md",
+    "Matemática Discreta/Set Operations.md",
+    "Matemática Discreta/Sets.md",
+    "Matemática Discreta/Subsets.md",
+    "Matemática Discreta/Tipos de Relaciones de Sets.md",
+    "Física/Ley de Gauss.md",
+    "Ecuaciones Diferenciales/Convolución.md",
+    "trans.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
-    "Ecuaciones Diferenciales/Traslación en T.md",
-    "Ecuaciones Diferenciales/Función Escalón Unitaria-1.jpeg",
-    "Ecuaciones Diferenciales/Función Escalón Unitaria-2.jpeg",
-    "Física/Ejemplo Circuito Varios materiales-3.png",
-    "Física/Imágenes/Solución Ejemplo Ley de Gauss.png",
-    "Física/Imágenes/Semicírculo con densidad de carga variable.png",
-    "Física/Imágenes/Problema Ley de Gauss.png",
-    "Física/Imágenes/Problema de Plano Infinito.png",
-    "Física/Imágenes/Líneas Equipotenciales.png",
-    "Física/Imágenes/Líneas Equipotenciales - Ejemplo 2.png",
     "Física/Imágenes",
     "Matemática Discreta/4913",
     "Untitled.canvas"
