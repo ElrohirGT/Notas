@@ -35,6 +35,10 @@ $$
 R=\frac{\rho l}{A}
 $$
 
+## Ley de Ohm
+$$
+\Delta V = I\cdot R
+$$
 ## Usos del Resistor
 1. Limitar la corriente, puede bajar la corriente para que no queme conductores.
 2. Establecer un voltaje fijo.
