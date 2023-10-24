@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Transformadas de Laplace.md"
+                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md"
               }
             }
           },
@@ -160,8 +160,8 @@
   },
   "active": "092683155e8def95",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
+    "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
     "Matemática Discreta/Vingere Cypher.png",
     "Matemática Discreta/Criptografía.md",
