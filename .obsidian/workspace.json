@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
+                "file": "Ecuaciones Diferenciales/Series de Potencias.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
+                "file": "Ecuaciones Diferenciales/Series de Potencias.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
+                "file": "Ecuaciones Diferenciales/Series de Potencias.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md"
+                "file": "Ecuaciones Diferenciales/Series de Potencias.md"
               }
             }
           },
@@ -160,6 +160,16 @@
   },
   "active": "092683155e8def95",
   "lastOpenFiles": [
+    "Ecuaciones Diferenciales/Imágenes/Series de Potencias.png",
+    "Ecuaciones Diferenciales/Series de Potencias.md",
+    "Física/Fuerza electromagnética.md",
+    "Física/Imágenes/Espectómetro de masa.png",
+    "Física/Fuerza Magnética.md",
+    "Física/Imágenes/Regla de la mano derecha para campos magnéticos.png",
+    "Física/Imágenes/Repaso Producto Cruz.png",
+    "Física/Imágenes/Campo Magnético.png",
+    "Física/Ley de Ohm.md",
+    "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
     "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
@@ -168,15 +178,8 @@
     "Matemática Discreta/Ejemplo Transposition Cypher.png",
     "Matemática Discreta/Notación de ciclo vs Notación de dos líneas.png",
     "Matemática Discreta/Shift cipher alphabets.png",
-    "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
     "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png",
-    "Pasted image 20231013110639.png",
-    "Ecuaciones Diferenciales/Definición de Ecuación Característica.png",
-    "Pasted image 20231013112921.png",
-    "Pasted image 20231013105545.png",
-    "Física/Ley de Ohm.md",
     "Física/Capacitancia.md",
-    "Física/Imágenes/Ejemplo Ley de Gauss 2.png",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
@@ -192,10 +195,6 @@
     "Matemática Discreta/Principios de Conteo.md",
     "Matemática Discreta/Set Operations.md",
     "Matemática Discreta/Sets.md",
-    "Matemática Discreta/Subsets.md",
-    "Matemática Discreta/Tipos de Relaciones de Sets.md",
-    "Física/Ley de Gauss.md",
-    "Ecuaciones Diferenciales/Convolución.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913",
