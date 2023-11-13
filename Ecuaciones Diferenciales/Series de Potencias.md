@@ -35,6 +35,9 @@ $$
 $$
 
 Para unir sumatorias se debe tener el mismo índice y empezar en la misma potencia.
+
+Es posible que algunas sumatorias nos queden con términos $C_n$ desconocidos, por lo que hay que considerar los casos en donde ese $C_n=0$, lo cual nos da el $y_n$. El $y$ total será la suma de todos los $y_n$.
+
 ## Ejemplos
 Determine intervalo y radio de convergencia:
 $$
@@ -147,3 +150,70 @@ Ahora simplemente se sustituye en la ecuación $y=C_0x^0+C_1x'+\dots$
 $$
 y=C_0-C_0x+C_0\frac{x^2}{2}-C_0\frac{x^3}{6}+C_0\frac{x^4}{24}+\dots
 $$
+
+---
+Resolver
+$$
+y''-xy=0
+$$
+
+En torno al punto $x_0=0$
+
+Para resolverla, se considera que el punto $x_0=a=0$.
+
+Entonces:
+$$
+y=\sum_{n=0}^\infty C_nx^n
+$$
+$$
+y'=\sum_{n=1}^\infty nC_nx^{n-1}
+$$
+$$
+y''=\sum_{n=2}^\infty n(n-1)C_nx^{n-2}
+$$
+
+Por lo que reescribiendo:
+$$
+\sum_{n=2}^\infty n(n-1)C_nx^{n-2}-x\sum_{n=0}^\infty C_nx^n=0
+$$
+$$
+\sum_{n=2}^\infty n(n-1)C_nx^{n-2}-\sum_{n=0}^\infty C_nx^{n+1}=0
+$$
+
+Primero, las sumatorias no empiezan a sumar con el mismo término en $x$. Pues $n-2=2-2=0$ mientras que $n+1=0+1=1$. Así que podemos simplemente sacar el primer término de la sumatoria con $n=2$ para que empiece con el mismo exponente que la segunda sumatoria.
+$$
+2C_2+\sum_{n=3}^\infty n(n-1)C_nx^{n-2}-\sum_{n=0}^\infty C_nx^{n+1}=0
+$$
+
+Ahora podemos unirlas, encontramos las $k$'s:
+$$
+k=n-2=1\therefore n=k+2
+$$
+$$
+k=n+1=1\therefore n=k-1
+$$
+
+Reescribiendo en términos de $k$:
+$$
+2C_2+\sum_{k=1}^\infty (k+2)(k+1)C_{k+2}x^k-\sum_{k=1}^\infty C_{k-1}x^k=0
+$$
+
+Uniendo las sumatorias:
+$$
+2C_2+\sum_{k=1}^\infty\left[(k+2)(k+1)C_{k+2}x^k-C_{k-1}x^k\right]=0
+$$
+$$
+2C_2+\sum_{k=1}^\infty\left[(k+2)(k+1)C_{k+2}-C_{k-1}\right]x^k=0
+$$
+
+Para obtener la ecuación indical, podemos suponer que $C_2=0$. Entonces:
+$$
+(k+2)(k+1)C_{k+2}-C_{k-1}=0
+$$
+$$
+C_{k+2}=\frac{C_{k-1}}{(k+2)(k+1)}
+$$
+
+Se utiliza este despeje pues $C_{k+2}$ está después de $C_{k-1}$ por lo que todos los términos estarán definidos en base de alguna constante $C_n$ base.
+
+Luego se factoriza para esta constante. Es posible que hayan dos por lo que se debe factorizar todos los términos de cada una de ellas y representar la solución con varias $y$'s como constantes $C_n$ hayan en común.

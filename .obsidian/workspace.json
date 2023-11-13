@@ -11,11 +11,9 @@
             "id": "092683155e8def95",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Ecuaciones Diferenciales/Series de Potencias.md",
-                "mode": "source",
-                "source": false
+                "file": "Física/Imágenes/Campo de una Espira Circular 1.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecuaciones Diferenciales/Series de Potencias.md",
+                "file": "Física/Imágenes/Campo de una Espira Circular 1.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ecuaciones Diferenciales/Series de Potencias.md",
+                "file": "Física/Imágenes/Campo de una Espira Circular 1.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecuaciones Diferenciales/Series de Potencias.md"
+                "file": "Física/Imágenes/Campo de una Espira Circular 1.png"
               }
             }
           },
@@ -160,25 +158,26 @@
   },
   "active": "092683155e8def95",
   "lastOpenFiles": [
-    "Ecuaciones Diferenciales/Imágenes/Series de Potencias.png",
+    "Física/Fuentes de Campo Magnético.md",
+    "Física/Imágenes/Campo de una Espira Circular 1.png",
+    "Física/Fuerza Magnética.md",
+    "Física/Imágenes/Campo de una Espira Circular.png",
+    "Física/Imágenes/Ejemplo Fuerza Magnética 3.png",
+    "Física/Imágenes/Ejemplo Fuerza magnética 1.png",
+    "Física/Imágenes/Ejemplo Fuerza Magnética 2.png",
     "Ecuaciones Diferenciales/Series de Potencias.md",
     "Física/Fuerza electromagnética.md",
+    "Física/Imágenes/Fuerza en un conductor.png",
+    "Física/Imágenes/Espiras.png",
+    "Física/Imágenes/Torque espiras.png",
+    "Ecuaciones Diferenciales/Imágenes/Series de Potencias.png",
     "Física/Imágenes/Espectómetro de masa.png",
-    "Física/Fuerza Magnética.md",
-    "Física/Imágenes/Regla de la mano derecha para campos magnéticos.png",
-    "Física/Imágenes/Repaso Producto Cruz.png",
-    "Física/Imágenes/Campo Magnético.png",
     "Física/Ley de Ohm.md",
     "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
     "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
-    "Matemática Discreta/Vingere Cypher.png",
     "Matemática Discreta/Criptografía.md",
-    "Matemática Discreta/Ejemplo Transposition Cypher.png",
-    "Matemática Discreta/Notación de ciclo vs Notación de dos líneas.png",
-    "Matemática Discreta/Shift cipher alphabets.png",
-    "Ecuaciones Diferenciales/Soluciones de un Sistema Diferencial.png",
     "Física/Capacitancia.md",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
@@ -194,7 +193,6 @@
     "Matemática Discreta/Power Sets.md",
     "Matemática Discreta/Principios de Conteo.md",
     "Matemática Discreta/Set Operations.md",
-    "Matemática Discreta/Sets.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913",
