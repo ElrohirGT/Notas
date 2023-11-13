@@ -23,3 +23,18 @@ La frecuencia con la que girará la partícula sera:
 $$
 f=\frac{1}{2\pi}\sqrt{\frac{qvB}{mR}}
 $$
+## Fuerza que siente un conductor en un campo magnético
+$\vec B$ es el campo magnético.
+![[Fuerza en un conductor.png]]
+## Espiras y Torques
+![[Espiras.png]]
+La fuerza neta en todas las espiras es 0. Sin embargo como se puede ver por la imagen, un lado es empujado mientras el otro es levantado, por lo que esto genera un torque.
+
+Cuando se tienen dos fuerzas iguales que buscan hacer girar un objeto, se les llama "un par".
+![[Torque espiras.png]]
+
+## Momento dipolar magnético
+Se representa con la letra $\mu$. Sus unidades son el Webber
+$$
+\vec\mu=I\vec A; [\mu]=Am^2=Wb
+$$
