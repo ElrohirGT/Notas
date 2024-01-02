@@ -11,7 +11,7 @@ Son sistemas de ecuaciones en donde las incógnitas son las funciones diferencia
 2) Por cada uno de los $\lambda_i$ se encuentra un $\vec k_i$.
 3) Expresar la solución de la forma:
 $$
-\vec X=C_1\vec k_1 e^{\lambda_1 t}+C_2\vec k_2e^{\lambda_2t}
+\vec X=C_1\vec k_1 e^{\lambda_1 t}+C_2\vec k_2e^{\lambda_2t}+\dots+C_n\vec{k_n}e^{\lambda_n t}
 $$
 ## Ejemplos
 Escribir en forma matricial el siguiente sistema:

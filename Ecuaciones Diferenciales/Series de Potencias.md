@@ -38,6 +38,18 @@ Para unir sumatorias se debe tener el mismo índice y empezar en la misma potenc
 
 Es posible que algunas sumatorias nos queden con términos $C_n$ desconocidos, por lo que hay que considerar los casos en donde ese $C_n=0$, lo cual nos da el $y_n$. El $y$ total será la suma de todos los $y_n$.
 
+## Método de Forbenius
+Se utiliza cuando se tienen puntos singulares, es decir puntos en donde la ecuación se indefine si se escribe en su forma estándar.
+$$
+y=\sum^\infty_{n=0}C_nx^{n+r}
+$$
+$$
+y'=\sum^\infty_{n=0}(n+r)C_nx^{n+r-1}
+$$
+$$
+y''=\sum^\infty_{n=0}(n+r)(n+r-1)C_nx^{n+r-2}
+$$
+
 ## Ejemplos
 Determine intervalo y radio de convergencia:
 $$
@@ -217,3 +229,61 @@ $$
 Se utiliza este despeje pues $C_{k+2}$ está después de $C_{k-1}$ por lo que todos los términos estarán definidos en base de alguna constante $C_n$ base.
 
 Luego se factoriza para esta constante. Es posible que hayan dos por lo que se debe factorizar todos los términos de cada una de ellas y representar la solución con varias $y$'s como constantes $C_n$ hayan en común.
+
+---
+Resolver
+$$
+3xy''+y'-y=0
+$$
+
+Centrado en $x_0=0$
+
+Si la pasamos a forma estándar:
+$$
+y''+\frac{y'}{3x}-\frac{y}{3x}=0
+$$
+
+Esta solo se puede resolver usando serie de potencias. El punto $x_0$ hace que la función se indetermine. Por lo que se utiliza el método de Frobenius.
+
+Por lo que sustituyendo:
+$$
+3x\sum^\infty_{n=0}(n+r)(n+r-1)C_nx^{n+r-2}+\sum^\infty_{n=0}(n+r)C_nx^{n+r-1}+\sum^\infty_{n=0}C_nx^{n+r}=0
+$$
+$$
+\sum^\infty_{n=0}(n+r)(3n+3r-3)C_nx^{n+r-1}+\sum^\infty_{n=0}(n+r)C_nx^{n+r-1}+\sum^\infty_{n=0}C_nx^{n+r}=0
+$$
+$$
+\sum^\infty_{n=0}(n+r)[3n+3r-3+1]C_nx^{n+r-1}+\sum^\infty_{n=0}C_nx^{n+r}=0
+$$
+$$
+x^r\left[\sum^\infty_{n=0}(n+r)[3n+3r-2]C_nx^{n-1}+\sum^\infty_{n=0}C_nx^{n}\right]=0
+$$
+
+Ahora debemos unir las sumatorias, para esto necesitamos que las $k$'s sean iguales, así que vamos a sacar un término:
+$$
+x^r\left[r(3r-2)C_0x^{-1}+\sum^\infty_{n=1}(n+r)[3n+3r-2]C_nx^{n-1}+\sum^\infty_{n=0}C_nx^{n}\right]=0
+$$
+
+Ahora que sus $k$'s son iguales se pueden sustituir:
+$$
+k=n-1=0\rightarrow n=k+1
+$$
+$$
+k=n=0
+$$
+$$
+x^r\left[r(3r-2)C_0x^{-1}+\sum^\infty_{k=0}[(k+r+1)(3k+3+3r-2)C_{k+1}-C_k]x^k\right]=0
+$$
+$$
+x^r\left[r(3r-2)C_0x^{-1}+\sum^\infty_{k=0}[(k+r+1)(3k+3r-1)C_{k+1}-C_k]x^k\right]=0
+$$
+
+Ahora debemos suponer qué pasaría si los términos dentro del corchete son iguales a 0, entonces primero tenemos:
+$$
+r(3r-2)=0\therefore r_1=\frac23\ y\ r_2=0
+$$
+$$
+C_{k+1}=\frac{C_k}{(k+r+1)(3k+3r+1)}
+$$
+
+Ahora se evalúa la sumatoria, el $y_1$ depende de $r_1$ y el $y_2$ depende de $r_2$.

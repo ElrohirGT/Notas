@@ -4,16 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "f662e4a3540f9c94",
+        "id": "c96018132ad30656",
         "type": "tabs",
         "children": [
           {
-            "id": "092683155e8def95",
+            "id": "8fca0ab46ecbbc68",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Física/Imágenes/Campo de una Espira Circular 1.png"
+                "file": "Matemática Discreta/RSA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b6c0dbe84ba7ea47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Matemática Discreta/Criptografía.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Física/Imágenes/Campo de una Espira Circular 1.png",
+                "file": "Matemática Discreta/RSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Física/Imágenes/Campo de una Espira Circular 1.png",
+                "file": "Matemática Discreta/RSA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Física/Imágenes/Campo de una Espira Circular 1.png"
+                "file": "Matemática Discreta/RSA.md"
               }
             }
           },
@@ -156,28 +170,31 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "092683155e8def95",
+  "active": "8fca0ab46ecbbc68",
   "lastOpenFiles": [
-    "Física/Fuentes de Campo Magnético.md",
-    "Física/Imágenes/Campo de una Espira Circular 1.png",
+    "Matemática Discreta/Criptografía.md",
+    "Matemática Discreta/RSA.md",
     "Física/Fuerza Magnética.md",
-    "Física/Imágenes/Campo de una Espira Circular.png",
-    "Física/Imágenes/Ejemplo Fuerza Magnética 3.png",
-    "Física/Imágenes/Ejemplo Fuerza magnética 1.png",
-    "Física/Imágenes/Ejemplo Fuerza Magnética 2.png",
+    "Física/Ley de Gauss Magnética.md",
+    "Física/Imágenes/Ley de Gauss magnética-8.png",
+    "Física/Imágenes/Ley de Gauss magnética-7.png",
+    "Física/Imágenes/Ley de Gauss magnética-6.png",
+    "Física/Imágenes/Ley de Gauss magnética-5.png",
+    "Física/Imágenes/Ley de Gauss magnética-4.png",
+    "Física/Ley de Gauss.md",
+    "Física/Imágenes/Ley de Gauss magnética-3.png",
+    "Física/Imágenes/Ley de Gaus magnética-2.png",
+    "Pasted image 20231117073210.png",
+    "Pasted image 20231117073205.png",
+    "Pasted image 20231117073201.png",
     "Ecuaciones Diferenciales/Series de Potencias.md",
-    "Física/Fuerza electromagnética.md",
-    "Física/Imágenes/Fuerza en un conductor.png",
-    "Física/Imágenes/Espiras.png",
-    "Física/Imágenes/Torque espiras.png",
-    "Ecuaciones Diferenciales/Imágenes/Series de Potencias.png",
-    "Física/Imágenes/Espectómetro de masa.png",
-    "Física/Ley de Ohm.md",
     "Ecuaciones Diferenciales/Sistemas de ecuaciones diferenciales.md",
+    "Física/Fuentes de Campo Magnético.md",
+    "Física/Fuerza electromagnética.md",
+    "Física/Ley de Ohm.md",
     "Ecuaciones Diferenciales/Transformadas de Laplace.md",
     "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
-    "Matemática Discreta/Criptografía.md",
     "Física/Capacitancia.md",
     "Ecuaciones Diferenciales/Método por Sustitución.md",
     "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
@@ -191,8 +208,6 @@
     "Matemática Discreta/Funciones.md",
     "Matemática Discreta/La Identidad de Bezout.md",
     "Matemática Discreta/Power Sets.md",
-    "Matemática Discreta/Principios de Conteo.md",
-    "Matemática Discreta/Set Operations.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913",
