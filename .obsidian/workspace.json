@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8fca0ab46ecbbc68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Matemática Discreta/RSA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b6c0dbe84ba7ea47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática Discreta/Criptografía.md",
+                "file": "Matemática Discreta/Principios de Conteo.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matemática Discreta/RSA.md",
+                "file": "Matemática Discreta/Principios de Conteo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matemática Discreta/RSA.md",
+                "file": "Matemática Discreta/Principios de Conteo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matemática Discreta/RSA.md"
+                "file": "Matemática Discreta/Principios de Conteo.md"
               }
             }
           },
@@ -147,7 +135,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -170,8 +160,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8fca0ab46ecbbc68",
+  "active": "b6c0dbe84ba7ea47",
   "lastOpenFiles": [
+    "Matemática Discreta/Principios de Conteo.md",
     "Matemática Discreta/Criptografía.md",
     "Matemática Discreta/RSA.md",
     "Física/Fuerza Magnética.md",
@@ -207,7 +198,6 @@
     "Matemática Discreta/El Algoritmo de Euclides.md",
     "Matemática Discreta/Funciones.md",
     "Matemática Discreta/La Identidad de Bezout.md",
-    "Matemática Discreta/Power Sets.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913",
