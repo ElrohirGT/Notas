@@ -1,0 +1,49 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "p8yvJNIqA9T3I1KP_g2S5",
+      "name": "#b0da09",
+      "value": "#b0da09"
+    },
+    {
+      "id": "SgyhVSX7cmI5BRT-U3m7z",
+      "name": "#f99400",
+      "value": "#f99400"
+    },
+    {
+      "id": "z6rfVqlwB8Myqnx1FFzQM",
+      "name": "#f00a5e",
+      "value": "#f00a5e"
+    },
+    {
+      "id": "bujuGYqcXRWfKriBtj7Hr",
+      "name": "#b80090",
+      "value": "#b80090"
+    },
+    {
+      "id": "gEr3CunZfi4yZxfqkj8ZR",
+      "name": "#2a8b8b",
+      "value": "#2a8b8b"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Bases de Datos",
+      "color": "gEr3CunZfi4yZxfqkj8ZR"
+    },
+    {
+      "path": "Ecuaciones Diferenciales",
+      "color": "SgyhVSX7cmI5BRT-U3m7z"
+    },
+    {
+      "path": "Física",
+      "color": "p8yvJNIqA9T3I1KP_g2S5"
+    },
+    {
+      "path": "Interacción Humano-Computador",
+      "color": "z6rfVqlwB8Myqnx1FFzQM"
+    }
+  ]
+}
