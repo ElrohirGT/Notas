@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "218d607799f2a13a",
+        "id": "3ffab7a9cadb1891",
         "type": "tabs",
         "children": [
           {
-            "id": "ddd72970fbd66e95",
+            "id": "731787c12543ec10",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -151,8 +151,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ddd72970fbd66e95",
+  "active": "731787c12543ec10",
   "lastOpenFiles": [
+    "Interacción Humano-Computador/Diario/Semana2.md",
     "2024-01-16.md",
     "Untitled.canvas",
     "Matemática Discreta/Principios de Conteo.md",
@@ -189,7 +190,6 @@
     "Matemática Discreta/Artimética Modular.md",
     "Matemática Discreta/Ecuaciones Diofanticas.md",
     "Matemática Discreta/El Algoritmo de Euclides.md",
-    "Matemática Discreta/Funciones.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913"

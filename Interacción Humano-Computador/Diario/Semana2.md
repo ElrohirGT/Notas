@@ -80,3 +80,6 @@ Entretenido y Divertido son el top 2 adjetivos más utilizados, mientras que el 
 
 - **¿Consideran que el diseño de la aplicación de TikTok se siente como los diseñadores originales planificaron?**
 Me parece que la data es clara en que su visión la cumplieron, ya que las plataformas sociales arriba de TikTok en usuarios son plataformas que tienen objetivos distintos a ellos en el sentido de el manejo de videos y contenido, como facebook y twitter. Además, uno de los objetivos que tiene listado TikTok en su misión y visión es brindar entretenimiento, lo cual diría yo lo cumplieron ya que es una de las palabras que fue el top 2 de adjetivos.
+
+## Perfiles de Usuario
+![Infografía con los perfiles](./imgs/PerfilesdeUsuariosdeTikTok.png)
