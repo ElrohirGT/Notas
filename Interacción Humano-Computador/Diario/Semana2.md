@@ -26,7 +26,7 @@ Algunas de las características que tiene TikTok son:
 TikTok tiene un total de 1,218 millones de usuarios.
 
 - **¿Cuál es la distribución de las edades de los usuarios de TikTok?**
-![Edad usuarios TikTok](./imgs/edad-usuarios-tiktok.webp)
+![Edad usuarios TikTok](./imgs/edad-usuarios-tiktok.jpg)
 
 - **¿Cuál es la distribución de los géneros de los usuarios de TikTok?**
 El 49.2% de los usuarios globales son mujeres mientras que el 50.8% son hombres.
@@ -44,15 +44,15 @@ Un usuario promedio utiliza TikTok 23.6hrs al mes.
 Una sesión de uso proedio de TikTok se encuentra entre 30 y 60 minutos.
 
 - **¿Cómo se compara TikTok con las otras redes sociales populares en cuanto a total de usuarios?**
-![TikTok vs otras redes sociales](./imgs/tiktok-vs-otras-redes-sociales.webp)
+![TikTok vs otras redes sociales](./imgs/tiktok-vs-otras-redes-sociales.jpg)
 
 # Usuarios
 Sobe la data que se recolectó se tiene:
-![Distribución de usuarios por género mundial](imgs/DistribucióndeGéneroenTikTokGlobal.png)
-![Distribución de usuarios por género local](imgs/DistribucióndeGéneroenTikTokLocal.png)
+![Distribución de usuarios por género mundial](imgs/DistribuciondeGeneroenTikTokGlobal.png)
+![Distribución de usuarios por género local](imgs/DistribuciondeGeneroenTikTokLocal.png)
 
-![Distribución de usuarios por edades mundial](imgs/DistribucióndeUsuariosporedadesGlobal.png)
-![Distribución de usuarios por edades local](imgs/DistribucióndeusuariosporedadesLocal.png)
+![Distribución de usuarios por edades mundial](imgs/DistribuciondeUsuariosporedadesGlobal.png)
+![Distribución de usuarios por edades local](imgs/DistribuciondeusuariosporedadesLocal.png)
 
 ## ¿Consideran que su data es representativa de la totalidad de usuarios?
 No la considero representativa, pues hay varios cesgos que no se tomaron en cuenta al momento de responder la encuesta y se demuestran en la data en sí, por ejemplo:
@@ -83,3 +83,23 @@ Me parece que la data es clara en que su visión la cumplieron, ya que las plata
 
 ## Perfiles de Usuario
 ![Infografía con los perfiles](./imgs/PerfilesdeUsuariosdeTikTok.png)
+
+# Touch Controls
+Mi compañero, Pedro Pablo, agarró el teléfono de dos formas durante la actividad, con la mano derecha en desde la parte lateral inferior, y la segunda forma fue con dos manos una de cada lado aunque solo para escribir.
+
+## Medidas de un teléfono moderno
+Investigado:
+- Alto: 15.07 cm
+- Ancho: 7.12 cm
+- Resolución: 2400 x 1800 px.
+
+Medidas del nuestro:
+- Alto: 15.4 cm
+- Ancho: 7.2 cm
+
+$$
+\frac{15.4\ cm \times 10\ mm}{2400\ pixeles} = \frac{11\ mm}{x\ pixeles}
+$$
+$$
+x\ pixeles = \frac{11 \times 2400}{15.4 \times 10} = 171\ pixeles
+$$
