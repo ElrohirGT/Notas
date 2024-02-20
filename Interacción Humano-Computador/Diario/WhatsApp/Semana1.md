@@ -37,3 +37,17 @@ Tim se preocupa por llevar la cuenta de todos los pagos que ha recibido de sus a
 Kim es una mujer emprendedora que utiliza App WhatsApp Business para interactuar con sus clientes.
 
 Kim se preocupa por registrar las cuentas de sus clientes, al igual que tim se preocupa por llevar la cuenta de todos los pagos que ha recibido pero en lugar de sus amigos es con sus clientes.
+![Mapa de Empatía Kim](./imgs/empathy_map_kim.jpg)
+
+## Metas de usuario
+### Tim
+
+* Tim como amigo responsable le gustaría saber a quién cobrar y cuánto cobrar.
+* Tim como amigo buena onda le gustaría perdonar deudas de amigos de hace mucho tiempo.
+
+### Kim
+* Kim como emprendedora le gustaría llevar la cuenta de cuánto le deben sus clientes.
+* Kim como buena analista le gustaría poder exportar sus datos para analizarlos de manera más profunda.
+
+## Task Flow
+![Task flow de usuario](./imgs/task-flow.jpg)
