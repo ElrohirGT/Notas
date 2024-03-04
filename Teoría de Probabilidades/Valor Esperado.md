@@ -49,10 +49,47 @@ $$
 VAR[X]=E[X^2]-(E[X])^2
 $$
 
+$VAR[aX+b]=a^2VAR[X]$ solamente si $E[X^2]$ existe y $a$ y $b$ son constantes.
+
 ## Desviación Estándar
 $$
 \sigma_X=+\sqrt{VAR[X]}
 $$
+
+## Variable Degenerada
+Las variables degeneradas son una variable aleatoria que solamente definen un punto, por lo tanto su varianza es 0.
+
+Una variable es degenerada en el punto $k$ si:
+$$
+P([X=x])=
+\begin{cases}
+1 &,x=k\\
+0 &,cualquier\ otro\ caso
+\end{cases}
+$$
+
+## Variable Estandarizada
+Una variable aleatoria $Z$ es estandarizada si $E[Z]=0$ y $VAR[Z]=1$. Para estandarizar una variable $X$ se necesita que $[X] \lt\infty$ y $0<VAR[X]\lt\infty$.
+$$
+Z=\frac{X-E[X]}{\sqrt{VAR[X]}}
+$$
+
+## Momentos
+El momento $r$ de una variable aleatoria $X$ se calcula como:
+$$
+m_r=E[X^r]\lt\infty
+$$
+
+## Cuantil
+Un cuantil es un número $x$ denotado por $\epsilon_x(X)$ y de orden $p$ si cumple:
+$$
+P([X\le x])\ge p
+$$
+$$
+P([X\ge x])\ge 1-p
+$$
+
+Además: $0\lt p\lt 1$.
 
 ## Ejemplos
 Se tiene la venta de un collar:
@@ -90,3 +127,37 @@ Como esa integral si es definida se puede continuar a calcular el $E(D)$ real:
 $$
 E(D)=\int_{35}^{50} tf(t)dt = \frac{3905}{91}
 $$
+
+---
+Dado una variable aleatoria con función de masa de probabilidad:
+|X|P|
+|---|---|
+|-2|$\frac14$|
+|0|$\frac14$|
+|1|$\frac13$|
+|2|$\frac16$|
+
+Calcule la mediana de X.
+
+Se usa la función de probabilidad acumulada de $X$ para obtener el intervalo de abajo.
+$$
+P([X\le x])\ge 0.5 \rightarrow x\in[0,\infty]
+$$
+
+Se acumula las probabilidades $P$ descritas anteriormente pero de izquierda a derecha (en la tabla sería de abajo hacia arriba).
+$$
+P([X\ge x])\ge 1-0.5=0.5\rightarrow x\in[-\infty, 1]
+$$
+
+Por lo que la mediana es: $[0,1]$.
+
+Si $p=0.2$ entonces se tiene:
+
+$$
+P([X\le x])\ge 0.2\rightarrow x\in[-2,\infty]
+$$
+$$
+P([X\ge x])\ge 0.8\rightarrow x\in [-\infty, -2]
+$$
+
+Por lo que el cuantil de orden 0.2 es $x=-2$.
