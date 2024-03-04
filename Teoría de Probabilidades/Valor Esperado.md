@@ -33,6 +33,20 @@ $$
 E[Y]=\int_{-\infty}^\infty g(x_j)f(x)dx
 $$
 
+## Desigualdad de Markov y Chebychev-Bienayme
+Si se tiene una función $h(X)$ no negativa borel medible de una variable aleatoria $X$. Si $E[h(X)]$ existe entonces para cualquier $\epsilon>0$.
+$$
+P([h(X)\ge\epsilon])\le\frac{E[h(X)]}{\epsilon}
+$$
+
+La desigualdad de Markov se obtiene reemplazando $h(X)=|X|^r$ y $\epsilon=K^r$. En donde $K\gt 0$ y $r \gt 0$.
+
+La desigualdad de Chebychev-Bienayme se obtiene reemplazando $h(X)=(X-\mu)^2$ y $\epsilon=K^2\sigma^2$. Lo que nos da:
+$$
+P([|x-\mu|\ge k\sigma]) \le \frac{1}{K^2}
+$$
+En donde $E[X]=\mu$ y $VAR[X]=\sigma^2$.
+
 ## Varianza
 Para calcular la varianza de variables aleatorias discretas se utiliza $\mu_X = E(X)$:
 $$
@@ -113,6 +127,8 @@ $$
 
 Además: $0\lt p\lt 1$.
 
+gg
+
 ## Ejemplos
 Se tiene la venta de un collar:
 
@@ -185,6 +201,36 @@ $$
 Por lo que el cuantil de orden 0.2 es $x=-2$.
 
 ---
+$\mu=10$ y $\sigma^2=4$
 
-Calcule la función generadora de momentos de la variable aleatoria:
+Calcular la probabilidad de $P[|X-10|\ge 3]$. Así que:
+$$
+P[|x-10|\ge 3]=\frac{1}{(\frac32)^2}=\frac 49
+$$
 
+Calcular la probabilidad de $P[|X-10|\lt 3]$. Así que:
+$$
+P[|X-10|\lt 3]=1-P[|X-10|\ge 3]
+$$
+
+Lo que da:
+$$
+P[|X-10|\lt 3] \ge \frac59
+$$
+
+Calcular la probabilidad de $P[5\lt x\lt 15]$. Así que:
+$$
+P[5-10\lt x-10\lt 15-10]=P[-5\lt x\lt 5]=P[|x-10|\lt 5]
+$$
+
+Ahora para calcular esta probabilidad se obtiene el complemento:
+$$
+P[|x-10|\lt 5] = 1-\frac{1}{(\frac{5}{2})^2}=\frac{21}{25}
+$$
+
+Encuentre el valor de $c$ tal que $P[|x-10|\ge c]\le 0.04$. Despejamos para
+$$
+\frac{1}{k^2}=0.04
+$$
+
+Con lo que después podemos obtener que $c=k\sigma=5\cdot2=10$.
