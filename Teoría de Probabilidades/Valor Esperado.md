@@ -75,9 +75,31 @@ Z=\frac{X-E[X]}{\sqrt{VAR[X]}}
 $$
 
 ## Momentos
+Saber que es un momento, pero sirve para calcular varias cosas :v y se define de la siguiente manera...
+
 El momento $r$ de una variable aleatoria $X$ se calcula como:
 $$
 m_r=E[X^r]\lt\infty
+$$
+
+## Función generadora de Momentos
+La función generadora de momentos $M_X(s)$ de una variable aleatoria $X$ se define como:
+$$
+M_X(s)=E(e^{sX})
+$$
+
+Si dos variables aleatorias ($X$ y $Y$)tienen funciones generadoras de momentos que existen y son iguales en todo $s$ dentro de $-h\lt0\lt h$. Entonces se dice que sus funciones de distribución acumluada son iguales.
+
+Si $F_X = F_Y$ y $M_X(s)$ existe entonces $M_Y(s)$ existe y es igual a $M_X(s)$ en algún intervalo $-h\lt0\lt h$.
+
+Esta función se utiliza para calcular momentos, para calcular el momento 1 se realiza lo siguiente:
+$$
+E(X)=\frac{d}{ds}M_X(s)|_{s=0}
+$$
+
+Para calcular el momento 2 se realiza:
+$$
+E(X^2)=\frac{d^2}{ds^2}M_X(s)|_{s=0}
 $$
 
 ## Cuantil
@@ -161,3 +183,8 @@ P([X\ge x])\ge 0.8\rightarrow x\in [-\infty, -2]
 $$
 
 Por lo que el cuantil de orden 0.2 es $x=-2$.
+
+---
+
+Calcule la función generadora de momentos de la variable aleatoria:
+
