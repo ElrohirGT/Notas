@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoría de Probabilidades/Valor Esperado.md",
+                "file": "Teoría de Probabilidades/Variable Aleatoria.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría de Probabilidades/Valor Esperado.md",
+                "file": "Teoría de Probabilidades/Variable Aleatoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría de Probabilidades/Valor Esperado.md",
+                "file": "Teoría de Probabilidades/Variable Aleatoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría de Probabilidades/Valor Esperado.md"
+                "file": "Teoría de Probabilidades/Variable Aleatoria.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "731787c12543ec10",
   "lastOpenFiles": [
+    "Teoría de Probabilidades/Valor Esperado.md",
+    "Teoría de Probabilidades/Análisis Combinatorio.md",
     "Interacción Humano-Computador/Diario/Semana2.md",
     "2024-01-16.md",
     "Untitled.canvas",
@@ -196,8 +198,6 @@
     "Ecuaciones Diferenciales/Traslación en el eje S.md",
     "Ecuaciones Diferenciales/Transformadas de funciones periódicas.md",
     "Matemática Discreta/Artimética Modular.md",
-    "Matemática Discreta/Ecuaciones Diofanticas.md",
-    "Matemática Discreta/El Algoritmo de Euclides.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913"
