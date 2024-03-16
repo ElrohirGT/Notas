@@ -74,8 +74,6 @@ general - pcs
 \end{align}
 $$
 
-//TODO Arreglar
-
 f) Liste el tamaño de los discos duros que se encuentren en por lo menos dos PCs
 $$
 \begin{align}\\
@@ -98,8 +96,6 @@ menores = \rho_{f1}(fabricantes)\bowtie_{f1.velocidad \lt f2.velocidad}&\rho_{f2
 fabricantes - menores
 \end{align}
 $$
-
-// TODO: Arreglar
 
 h) Encuentre los fabricantes que producen PCs con al menos tres diferentes velocidades
 $$

@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "55b15dd6f860f64e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bases de Datos/Lab8.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md",
+                "file": "Bases de Datos/Lab8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md",
+                "file": "Bases de Datos/Lab8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md"
+                "file": "Bases de Datos/Lab8.md"
               }
             }
           },
@@ -135,7 +148,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -157,8 +172,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "731787c12543ec10",
+  "active": "55b15dd6f860f64e",
   "lastOpenFiles": [
+    "Bases de Datos/Álgebra Relacional.md",
     "Teoría de Probabilidades/Variable Aleatoria.md",
     "Teoría de Probabilidades/Valor Esperado.md",
     "Teoría de Probabilidades/Análisis Combinatorio.md",
@@ -195,7 +211,6 @@
     "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md",
     "Ecuaciones Diferenciales/Traslación en el eje S.md",
-    "Ecuaciones Diferenciales/Transformadas de funciones periódicas.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913"
