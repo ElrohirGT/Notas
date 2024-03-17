@@ -179,18 +179,18 @@ pub type Option(inner) {
 Son una estructura conveniente para representar data binaria, pueden opcionalmente incluir una tag al final para indicar la conversión a utilizar para binario, por el momento no todos los tipos de conversiones son soportados en javascript:
 
 
-    size: the size of the segment in bits.
-    unit: how many times to repeat the segment.
-    bits: a nested bit array of any size.
-    bytes: a nested byte-aligned bit array.
-    float: a 64 bits floating point number.
-    int: an int with a default size of 8 bits.
-    big: big endian.
-    little: little endian.
-    native: the endianness of the processor.
-    utf8: utf8 encoded text.
-    utf16: utf16 encoded text.
-    utf32: utf32 encoded text.
+- size: the size of the segment in bits.
+- unit: how many times to repeat the segment.
+- bits: a nested bit array of any size.
+- bytes: a nested byte-aligned bit array.
+- float: a 64 bits floating point number.
+- int: an int with a default size of 8 bits.
+- big: big endian.
+- little: little endian.
+- native: the endianness of the processor.
+- utf8: utf8 encoded text.
+- utf16: utf16 encoded text.
+- utf32: utf32 encoded text.
 
 
 ```gleam
@@ -208,3 +208,40 @@ pub fn main() {
 ``` 
 
 # Use
+
+La palabra clave `use` se utiliza para ayudar a _eliminar_ el callback hell, realmente solo lo oculta:
+```gleam
+pub fn without_use() {
+  result.try(get_username(), fn(username) {
+    result.try(get_password(), fn(password) {
+      result.map(log_in(username, password), fn(greeting) {
+        greeting <> ", " <> username
+      })
+    })
+  })
+}
+
+pub fn with_use() {
+  use username <- result.try(get_username())
+  use password <- result.try(get_password())
+  use greeting <- result.map(log_in(username, password))
+  greeting <> ", " <> username
+}
+```
+
+Para poder utilizar `use` la expresión a la derecha de `<-` debe ser una función que toma un `callback` como su último argumento. Los argumentos del `callback` van a la izquierda del `<-`. El `callback` puede tener cualquier cantidad de argumentos, incluso puede no tener argumentos.
+
+El resto del código dentro de `{}` se encuentra dentro del `callback` de la función de orden mayor.
+
+# Todo
+
+Puedes usar la palabra clave `todo` para indicarle al compilador que una sección del código todavía no se ha implementado. Al compilar generará una warning y al correr un panic.
+```gleam
+pub fn main() {
+  todo as "I haven't written this code yet!"
+}
+
+pub fn todo_without_reason() {
+  todo
+}
+```
