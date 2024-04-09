@@ -21,10 +21,11 @@ $BODY$
 LANGUAGE 'plpgsql';
 
 -- Luego el trigger se asigna a una operación
-CREATE OR REPLACE TRIGGER max_asignacion()
+CREATE OR REPLACE TRIGGER max_asignacion
 BEFORE DELETE
 -- AFTER INSERT
 ON asignacion
-FOR EACH STATEMENT
+FOR EACH ROW
+-- FOR EACH STATEMENT
 EXECUTE PROCEDURE assert_max_asignaciones();
 ```
