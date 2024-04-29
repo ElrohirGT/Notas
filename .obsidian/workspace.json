@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "3ffab7a9cadb1891",
+        "id": "4a2779b57273e2b2",
         "type": "tabs",
         "children": [
           {
-            "id": "731787c12543ec10",
+            "id": "22fb51648ee56257",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md",
+                "file": "Teoría de Probabilidades/Variables Aleatorias Múltiples.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "458c73d8f88b5272",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoría de Probabilidades/Distribuciones.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md",
+                "file": "Teoría de Probabilidades/Variables Aleatorias Múltiples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md",
+                "file": "Teoría de Probabilidades/Variables Aleatorias Múltiples.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría de Probabilidades/examen2.11.md"
+                "file": "Teoría de Probabilidades/Variables Aleatorias Múltiples.md"
               }
             }
           },
@@ -159,13 +171,17 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "731787c12543ec10",
+  "active": "22fb51648ee56257",
   "lastOpenFiles": [
+    "Teoría de Probabilidades/Distribuciones.md",
+    "Teoría de Probabilidades/Variables Aleatorias Múltiples.md",
+    "Teoría de Probabilidades/Valor Esperado.md",
+    "Teoría de Probabilidades/Convergencia.md",
+    "Teoría de Probabilidades/Variable Aleatoria.md",
+    "Teoría de Probabilidades/examen2.11.md",
+    "Teoría de Probabilidades/Análisis Combinatorio.md",
     "Bases de Datos/Lab8.md",
     "Bases de Datos/Álgebra Relacional.md",
-    "Teoría de Probabilidades/Variable Aleatoria.md",
-    "Teoría de Probabilidades/Valor Esperado.md",
-    "Teoría de Probabilidades/Análisis Combinatorio.md",
     "Interacción Humano-Computador/Diario/Semana2.md",
     "2024-01-16.md",
     "Untitled.canvas",
@@ -194,10 +210,6 @@
     "Ecuaciones Diferenciales/Derivada de una Transformada.md",
     "Ecuaciones Diferenciales/Transformada de Derivadas.md",
     "Física/Capacitancia.md",
-    "Ecuaciones Diferenciales/Método por Sustitución.md",
-    "Ecuaciones Diferenciales/Función Escalón Unitaria.md",
-    "Ecuaciones Diferenciales/Ecuaciones Diferenciales.md",
-    "Ecuaciones Diferenciales/Traslación en el eje T.md",
     "Ecuaciones Diferenciales/Traslación en el eje T.md~",
     "Física/Imágenes",
     "Matemática Discreta/4913"

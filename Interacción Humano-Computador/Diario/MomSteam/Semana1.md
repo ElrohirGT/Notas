@@ -43,3 +43,7 @@ La paleta de colores de Steam tiende a ser oscura con tintes de azules de distin
 - \#158698
 
 La mayoría de los sitios que encontré que estaban dirigidos a madres usaban colores claros combinados con rosas y morados de distintas tonalidades, a veces se ponían un poco más atrevidos y utilizanan marrón pero en general se centraban en tema claro con colores claros.
+
+## Paleta de color a utilizar
+![Paleta de colores final](./imgs/final_colors.png)
+![Ejemplo de uso de la paleta](./imgs/colors_in_pages.png)
