@@ -11,3 +11,10 @@ Check differences between two files not in a git repo:
 ```bash
 git diff --no-index --find-renames <path> <path>
 ```
+
+---
+
+Check a file differences between two branches:
+```bash
+git diff mybranch myOtherBranch -- myfile.cs
+```
