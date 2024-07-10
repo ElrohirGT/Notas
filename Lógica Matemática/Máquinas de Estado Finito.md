@@ -31,6 +31,12 @@ $$
 
 El **lenguaje** son las cadenas que se puden formar utilizando los símbolos del **alfabeto**.
 
+Un alfabeto es un conjunto de símbolos finito no vacío y se representa por la letra griega $\Sigma$, un símbolo puede ser cualquier cosa.
+
+Una palabra o cadena de caracteres es una secuencia finita de símbolos seleccionados de algún alfabeto $\Sigma$.
+
+Normalmente se usa $w,x,y,z$ para referirse a palabras y $a,b,c,d$ para referirse a símbolos.
+
 **Ejemplo**
 
 Si $A=\{a,b,c\}$ entonces algunos lenguajes son:
@@ -44,7 +50,7 @@ $$
 L_3=\{a^1cb^1 | i \ge 1\}
 $$
 
-> $\lambda$ es un símbolo que representa algo que no está en el alfabeto de un lenguaje.
+> $\lambda$ (a veces se utiliza $\epsilon$) es un símbolo que representa algo que no está en el alfabeto de un lenguaje.
 > Se llama cadena vacía y cualquier concatenación con otra cadena nos da la misma cadena original.
 
 ## Gramática
@@ -86,3 +92,15 @@ Una máquina de estado finito está especificada por:
 4. Un conjunto finito de caracteres de salida $O$
 5. Una función $f$ de $S\times IaS$ (función de transición)
 6. Una función $g$ de $SaO$ (función de salida)
+
+Dentro de los estados $O$ convencionalmente se tiene como rechazo los estados que dan 0 y aceptado los estados que devuelven 1.
+
+Si un estado tiene entradas y salidas iguales a otro estado, entonces estos dos estados son equivalentes.
+
+## Tipos de equivalencia
+0-equivalentes: Tienen la misa salida.
+1-equivalentes, si tienen la misma salida y para toda entrada I sus sucesores son 0-equivalentes.
+k-equivalentes, si tienen la misma salida y si para toda entrada sus sucesores son k-1 equivalentes.
+
+## Máquinas de estado finito como reconocedores de lenguaje
+Una sucesión de entrada es aceptada si la máquina termina con 1 y rechazada si termina con 0.
