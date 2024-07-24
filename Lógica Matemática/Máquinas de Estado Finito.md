@@ -104,3 +104,15 @@ k-equivalentes, si tienen la misma salida y si para toda entrada sus sucesores s
 
 ## Máquinas de estado finito como reconocedores de lenguaje
 Una sucesión de entrada es aceptada si la máquina termina con 1 y rechazada si termina con 0.
+
+## Máquinas de estado finito no deterministas
+Existen dos maneras de construit máquinas de estado finito no deterministas, la primera cambia la función de transición:
+$$
+f: S\times I\rightarrow P(S)
+$$
+
+Es decir, cada output de la función de transición es un subconjunto de estados de $S$.
+
+La segunda manera es haciendo que la cadena vacía $\lambda$ capaz de transicionarse entre cualquier estado dentro de la máquina.
+
+**Todas las máquinas no deterministas se pueden transformar en una máquina determinista que acepta el mismo lenguaje**
