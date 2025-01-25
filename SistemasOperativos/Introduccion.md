@@ -83,3 +83,62 @@ Hay 3 tipos:
 1. Interrupciones de Software: los que se realizan cuando se solicita un servicio.
 1. Interrupciones a nivel de Hardware: se recibe un I/O de un device.
 1. Excepciones: Se dan cuando el OS detecta acciones no permitidas.
+
+# Tipos de Estructuras
+
+Tiene como propósito manejar estas 4 características:
+
+1. Desempeño
+1. Robustez
+1. Mantenimiento
+1. Complejidad
+
+## Simple
+
+Es la forma más sencilla de estructurizar un OS. Utilizada por MS-DOS y UNIX Versión 0.
+
+- Fácil de implementar en sistemas pequeños.
+- Bajo costo en recursos.
+- Difícil de mantener.
+- Falta de modularidad.
+
+## Monolítica
+
+Linux versión original y UNIX posteriors.
+
+- Tiene todas las System Calls agrupadas en un mismo kernel junto con sus servicios básicos.
+- Excelente Desempeño.
+- Difícil de modificar.
+
+## Por Capas
+
+Ya no se utiliza, esta estructura permite tener multimodos de operación en cuanto a permisos en lugar del clásico dual. Usado en WindowsNT y el IBM 360 system.
+
+- Multimode Operation.
+- Mayor robustez debido al multimode operation.
+- Menos desempeño debido al multimode operation.
+- Aumenta mucho la complejidad debido al multimode operation.
+
+## Microkernel
+
+El propósito es solo tener el kernel, es decir las funciones más escenciales y nada más.
+
+- Contiene solo funciones escenciales para gestión.
+- Modular.
+- Fácil de depurar y mantener.
+- Diseño complejo.
+- Menor desempeño.
+
+## Sistemas Híbridos
+
+Combinan la monolítica con la microkernel. Permiten subsistemas. Son Representan los sistemas operativos actuales.
+
+## Comparativa
+
+|Estructura|Desempeño|Robustez|Facilidad de Mantenimiento|Complejidad|
+|---|---|---|---|---|
+|Simple|Alto|Bajo|Bajo|Bajo|
+|Monolítica|Muy Alto|Medio|Medio|Medio|
+|Por capas|Medio|Alto|Alto|Alto|
+|Microkernel|Bajo|Muy Alto|Alto|Muy Alto|
+|Híbrido|Alto|Alto|Alto|Alto|
