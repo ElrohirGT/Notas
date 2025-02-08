@@ -83,3 +83,57 @@ entre procesos.
 
 **Overhead:** Invertir tiempo no _útil_ en el procesador es lo que conocemos
 como overhead.
+
+## Creación de Procesos
+
+Un proceso puede crear a otro, creando una relación padre -> hijo.
+
+La relación entre procesos afecta cómo se comunican entre ellos.
+
+Esto nos permite tener un _árbol de procesos_. Los procesos raíz por general
+son:
+
+- init
+- systemd
+
+Opciones en cuanto a recursos:
+
+- Padre e hijo comparten recursos.
+- Padre e hijo comparte ciertos recursos.
+- Padre e hijo no comparten recursos.
+
+Opciones de ejecución:
+
+- Padre e hijo se ejecutan concurrentemente.
+- Padre espera a que el hijo termine.
+
+Para crear procesos en C se utiliza fork():
+
+- El padre tiene un pid > 0.
+- El hijo tiene un pid = 0.
+
+## Terminación de Procesos
+
+Un proceso puede terminar de manera volutaria como involuntaria.
+
+- Para terminar de forma voluntaria: exit()
+
+La terminación se da en caso de un error fatal o mediante otro proceso. En este
+caso el proceso padre mata inmediatamente al proceso hijo.
+
+- Para terminar de forma involuntaria: abort()
+
+Algunas razones son:
+
+- El proceso hijo excedió recursos.
+- El proceso hijo ya no es necesario.
+- El proceso padre hace un exit() y el OS no permite que siga viviendo.
+
+Los procesos zombies son procesos hijos que ya terminaron su ejecución vía un
+exit pero su PCB todavía sigue como si estuviera vivo.
+
+El proceso padre debe eliminar el registro del PCB mediante un wait(). Cuando
+eso sucede el proceso hijo es cosechado.
+
+Cuando un proceso zombie permanece durante mucho tiempo, se le llama "resource
+leak".
