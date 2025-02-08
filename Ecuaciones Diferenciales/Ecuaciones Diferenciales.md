@@ -1,135 +1,137 @@
 # Ecuaciones Diferenciales
-Se pueden graficar por medio de [[Campos Direccionales]].
 
-$\frac{dy}{dx}+5y=e^x$
+Se pueden graficar por medio de \[\[Campos Direccionales\]\].
 
-$\frac{d^2y}{dx^2}-\frac{dy}{dx}+6y=0$
+$\\frac{dy}{dx}+5y=e^x$
 
-$\frac{dx}{dt}+\frac{dy}{dt}=2x+y$
+$\\frac{d^2y}{dx^2}-\\frac{dy}{dx}+6y=0$
 
-$\frac{\delta^2 u}{\delta x^2}+\frac{\delta^2 u}{\delta t^2}=0$
+$\\frac{dx}{dt}+\\frac{dy}{dt}=2x+y$
 
-|$dy$: Diferencial Ordinario.|$\delta y$: Diferencial Parcial.|
-|---|---|
-|Las ecuaciones diferenciales que tienen solamente diferenciales ordinarios son Ecuaciones Diferenciales Ordinarias (EDO).| Las ecuaciones diferenciales que tienen solamente diferenciales parciales son Ecuaciones Diferenciales Parciales (EDP).|
+$\\frac{\\delta^2 u}{\\delta x^2}+\\frac{\\delta^2 u}{\\delta t^2}=0$
 
-Existen varios tipos de ecuaciones diferenciales, las [[ED lineales de Orden Superior]] son aquellas que tienen un orden mayor a 1, es decir, tienen una segunda, tercera o cuarta derivada respecto a una variable.
+|$dy$: Diferencial Ordinario.|$\\delta y$: Diferencial Parcial.| |---|---| |Las
+ecuaciones diferenciales que tienen solamente diferenciales ordinarios son
+Ecuaciones Diferenciales Ordinarias (EDO).| Las ecuaciones diferenciales que
+tienen solamente diferenciales parciales son Ecuaciones Diferenciales Parciales
+(EDP).|
+
+Existen varios tipos de ecuaciones diferenciales, las \[\[ED lineales de Orden
+Superior\]\] son aquellas que tienen un orden mayor a 1, es decir, tienen una
+segunda, tercera o cuarta derivada respecto a una variable.
 
 ## Ecuaciones Diferenciales Ordinarias (EDO)
+
 Son del mismo orden en el que se encuentra su diferencial más alto.
+
 - **Orden:** Máxima derivada que se está aplicando.
 - **Grado:** Máximo exponente del polinomio.
 
-|Notación de Leibniz|Notación de Newton/Primas|
-|--|--|
-|$\frac{dy}{dx}$|$y''$|
+|Notación de Leibniz|Notación de Newton/Primas| |--|--| |$\\frac{dy}{dx}$|$y''$|
 
-**NOTA:** Tomar en cuenta el intervalo en el que una función es continua, ya que solamente puede ser solución a una ecuación diferencial dentro de ese mismo intervalo, pues solamente en ese intervalo es derivable.
-Para señalar este intervalo se utiliza la siguiente notación:
+**NOTA:** Tomar en cuenta el intervalo en el que una función es continua, ya que
+solamente puede ser solución a una ecuación diferencial dentro de ese mismo
+intervalo, pues solamente en ese intervalo es derivable. Para señalar este
+intervalo se utiliza la siguiente notación:
 
 $I(a,b)$.
 
-$I -\infin < x < 0$ & $0 < x < \infin$
+$I -\\infin \< x \< 0$ & $0 \< x \< \\infin$
 
-**Solución trivial:** Muchas veces las ecuaciones diferenciales tienen una solución en donde f=0. **No tomar en cuenta esta para el curso.**
+**Solución trivial:** Muchas veces las ecuaciones diferenciales tienen una
+solución en donde f=0. **No tomar en cuenta esta para el curso.**
 
-Hay veces que una ecuación diferencial tiene infinitas soluciones que comparten una forma. Este tipo de soluciones introducen constantes para parametrizar la función solución. Se les llama `Soluciones Generales`.
+Hay veces que una ecuación diferencial tiene infinitas soluciones que comparten
+una forma. Este tipo de soluciones introducen constantes para parametrizar la
+función solución. Se les llama `Soluciones Generales`.
 
-|Solución Particular|Solución General|
-|--|--|
-|$y=\frac{1}{16}x^4$|$y=ce^x$|
+|Solución Particular|Solución General| |--|--| |$y=\\frac{1}{16}x^4$|$y=ce^x$|
 
-Para elegir qué valor debe tener esta constante se pueden utilizar varios métodos.
-- **Condiciones Iniciales:** Con este método se elige/tiene un punto fijo por el que debe pasar la función. Lo cual ayuda a despejar la constante.
+Para elegir qué valor debe tener esta constante se pueden utilizar varios
+métodos.
 
-Para resolver problemas de segundo orden, se necesita que nos den un punto de la función original y uno de la derivada.
+- **Condiciones Iniciales:** Con este método se elige/tiene un punto fijo por el
+  que debe pasar la función. Lo cual ayuda a despejar la constante.
 
-Las EDO pueden ser lineales ([[Edo Lineal]]).
+Para resolver problemas de segundo orden, se necesita que nos den un punto de la
+función original y uno de la derivada.
+
+Las EDO pueden ser lineales (\[\[Edo Lineal\]\]).
 
 ## Tipos de Ecuaciones Diferenciales
-* **Autónoma:** $\frac{dy}{dx}=f(y)$
-* **No Autónoma:** $\frac{dy}{dx}=f(x,y)$
+
+- **Autónoma:** $\\frac{dy}{dx}=f(y)$
+- **No Autónoma:** $\\frac{dy}{dx}=f(x,y)$
 
 ## Métodos de Solución
-La forma en la que sabemos si una ecuación diferencial tiene una única solución en el punto dado es debido al [[Teorema de Única Solución]].
 
-[[Método por Sustitución]]: Consiste en reemplazar las variables dependientes e independientes por alguna relación entre ellas, el método de bernoulli también es clasificado como uno de sustitución.
+La forma en la que sabemos si una ecuación diferencial tiene una única solución
+en el punto dado es debido al \[\[Teorema de Única Solución\]\].
 
-[[Método de Solución ED Exacta]]: No todas las ecuaciones que tienen la forma de una exacta pueden ser resueltas con este método, sin embargo, es definitivamente uno de los más tardados y laboriosos.
+\[\[Método por Sustitución\]\]: Consiste en reemplazar las variables
+dependientes e independientes por alguna relación entre ellas, el método de
+bernoulli también es clasificado como uno de sustitución.
 
-[[Método de Separación de Variables]]: Este método es el más sencillo al momento de plantear, pero puede que las integrales nos queden muy complicadas.
+\[\[Método de Solución ED Exacta\]\]: No todas las ecuaciones que tienen la
+forma de una exacta pueden ser resueltas con este método, sin embargo, es
+definitivamente uno de los más tardados y laboriosos.
 
-[[Método de Coeficientes Indeterminados]]: Este método es útil para ecuaciones lineales de segundo orden o mayor, sin embargo, la función $g(x)$ a la que se tienen que igualar estas ED's debe ser de la forma de potencias de $x^n$, trigonométricas o  $e^{nx}$.
+\[\[Método de Separación de Variables\]\]: Este método es el más sencillo al
+momento de plantear, pero puede que las integrales nos queden muy complicadas.
 
-[[Método de Variación de Parámetros]]: Este método se utiliza cuando la ecuación no es homogénea. No tiene la limitante del [[Método de Coeficientes Indeterminados]] pues el $y_p$ se define de forma natural en base a bosquianos determinados por el mismo procedimiento.
+\[\[Método de Coeficientes Indeterminados\]\]: Este método es útil para
+ecuaciones lineales de segundo orden o mayor, sin embargo, la función $g(x)$ a
+la que se tienen que igualar estas ED's debe ser de la forma de potencias de
+$x^n$, trigonométricas o $e^{nx}$.
 
-[[Método de Cauchy-Euler]]: Este método se utiliza cuando las derivadas de la variable dependiente se encuentran multiplicadas por su respectiva $x^n$. Se puede combinar con el  [[Método de Variación de Parámetros]] para resolver ecuaciones no homogéneas.
+\[\[Método de Variación de Parámetros\]\]: Este método se utiliza cuando la
+ecuación no es homogénea. No tiene la limitante del \[\[Método de Coeficientes
+Indeterminados\]\] pues el $y_p$ se define de forma natural en base a bosquianos
+determinados por el mismo procedimiento.
 
-Otro método de solución de ecuaciones diferenciales es usar las [[Transformadas de Laplace]]. Estas convierten una función de números reales a una de complejos, sin embargo si se utiliza la [[Transformada de Derivadas]] el problema diferencial en números reales se vuelve uno aritmético en los complejos, por lo que simplemente se resuelve el sistema y se realiza una transformada inversa para regresar a la dimensión de los reales.
+\[\[Método de Cauchy-Euler\]\]: Este método se utiliza cuando las derivadas de
+la variable dependiente se encuentran multiplicadas por su respectiva $x^n$. Se
+puede combinar con el \[\[Método de Variación de Parámetros\]\] para resolver
+ecuaciones no homogéneas.
+
+Otro método de solución de ecuaciones diferenciales es usar las
+\[\[Transformadas de Laplace\]\]. Estas convierten una función de números reales
+a una de complejos, sin embargo si se utiliza la \[\[Transformada de
+Derivadas\]\] el problema diferencial en números reales se vuelve uno aritmético
+en los complejos, por lo que simplemente se resuelve el sistema y se realiza una
+transformada inversa para regresar a la dimensión de los reales.
+
 ## Ejemplos Aplicados
-Ejemplos de aplicación se pueden encontrar en la página de [[Ejemplos]].
-## Problemas de Valor Inicial 
-Determinar que: $x^2+y^2=25$
-es solución de: $\frac{dy}{dx} = - \frac{x}{y}$
 
-$$
-2xdx+2ydy=0\\
-2ydy=-2xdx\\
-\frac{dy}{dx}=-\frac{2x}{2y}\\
-\frac{dy}{dx}=-\frac{x}{y}
-$$
+Ejemplos de aplicación se pueden encontrar en la página de \[\[Ejemplos\]\].
 
-Encontrar la solución explícita particular: $y=\frac{1}{x^2+c}$. En donde: $y'+2xy^2=0 \land y(0) = -1$
-$$
-y(0) = -1 = \frac{1}{c}
-$$
-$$
-c = -1
-$$
-$$
-y=\frac{1}{x^2-1}
-$$
+## Problemas de Valor Inicial
+
+Determinar que: $x^2+y^2=25$ es solución de: $\\frac{dy}{dx} = - \\frac{x}{y}$
+
+$$ 2xdx+2ydy=0\\ 2ydy=-2xdx\\ \\frac{dy}{dx}=-\\frac{2x}{2y}\\
+\\frac{dy}{dx}=-\\frac{x}{y} $$
+
+Encontrar la solución explícita particular: $y=\\frac{1}{x^2+c}$. En donde:
+$y'+2xy^2=0 \\land y(0) = -1$ $$ y(0) = -1 = \\frac{1}{c} $$ $$ c = -1 $$ $$
+y=\\frac{1}{x^2-1} $$
 
 **Problema de valores iniciales (PVI)**
 
-$$x=C_1\cos(4t)+C_2\sin(4t)$$
+$$x=C_1\\cos(4t)+C_2\\sin(4t)$$
 
 Solución de: $x''+16x=0$
 
-en donde: $x(\pi/2)=-2\ \land x'(\pi/2) = 1$
+en donde: $x(\\pi/2)=-2\\ \\land x'(\\pi/2) = 1$
+
+$$ x'=-4C_1\\cos4t+4C_2\\cos4t $$ $$
+x'\\left(\\frac{\\pi}{2}\\right)=1=-4C_1\\cos(4\\cdot\\frac{\\pi}{2})+4C_2\\cos(4\\cdot\\frac{\\pi}{2})
+$$ $$ x'\\left(\\frac{\\pi}{2}\\right)=1=-4C_1\\cos(2\\pi)+4C_2\\cos(2\\pi) $$
+$$ x'\\left(\\frac{\\pi}{2}\\right)=1=4C_2 $$ $$ C_2=\\frac{1}{4} $$
 
 $$
-x'=-4C_1\cos4t+4C_2\cos4t
-$$
-$$
-x'\left(\frac{\pi}{2}\right)=1=-4C_1\cos(4\cdot\frac{\pi}{2})+4C_2\cos(4\cdot\frac{\pi}{2})
-$$
-$$
-x'\left(\frac{\pi}{2}\right)=1=-4C_1\cos(2\pi)+4C_2\cos(2\pi)
-$$
-$$
-x'\left(\frac{\pi}{2}\right)=1=4C_2
-$$
-$$
-C_2=\frac{1}{4}
-$$
+x\\left(\\frac{\\pi}{2}\\right)=-2=C_1\\cos(4\\cdot\\frac{\\pi}{2})+C_2\\sin(4\\cdot\\frac{\\pi}{2})
+$$ $$ x\\left(\\frac{\\pi}{2}\\right)=-2=C_1\\cos(2\\pi)+C_2\\sin(2\\pi) $$ $$
+x\\left(\\frac{\\pi}{2}\\right)=-2=C_1 $$ $$ C_1=-2 $$
 
-$$
-x\left(\frac{\pi}{2}\right)=-2=C_1\cos(4\cdot\frac{\pi}{2})+C_2\sin(4\cdot\frac{\pi}{2})
-$$
-$$
-x\left(\frac{\pi}{2}\right)=-2=C_1\cos(2\pi)+C_2\sin(2\pi)
-$$
-$$
-x\left(\frac{\pi}{2}\right)=-2=C_1
-$$
-$$
-C_1=-2
-$$
-
-$$
-y=-2\cos4t+\frac{1}{4}\sin4t
-$$
-$$
-I(-\infin, \infin)
-$$
+$$ y=-2\\cos4t+\\frac{1}{4}\\sin4t $$ $$ I(-\\infin, \\infin) $$

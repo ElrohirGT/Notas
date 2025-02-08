@@ -1,18 +1,25 @@
 # Function Captures
+
 En Gleam se pueden escribir lambdas del tipo:
+
 ```gleam
 let add_one_v1 = fn(x) { add(1, x) }
 ```
 
 Como:
+
 ```gleam
 let add_one_v1 = add(1, _)
 ```
 
-Esta sintaxis es válida solamente cuando la función anónima tiene un solo argumento. Esta funcionalidad ayuda mucho al momento de hacer [currying](https://es.wikipedia.org/wiki/Currificaci%C3%B3n).
+Esta sintaxis es válida solamente cuando la función anónima tiene un solo
+argumento. Esta funcionalidad ayuda mucho al momento de hacer
+[currying](https://es.wikipedia.org/wiki/Currificaci%C3%B3n).
 
 # Pipelines
+
 En Gleam existe el concepto de `pipe` como en bash. Se ve de la siguiente forma:
+
 ```gleam
 // Without the pipe operator
 io.debug(string.drop_left(string.drop_right("Hello, Joe!", 1), 7))
@@ -25,13 +32,18 @@ io.debug(string.drop_left(string.drop_right("Hello, Joe!", 1), 7))
 ```
 
 ## ¿Cómo funciona?
+
 Si se tiene la siguiente pipeline:
+
 ```gleam
 a
   |> b(1,2)
 ```
 
-Entonces Gleam primero intenta `b(a,1,2)` y si esto es inválido entonces intenta `b(1,2)(a)`. Recuerda que puedes usar Funcition Captures para determinar el lugar en el que quieres insertar el parámetro:
+Entonces Gleam primero intenta `b(a,1,2)` y si esto es inválido entonces intenta
+`b(1,2)(a)`. Recuerda que puedes usar Funcition Captures para determinar el
+lugar en el que quieres insertar el parámetro:
+
 ```gleam
 "1"
   |> string.append("2")
@@ -42,7 +54,9 @@ Entonces Gleam primero intenta `b(a,1,2)` y si esto es inválido entonces intent
 ```
 
 # Deprecations
+
 Las funciones o tipos pueden ser marcadas como deprecadas utilizando:
+
 ```gleam
 @deprecated("Use new_function instead")
 fn old_function() {
@@ -51,7 +65,11 @@ fn old_function() {
 ```
 
 # Pattern Matching
-Se puede realizar pattern matching usando el `switch`. Parece que el pattern matching es bien avanzado en Gleam. Hasta puedes hacer  casos como todas las cadenas que inician con `Hello`:
+
+Se puede realizar pattern matching usando el `switch`. Parece que el pattern
+matching es bien avanzado en Gleam. Hasta puedes hacer casos como todas las
+cadenas que inician con `Hello`:
+
 ```gleam
 case x {
     "Hello, " <> name -> name
@@ -60,13 +78,16 @@ case x {
 ```
 
 Puedes hacer pattern matching de varios valores utilizando una coma:
+
 ```gleam
 case x,y {
     _,_ -> io.println("Hello")
 }
 ```
 
-También puedes asignar aliases a patrones para guardarlos en variables y usarlos dentro de la expresión del caso:
+También puedes asignar aliases a patrones para guardarlos en variables y usarlos
+dentro de la expresión del caso:
+
 ```gleam
 fn get_first_non_empty(lists: List(List(t))) -> List(t) {
   case lists {
@@ -77,7 +98,11 @@ fn get_first_non_empty(lists: List(List(t))) -> List(t) {
 }
 ```
 
-Además se pueden agregar `Guards` a los cases de un switch, estas `Guards` son `if`s sencillos que no pueden llamar a funciones externas y solo pueden usar un set limitado de operaciones, para que un caso sea elegido su `Guard` debe retornar `True`:
+Además se pueden agregar `Guards` a los cases de un switch, estas `Guards` son
+`if`s sencillos que no pueden llamar a funciones externas y solo pueden usar un
+set limitado de operaciones, para que un caso sea elegido su `Guard` debe
+retornar `True`:
+
 ```gleam
 fn get_first_larger(lists: List(Int), limit: Int) -> Int {
   case lists {
@@ -89,10 +114,19 @@ fn get_first_larger(lists: List(Int), limit: Int) -> Int {
 ```
 
 # Loops
-Gleam no tiene loops, en su lugar tienes que usar recursión! La librería estándar provee algunas utilidades para cerrar un poco la brecha pero es posible que la forma más clara de resolver un problema sea creando tu propia función recursiva.
+
+Gleam no tiene loops, en su lugar tienes que usar recursión! La librería
+estándar provee algunas utilidades para cerrar un poco la brecha pero es posible
+que la forma más clara de resolver un problema sea creando tu propia función
+recursiva.
 
 ## Tail calls
-Es una optimización que ahorra la generación del último stack para una función recursiva. Generalmente para que una función pueda aprovecharse de esta optimización debe hacer uso de un acumulador, por ejemplo si quisiéramos pasar la siguiente función factorial para que utilize esta optimización haríamos:
+
+Es una optimización que ahorra la generación del último stack para una función
+recursiva. Generalmente para que una función pueda aprovecharse de esta
+optimización debe hacer uso de un acumulador, por ejemplo si quisiéramos pasar
+la siguiente función factorial para que utilize esta optimización haríamos:
+
 ```gleam
 // Sin optimización
 pub fn factorial(x: Int) -> Int {
@@ -123,7 +157,10 @@ fn factorial_loop(x: Int, accumulator: Int) -> Int {
 ```
 
 ## Iterating over a list
-Por ejemplo si quisiéramos iterar sobre una lista para sumar todos sus valores podríamos escribir:
+
+Por ejemplo si quisiéramos iterar sobre una lista para sumar todos sus valores
+podríamos escribir:
+
 ```gleam
 fn sum_list(list: List(Int), total: Int) -> Int {
   case list {
@@ -134,7 +171,9 @@ fn sum_list(list: List(Int), total: Int) -> Int {
 ```
 
 # Tuples
+
 Gleam tiene soporte para tuplas, aunque la sintaxis no es la más común:
+
 ```gleam
 let triple = #(1, 2.2, "three")
 io.debug(triple)
@@ -145,7 +184,10 @@ io.debug(triple.1)
 ```
 
 # Types
-Types en Gleam son Union Types como en Rust. No existen los structs o clases, para definir un struct simplemente se crea un type con una única variante:
+
+Types en Gleam son Union Types como en Rust. No existen los structs o clases,
+para definir un struct simplemente se crea un type con una única variante:
+
 ```gleam
 pub type SchoolPerson {
   Teacher(name: String, subject: String, floor: Int, room: Int)
@@ -163,7 +205,10 @@ pub fn main() {
 ```
 
 # Genéricos
-Los genéricos tanto en funciones como en tipos de aplican usando un nombre para el tipo de la variable/atributo en lugar de una clase existente:
+
+Los genéricos tanto en funciones como en tipos de aplican usando un nombre para
+el tipo de la variable/atributo en lugar de una clase existente:
+
 ```gleam
 // Enum genérico para cualquier `inner`
 pub type Option(inner) {
@@ -173,11 +218,16 @@ pub type Option(inner) {
 ```
 
 # Nil
-`Nil` es el tipo unitario de Gleam, no existe el `null` o `undefined` en Gleam. Si una función no retorna nada entonces retorna `Nil`.
+
+`Nil` es el tipo unitario de Gleam, no existe el `null` o `undefined` en Gleam.
+Si una función no retorna nada entonces retorna `Nil`.
 
 # Bit arrays
-Son una estructura conveniente para representar data binaria, pueden opcionalmente incluir una tag al final para indicar la conversión a utilizar para binario, por el momento no todos los tipos de conversiones son soportados en javascript:
 
+Son una estructura conveniente para representar data binaria, pueden
+opcionalmente incluir una tag al final para indicar la conversión a utilizar
+para binario, por el momento no todos los tipos de conversiones son soportados
+en javascript:
 
 - size: the size of the segment in bits.
 - unit: how many times to repeat the segment.
@@ -192,7 +242,6 @@ Son una estructura conveniente para representar data binaria, pueden opcionalmen
 - utf16: utf16 encoded text.
 - utf32: utf32 encoded text.
 
-
 ```gleam
 pub fn main() {
   // 8 bit int. In binary: 00000011
@@ -205,11 +254,13 @@ pub fn main() {
   // A bit array of UTF8 data
   io.debug(<<"Hello, Joe!":utf8>>)
 }
-``` 
+```
 
 # Use
 
-La palabra clave `use` se utiliza para ayudar a _eliminar_ el callback hell, realmente solo lo oculta:
+La palabra clave `use` se utiliza para ayudar a _eliminar_ el callback hell,
+realmente solo lo oculta:
+
 ```gleam
 pub fn without_use() {
   result.try(get_username(), fn(username) {
@@ -229,13 +280,20 @@ pub fn with_use() {
 }
 ```
 
-Para poder utilizar `use` la expresión a la derecha de `<-` debe ser una función que toma un `callback` como su último argumento. Los argumentos del `callback` van a la izquierda del `<-`. El `callback` puede tener cualquier cantidad de argumentos, incluso puede no tener argumentos.
+Para poder utilizar `use` la expresión a la derecha de `<-` debe ser una función
+que toma un `callback` como su último argumento. Los argumentos del `callback`
+van a la izquierda del `<-`. El `callback` puede tener cualquier cantidad de
+argumentos, incluso puede no tener argumentos.
 
-El resto del código dentro de `{}` se encuentra dentro del `callback` de la función de orden mayor.
+El resto del código dentro de `{}` se encuentra dentro del `callback` de la
+función de orden mayor.
 
 # Todo
 
-Puedes usar la palabra clave `todo` para indicarle al compilador que una sección del código todavía no se ha implementado. Al compilar generará una warning y al correr un panic.
+Puedes usar la palabra clave `todo` para indicarle al compilador que una sección
+del código todavía no se ha implementado. Al compilar generará una warning y al
+correr un panic.
+
 ```gleam
 pub fn main() {
   todo as "I haven't written this code yet!"

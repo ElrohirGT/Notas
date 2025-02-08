@@ -1,5 +1,9 @@
 # Models
-AWS permite definir modelos para compartir entre las API endpoints. Estos modelos se definen utilizando [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step). Por ejemplo el siguiente schema define un objeto Producto de un catálogo inventado:
+
+AWS permite definir modelos para compartir entre las API endpoints. Estos
+modelos se definen utilizando
+[JSON Schema](https://json-schema.org/learn/getting-started-step-by-step). Por
+ejemplo el siguiente schema define un objeto Producto de un catálogo inventado:
 
 ```json
 {
@@ -55,4 +59,6 @@ AWS permite definir modelos para compartir entre las API endpoints. Estos modelo
 }
 ```
 
-Para definir una validación del body de una request de acuerdo a un modelo se cambia el `Method Request` para que valide el body de la request y se selecciona el schema a usar para validar.
+Para definir una validación del body de una request de acuerdo a un modelo se
+cambia el `Method Request` para que valide el body de la request y se selecciona
+el schema a usar para validar.

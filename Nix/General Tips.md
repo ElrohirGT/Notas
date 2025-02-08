@@ -1,9 +1,12 @@
 # Nix
 
 ## Installing older versions of packages
-You can checkout [this page](https://lazamar.co.uk/nix-versions/) to get the nixpkgs revision for packages.
+
+You can checkout [this page](https://lazamar.co.uk/nix-versions/) to get the
+nixpkgs revision for packages.
 
 For example if we wanted to install `cmakev3.22.1` then we could do:
+
 ```nix
 packages = with pkgs; let
     cmakePKgs = import (builtins.fetchGit {
