@@ -137,3 +137,102 @@ eso sucede el proceso hijo es cosechado.
 
 Cuando un proceso zombie permanece durante mucho tiempo, se le llama "resource
 leak".
+
+**¿Qué sucede cuando el padre termina antes que los hijos?**
+
+Tenemos dos opciones:
+
+- El proceso padre abandona al proceso hijo y muere independientemente.
+  Transformando al proceso hijo en un proceso huérfano.
+- El proceso realiza una terminación en cascada.
+
+## Procesos Huérfanos
+
+Un proceso huérfano es un proces cuyo padre terminó su ejecución antes y fue
+terminado.
+
+El OS realiza un proceso de _adopción_ y le asigna un nuevo proceso padre.
+Usualmente el nuevo proceso padre es el proceso raíz.
+
+Es vital asignarle un proceso padre puesto que éste es el encargado de borrarlo
+del PCB.
+
+## Comunicación entre Procesos
+
+Se conoce como IPC (Inter Process Comunication)
+
+Existen dos tipos de procesos:
+
+- Cooperativos: Aquellos que pueden afectar o ser afectados por otros procesos.
+- Independientes: No pueden ser afectados o afectar a otros procesos.
+
+Razones de comunicación:
+
+1. Para compartir información y/o recursos.
+1. Para reutilizar código y modulizar.
+1. Encadenar tareas.
+1. Sincronizar procesos.
+
+Existen 2 tipos de comunicación entre procesos:
+
+- **Memoria compartida:**
+
+Es un espacio de memoria compartida entre varios procesos. El sistema operativo
+orotga y asigna el espacio pero como se utiliza es ajeno al OS.
+
+Aunque generalmente es más rápido y no requiere intervención del kernel, su
+implementación es más difícil y pueden existir conflictos de acceso y
+sincronización.
+
+- **Paso de mensajes**
+
+No necesita de un espacio de memoria compartida, sino en vez utiliza un enlace
+de comunicación (protocolo). Las dos operaciones básicas son `send` y `recv`.
+
+Tiene varios subtipos de comunicación:
+
+- Directa e Indirecta.
+- Comunicación síncrona y asíncrona.
+- Buffering.
+
+Su principal ventaja es que la complejidad es baja y que es bastante útil en
+sistemas distribuidos. Su principal desventaja es que es más lento.
+
+### Comunicación Directa e Indirecta
+
+**Comunicación Directa (Simétrica)**: Es un tipo de comunicación en donde tanto
+el que envía mensajes como el que los recibe debe especificar A QUIÉN/DE QUIÉN
+son los mensajes. Es también conocida como comunicación bidireccional.
+
+**Comunicación Directa (Asimétrica)**: Es un tipo de comunicación en donde
+simplemente se necesita especificar a quién se envía. Es también conocida como
+comunicación unidireccional.
+
+**Comunicación Indirecta**: Este tipo de comunicación requiere el uso de un
+buzón (o algún otro mecanismo) que es definido dentro del link. El link se
+establece entre pares de procesos. El buzón permite la comunicación entre 2+
+procesos.
+
+Algunos problemas con el buzón son:
+
+- Se necesita evitar conflictos de lectura.
+- Limitar el acceso al buzón.
+- Emplear algún algoritmo que defina prioridades.
+
+### Comunicación Síncrona y Asíncrona
+
+En este contexto sincronía o asincronía se refiere al uso de bloqueos. En caso
+de ser síncrono sí los implementa, y cuando es asíncrono no.
+
+### Buffering
+
+Utiliza el uso de buffers para enviar o recibir mensajes. Esos buffers son
+definidos en el link. Permiten manejar distintos tipos de sincronía.
+
+Hay 3 tipos de implementación:
+
+1. Zero Capacity: El emisor se va a bloquear hasta que el mensaje sear recibido.
+1. Bounded Capacity: El emisor se bloqueará solamente cuando el buffer ya no
+   haya espacio dentro del buffer.
+1. Unbounded Capacity: El emisor seguirá escribiendo hasta que se quede sin
+   memoria el sistema.
