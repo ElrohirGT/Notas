@@ -236,3 +236,66 @@ Hay 3 tipos de implementación:
    haya espacio dentro del buffer.
 1. Unbounded Capacity: El emisor seguirá escribiendo hasta que se quede sin
    memoria el sistema.
+
+## Pipes
+
+Es un conducto de comunicación entre procesos. Existen 2 tipos:
+
+- Anónimos/Ordinarios
+
+Los pipes anónimos permiten la comunicación unidireccional y solamente entre
+padre e hijo. Dada su naturaleza, su uso es bien parecido al estándar del
+Producer/Consumer.
+
+- Nombrados
+
+Permiten la comunicación bidireccional y no requieren que los procesos tengan
+algún tipo de relación entre ellos. Además pueden ser utilizados por más
+procesos.
+
+## Sockets
+
+Es un punto de comunicación en el sistema. Usualmente nos podemos referir a un
+socket como un "endpoint". Permiten la comunicación entre 2 procesos a través de
+una red e implementando un protocolo.
+
+```
+# Estructura de un socket
+IP:Puerto
+
+EG: 
+
+122.89.98.12:4556
+```
+
+- localhost/127.0.0.1
+
+Se le conoce como IP loopback, es la dirección default para comunicarse con la
+propia máquina.
+
+- Para establecer la comunicación necesitamos 2 sockets.
+
+- Usualmente los puertos abajo de 1024 son llamados "well-known ports". Por
+  convención están definidos a:
+
+```
+|Uso |Puerto|
+|SSH |  22  |
+|FTP |  21  |
+|HTTP|  80  |
+```
+
+El OS asigna a un proceso el socket. Esto "reserva" el socket y no podremos
+tener 2 procesos en el mismo socket, los sockets también son únicos.
+
+Los sockets contienen una estructura llamada ProtocolStack. Aquí se almacenan
+los protocolos de comunicación que soporta ese socket.
+
+Ventajas:
+
+- Estructura estandarizada
+- Eficiente
+
+Desventajas:
+
+- No hay una estructura predefinida sobre cómo enviar los mensajes
