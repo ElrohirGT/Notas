@@ -299,3 +299,53 @@ Ventajas:
 Desventajas:
 
 - No hay una estructura predefinida sobre cómo enviar los mensajes
+
+## Remote Procedure Calls (RPC)
+
+Es una estrategia de comunicación en sistemas cliente-servidor. Permite a un
+programa ejecutar código de un sistema desde otro sistema, le quita al
+desarrollador la preocupación de definir el detalle de la comunicación entre
+ambos sistemas.
+
+Para hacer esto el RPC utiliza código intermediario que se le conoce como
+"stub". El "stub" del cliente emula la ejecución local de la llamada pero en
+realidad empaqueta el mensaje y lo envía al server.
+
+### ¿Cómo funciona?
+
+- RPC ya tiene estructuras de datos predefinidas para empaquetar/desempaquetar
+  datos y envía la información entre el cliente y servidor.
+
+- El cliente llama a una función localmente pero en realidad está invocando al
+  stub.
+
+- El stub del cliente empaqueta (serializa) el mensaje.
+
+- El stub del cliente abre un socket para poder enviar un mensaje.
+
+- El OS es el encargado de enviar ese mensaje al server. Lo envía a un daemon
+  del server.
+
+- El OS del server recibe el mensaje y se lo pasa a su stub para deserializarlo.
+
+- Se ejecuta la función en el sistema.
+
+- Se envía de regreso el output por un proceso similar.
+
+Hay dos formas que tiene el cliente para saber a qué puerto apuntar, dependiendo
+de cuál se tenga configurada:
+
+- Las funciones están predefinidas en el sistema y los puertos están fijados
+  para cada llamada.
+
+- El OS del server provee otro daemon llamado "matchmaker" que debe estar
+  predefinido. El daemon devuelve al cliente el puerto que necesita.
+
+Ventajas:
+
+- Estructuras definidas para el envío de mensajes.
+- Mayor flexibilidad para las llamadas.
+
+Desventajas:
+
+- Los daemons del server introducen overhead.
