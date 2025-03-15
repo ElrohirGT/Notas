@@ -159,10 +159,11 @@ los sistemas operativos actuales.
 
 ## Comparativa
 
-|Estructura|Desempeño|Robustez|Facilidad de Mantenimiento|Complejidad|
-|---|---|---|---|---| |Simple|Alto|Bajo|Bajo|Bajo| |Monolítica|Muy
-Alto|Medio|Medio|Medio| |Por capas|Medio|Alto|Alto|Alto| |Microkernel|Bajo|Muy
-Alto|Alto|Muy Alto| |Híbrido|Alto|Alto|Alto|Alto|
+| Estructura | Desempeño | Robustez | Facilidad de Mantenimiento | Complejidad |
+| ---------- | --------- | -------- | -------------------------- | ----------- |
+| Simple     | Alto      | Bajo     | Bajo                       | Bajo        |
+| Alto       | Medio     | Medio    | Medio                      |             |
+| Alto       | Alto      | Muy Alto |                            | Híbrido     |
 
 ## Computer Startup
 

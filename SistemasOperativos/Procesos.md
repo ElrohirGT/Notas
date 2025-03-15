@@ -278,12 +278,11 @@ propia máquina.
 - Usualmente los puertos abajo de 1024 son llamados "well-known ports". Por
   convención están definidos a:
 
-```
-|Uso |Puerto|
-|SSH |  22  |
-|FTP |  21  |
-|HTTP|  80  |
-```
+| Uso  | Puerto |
+| ---- | ------ |
+| SSH  | 22     |
+| FTP  | 21     |
+| HTTP | 80     |
 
 El OS asigna a un proceso el socket. Esto "reserva" el socket y no podremos
 tener 2 procesos en el mismo socket, los sockets también son únicos.
