@@ -21,3 +21,11 @@ Check a file differences between two branches:
 ```bash
 git diff mybranch myOtherBranch -- myfile.cs
 ```
+
+______________________________________________________________________
+
+Undo a git rebase using the reflog of the HEAD branch:
+
+```bash
+git reflog
+```
