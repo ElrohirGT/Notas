@@ -127,3 +127,23 @@ a cabo.
 - cuando un nuevo proceso llega a la ready queue, se recalcula cual proceso
   sigue usando el algoritmo de SJF.
 - Potencial de starvation.
+
+## Round Robin
+
+- En este algoritmo cada proceso obtiene el procesador una pequeña cantidad de
+  tiempo del CPU llamado "time quantum" o q.
+- Cuando este tiempo termina el proceso es movido al final de la ready queue.
+- Hay un timer que hace un interrupt cada quantum para calendarizar el siguiente
+  proceso.
+- Este calendarizador es preemptive porque no debemos esperar a que el proceso
+  termine para cambiar de proceso que se está ejecutando actualmente.
+
+## Priority Scheduling (PS)
+
+- Se le asigna un número entero asociado a cada proceso.
+- El CPU se asigna al proceso con la más alta prioridad, es decir el más
+  pequeño.
+- Se puede calcular la prioridad, por ejemplo, prediciendo cuál es el siguiente
+  tamaño de burst que necesitará un proceso.
+- Este proceso es preemptive porque no necesita esperar a que un proceso termine
+  para cambiar la calendarización de las cosas.
