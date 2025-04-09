@@ -147,3 +147,84 @@ a cabo.
   tamaño de burst que necesitará un proceso.
 - Este proceso es preemptive porque no necesita esperar a que un proceso termine
   para cambiar la calendarización de las cosas.
+
+## Cola Multinivel (Algoritmo de Calendarización Extra)
+
+La idea de este algoritmo es separar la `ready queue` en varias colas. Este
+algoritmo es bastante complicado porque debemos determinar los mejores
+parámetros.
+
+Cada cola puede implementar un algoritmo de calendarización diferente y por
+supuesto cómo se va a atender a cada cola también debe ser calendarizado.
+
+Usuarlmente el acercamiento que se utiliza es priorización. Es decir,
+priorizamos cada cola.
+
+**Parámetros**
+
+- Número de colas.
+- Algoritmo para cada cola.
+- Método para determinar a qué cola entra cada proceso.
+- Calendarización entre colas.
+
+Básicamente este calendarizador combina varios otros calendarizadores, usando
+varias estrategias para cada cola de `ready queue`, cada proceso en la cola
+puede pasar a la siguiente o directamente ejecutarse. Algunas características
+que toma en cuenta el algoritmo para decidir pueden ser: CPU Burst estimado,
+Memoria ocupada, Tiempo de espera en la cola, etc...
+
+## Sistemas multiprocesador y multicore
+
+Del lado de la calendarización multicore debemos de saber que la calendarización
+se da a dos niveles:
+
+- El sistema calendariza los threads de software sobre los threads de hardware.
+- El core del procesador calendariza sus threads de hardware.
+
+Algo que se dice acerca de la calendarización en sistemas multiprocesador es
+algo que se llama granularización del multithreading.
+
+- **Granularidad gruesa**: Un solo thread atiende el pipeline completo de
+  instrucciones.
+- **Granularidad fina**: En donde se intercalan las instrucciones entre
+  distintos threads.
+
+## Afinidad por Procesador
+
+Un proceso tiene "afinidad" por el procesador en el que se ejecutra. Esto se ve
+principalmente cuando un proceso inicia ejecutándose en un procesador
+específicos y luego por algún I/O se va a la `ready queue` y luego necesita un
+nuevo procesador. La afinidad hará que el sistema trate de colocar ese proceso
+en el mismo procesador. Esto evita vaciar y popular cosas como el caché para
+mejor desempeño.
+
+Existe la afinidad por 2 niveles:
+
+- **Dura**: El sistema limita la ejecución de procesos a procesadores
+  específicos.
+- **Suave**: Se procura evitarla pero esta permite la migración de procesos
+  entre procesadores.
+
+## Balanceo de Carga
+
+Se dice que el balanceo de carga es el enemigo natural de la afinidad por
+procesador, ya que si un procesador está libre y un proceso está en cola se le
+asignará aunque no sea su procesador con afinidad.
+
+El balanceo de carga entonces realiza el proceso de migración de un proceso a
+otro. Existen 2 tipos de migración:
+
+- **Push**: Hay un chequeo periódico y si se necesita se hace una redistribución
+  de los procesos.
+- **Pull**: Cuando un procesador se libera toma un proceso de otro proceso que
+  esté ocupado.
+
+## Calendarización en OS Modernos (UNIX)
+
+En sistemas Unix se utiliza el Multilevel Feedback Queue y cada cola utiliza RR.
+
+- En Linux se utiliza CFS (Completely Fair Scheduling). Este es en realidad una
+  implementación de Multilevel Feedback Queue con unas cuantas variantes.
+
+- En Windows se utiliza un calendarizador que le llaman dispatcher y este usa
+  Multilevel Feedback Queue.
