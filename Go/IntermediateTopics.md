@@ -153,3 +153,25 @@ chann := make(chan int)
 // Blocks when the buffer is empty/full depending on read/write.
 bufChan := make(chan int, 10)
 ```
+
+If you want to use a channel you use the operator:
+
+```go
+// send value to the channel
+chann <- value
+
+// Receive data from a channel
+// isOpen is false if the channel is closed by the writer.
+v, isOpen := <- chann
+```
+
+You can also iterate a channel until no more values are available:
+
+```go
+for i := range chann {
+    // Iterate over i values of the channel
+}
+```
+
+YOU DON'T TECHNICALLY NEED TO CLOSE A CHANNEL! They are not like files, but it's
+best practice to do so.
