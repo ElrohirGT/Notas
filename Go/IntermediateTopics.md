@@ -176,7 +176,11 @@ for i := range chann {
 YOU DON'T TECHNICALLY NEED TO CLOSE A CHANNEL! They are not like files, but it's
 best practice to do so.
 
-## Wait Groups
+## Synchronization
+
+### Once
+
+### Wait Groups
 
 If you need to wait for a bunch of go routines to start a task, simply use a
 `sync.WaitGroup`.
