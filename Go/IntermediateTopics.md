@@ -180,6 +180,47 @@ best practice to do so.
 
 ### Once
 
+Once is an object that will perform an operation exactly once.
+
+**DON'T COPY ONCE AFTER THE FIRST USE.**
+
+An example would be:
+
+```go
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func main() {
+	var once sync.Once
+	onceBody := func() {
+		fmt.Println("Only once")
+	}
+	done := make(chan bool)
+	for i := 0; i < 10; i++ {
+		go func() {
+			once.Do(onceBody)
+			done <- true
+		}()
+	}
+	for i := 0; i < 10; i++ {
+		<-done
+	}
+}
+
+// Outputs:
+// Only once
+```
+
+Special considerations:
+
+- If `f` calls once.Do again, it will deadlock.
+- If `f` panics, Do considers it to have returned; future calls of Do return
+  without calling `f`. **The program still panics!**
+
 ### Wait Groups
 
 If you need to wait for a bunch of go routines to start a task, simply use a
