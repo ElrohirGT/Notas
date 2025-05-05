@@ -27,7 +27,9 @@ Example `compose.yaml` file:
 ```yaml
 services:
   frontend:
-    image: example/webapp
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "443:8043"
     networks:
