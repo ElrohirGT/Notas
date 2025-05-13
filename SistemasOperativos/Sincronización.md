@@ -106,3 +106,69 @@ Requerimientos:
    tardarse indefinidamente.
 1. **Espera Limitada**: Un proceso no puede esperar indefinidamente para entrar
    a su critical section.
+
+## Sincronización por medio de Hardware
+
+Se tienen dos instrucciones para sincronizar por medio de hardware:
+
+1. Test and Set (TAS): En una sola instrucción compara y setea una variable
+   atómica. Es simple y eficiente pero no es recomendable si hay muchos procesos
+   porque lleva al busy waiting.
+1. Compare and Swap (CAS): Es básicamente la misma instrucción a la anterior
+   solo que realiza un swap de los valores de las variables en lugar de solo
+   setearlo.
+1. Mutex: Las soluciones anteriores eran difíciles de implementar bien. Así que
+   se creó un nivel de abstracción. Bloquea secciones de código y no variables.
+   Con el Mutex se introduce un problema cuando un proceso de baja prioridad
+   bloquea indirectamente a uno de alta prioridad. Para resolver este problema
+   se sube de prioridad al otro proceso de forma temporal.
+
+## Semáforos
+
+Propuesta por Dijkstra, es una herramienta de sincronización y lo que permite es
+manejar procesos de manera concurrente mediante un valor entero al que llamamos
+semáforo.
+
+Maneja dos operaciones:
+
+- wait()
+- signal()
+
+Hay dos tipos de semáforos, el Counting Semaphore es un semáforo normal,
+mientras que el binary semaphore no. Hay varias formas de implementar semáforos,
+busy-waiting o la mejor, cambiar el proceso a la waiting queue.
+
+Cambiar el proceso a la waiting queue viene con el contra de que es posible que
+sufra de starvation dependiendo del algoritmo de calendarización que utilice el
+OS.
+
+## Monitores
+
+Son abstracciones de alto nivel de un mecanismo de sincronización. Es ua clase
+abstracta que generalmente se ve así:
+
+```
+monitor {
+    variables
+    ...
+
+    condition variables
+    ...
+
+    procedure p1(){ ... }
+    procedure p2(){ ... }
+    ...
+}
+```
+
+La idea es que el monitor asegura que solo un proceso a la vez puede activarlo,
+en donde activarlo significa entrar a alguno de sus procedures.
+
+## Sincronización con Pthreads
+
+Ofrece:
+
+- Mutex Locks
+- Semáforos
+  - Nombrados (usable para muchos procesos)
+  - Anónimos (threads únicamente de un mismo proceso)
