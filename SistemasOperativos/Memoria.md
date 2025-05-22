@@ -53,3 +53,84 @@ en la arquitectura de los CPUs con el concepto de memoria virtual.
 - Agujeros en el espacio de direcciones.
 - Insuficiencia de memoria principal.
 - Seguridad de accesos entre procesos.
+
+## Dinamyc Loading y Linking
+
+**Dinamyc Loading:** Es una técnica de manejo de memoria que permite que rutinas
+y objetos se carguen dinámicamente hasta que se necesiten.
+
+Dinamic loading se utiliza para rutinas que no se ejecutan en el flujo principal
+de la aplicación. Un ejemplo para tal podría ser el manejo de errores.
+
+**Dinamyc Linking:** Técnica de manejo de memoria que permite que las rutinas y
+objetos se carguen en memoria una vez y si desean ser utilizados nuevamente se
+hace un link a la rutina origninal. En Windows el archivo utilizado es DLL
+(Dinamic Linking Library).
+
+## Swapping
+
+Es una técnica de manejo de memoria que permite que los procesos sean
+cargados/descargados de memoria principal hacia memoria secundaria según el OS
+decida.
+
+## Segmentación
+
+Es una técnica de manejo de memoria que permite la asignación de memoria de
+manera no continua. Esto significa dividir los procesos en segmentos. Cada
+segmento tiene su propio base+limit, los cuales le indican el inicio y bytes
+luego del inicio que pertenecen a ese segmento.
+
+La segmentación depende del lenguaje de programación + compilador. El OS tiene
+una estructura llamada tabla de segmentos.
+
+## Paginación
+
+**LAS PÁGINAS NO SE COMPARTEN ENTRE PROCESOS**
+
+Es una técnica de manejo e memoria en donde se separa la memoria física y lógica
+en trozos pequeños de igual tamaño. Este si es un mecanismo que viene provisto
+por el OS. El tamaño de las páginas se dan en tamaños de potencias de 2. Se
+mueven de memoria primaria a secundaria.
+
+Si tenemos:
+
+- $2^m$ direcciones lógicas disponibles.
+- $2^n$ tamaño de la página en bytes.
+
+Entonces tendremos una cantidad de páginas disponibles igual a:
+
+$$
+2^{m-n}
+$$
+
+Cada página tiene asignado un frame, ambos son iguales, solo que se les llama
+frame si está en memoria física o página si está en memoria lógica.
+
+Se tiene una page table por proceso, también tenemos un frame table para saber
+qué página va a qué frame.
+
+### Mecanismos para complementar la paginación
+
+- **Paginación Jerárquica**: Tienes árboles de páginas, para no tener que lidiar
+  con la lista lineal pura de $2^64$ páginas.
+
+- **Paginación con Hashing**: Se tiene la dirección lógica y se le pasa un hash,
+  este hash se utiliza para la memoria física.
+
+- **Paginación Inversa**: Se tiene una gran estructura la cual tiene un mapa de
+  procesos a frames.
+
+### Operaciones del OS
+
+- Obtención: ¿Qué página debo cargar?
+
+  - Demand paging
+  - Prepaging
+
+- Posicionamiento: Hacia qué frame se mapea la página
+
+- Reemplazo: ¿Qué página se reemplaza?
+
+  - LRU (Least Recently Used)
+  - FIFO (First In/First Out)
+  - Política de Reloj
