@@ -134,3 +134,57 @@ qué página va a qué frame.
   - LRU (Least Recently Used)
   - FIFO (First In/First Out)
   - Política de Reloj
+
+## Memoria Secundaria (Dispositivos de IO)
+
+Propósito:
+
+- ¿Con quién se comunica el dispositivo?
+- ¿Qué requirere del OS?
+- ¿Cómo se transfieren datos desde y hacia el dispositivo?
+
+Velocidad:
+
+- Velocidad de emisión y recepción de datos (Data Rate).
+
+Complejidad de Control:
+
+- ¿Hasta qué punto está involucrado el CPU?
+- Qué tan complicados serán las instrucciones que se deben enviar al
+  dispositivo?
+
+### Direct Memory Access (DMA)
+
+En sistemas operativos modernos la comunicación entre dispositivos de I/O y
+memoria es realizada a través del DMA.
+
+Es una característica combinada entre el OS y el procesador.
+
+## File Systems
+
+Es una estructura de software que e utiliza para organizar y buscar archivos en
+una partición. Suele manejar las siguientes operaciones:
+
+- Creación y eliminación de archivos.
+- Apertura y cerrado de archivos.
+- Lectura y escritura.
+
+Un archivo es la unidad más pequeña de información.
+
+- Linux: Ext4
+- Windows: NTFS
+- MacOS: AppleFS
+
+### Calendarización de disco
+
+El OS debe manejar el orden en el que se atiende solicitudes de un dispositivo.
+Disk scheduling es el proceso mediante el cual se decide el orden en el que se
+atienden solicitudes de lectura o escritura.
+
+El objetivo de estos algoritmos es el minimizar el tiempo de búsqueda del
+cabezal:
+
+- First come first server.
+- SSTF (Shortest seek time First)
+- SCAN: Predefine una dirección en la cual irá escaneando todos los puntos en la
+  cola hasta llegar a un extremo para luego regresar y continuar con el resto.
