@@ -185,3 +185,58 @@ Es un servicio de hosteo para dominios DNS que te provee la resolución de los
 nombres usando la infraestructura de Microsoft Azure. Si hosteas tus dominios
 con Azure puedes usar las mismas herramientas que usas para tus otros servicios
 para tu dominio.
+
+## Azure Storage
+
+Los datos que se guarden en Azure Storage siempre tienen redundancia en la
+región primaria ya que se replica por lo menos 3 veces. Azure te da dos
+opciones:
+
+- LRS (Locally Redundant Storage). Es la más baja y barata, te protege contra
+  fallos de disco o del servidor, pero no contra inundaciones o desastres más
+  severos.
+- ZRS (Zone Redundant Storage). Duplica tu data sobre 3 _Availability Zones_
+- GRS (Geo Redundant Storage). Duplica la data usando LRS en la misma región,
+  luego crea una copia de forma asíncrona en la región secundaria.
+- GZRS (Geo Zone Redundant Storage). Copia la data de la misma forma que ZRS,
+  pero además crea una copia de forma asíncrona en la región secundaria.
+
+No hay un SLA sobre cuánto tiempo de retraso tiene la copia en la región
+secundaria respecto a la primaria, pero generalmente es un retraso de 15mins.
+
+La plataforma de Azure Storage incluye los siguientes servicios:
+
+- **Azure Blobs**: Una _Object Store_ masivamente escalable usada para guardar
+  texto y data binaria. Incluye soporte para análisis de Big Data usando Data
+  Lake Storage Gen2.
+- **Azure Files**: Comparte archivos en la nube o _on-premise_.
+- **Azure Queues**: Una _Messaging Store_ para permitir mensajería consistente
+  entre componentes de aplicaciones.
+- **Azure Disks**: Volúmenes para las VM's.
+- **Azure Tables**: Opción NoSQL para data estructurada pero no relacional.
+
+## Migración de Datos
+
+### Azure Migrate
+
+Es un servicio que te ayuda a migrar data de un ambiente _on-premise_ a la nube.
+
+### Azure Data Box
+
+Es un servicio físico de migración que ayuda a transferir grandes cantidades de
+datos de forma rápida, confiable y barata. El límite de capacidad por caja es de
+80TB.
+
+### Transferencia de menores cantidades
+
+Para transferir archivos individuales o grupos de archivos en cantidades menores
+se tienen varias opciones:
+
+- **AzCopy**: Una utilidad de terminal que te permite copiar blobs y archivos
+  hacia tu _Storage Account_. Te permite hacer sincronización unidireccional de
+  archivos.
+- **Azure Storage Explorer**: Es una aplicación independiente que da una
+  interfaz gráfica para el manejo de archivos dentro de la _Storage Acount_.
+- **Azure File Sync**: Te permite centralizar el cómo compartes los archivos
+  como si estuvieras usando un Windows File Server. Sincroniza de forma
+  bidireccional.
