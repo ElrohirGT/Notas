@@ -75,10 +75,31 @@ rendimiento o confianza, también ayuda a reducir costos.
 ## Azure Service Health
 
 Te permite saber el estatus de cualquier recurso dentro de tu infraestructura en
-la nube.
+la nube. Ocupa 3 vistas:
+
+- **Azure Status**: Estatus general de Azure, contiene información sobre
+  desastres y demás cortes en la infraestructura general de Azure.
+- **Service Health**: Estatus de los servicios por región. Contiene notificas
+  que puedan afectar a los servicios que utilizas en las regiones en los que los
+  utilizas. Incluso puedes activar notificaciones para que te informe cuando
+  algún accidente ocurra.
+- **Resource Health**: Te brinda información de la salud de tus recursos en
+  específico. Si quieres configurar alertas para estos usa el _Azure Monitor_.
 
 ## Azure Monitor
 
 Recolecta información sobre tus recursos, ya sea métricas, logs, traces y te
 permite analizarla, visualizarla o incluso actuar de forma automática según los
 resultados (como por ejemplo lanzar alertas o auto escalar).
+
+### Aplication Insights
+
+Te permite monitorear tus aplicaciones web. Puedes usarlo en forma de SDK o el
+agente. La información que te permite monitorear es:
+
+- Request rates, response times, failure rates.
+- Dependency rates, response times, failure rates de servicios externos.
+- Page views and load performance según los browsers de los usuarios.
+- Llamadas de AJAX.
+- User and session counts.
+- Métricas de CPU, memoria y demás performance para máquinas de windows y linux.
