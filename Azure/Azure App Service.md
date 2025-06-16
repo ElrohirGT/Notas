@@ -212,3 +212,92 @@ az webapp show \
     --query possibleOutboundIpAddresses \
     --output tsv
 ```
+
+## Configuration
+
+En App Service, las configuraciones son pasadas como variables de entorno hacia
+el código de la aplicación. Cada vez que se modifican, App Service realiza un
+reinicio de la aplicación. Puedes acceder a ellos seleccionando: "Environment
+variables > Aplication settings".
+
+Las configuraciones pueden depender de acuerdo al _Deployment Slot_ por lo tanto
+también debes especificar si esta propiedad de configuración es _swappable_
+entre ambientes.
+
+> In a default Linux app service or a custom Linux container, any nested JSON
+> key structure in the app setting name like
+> ApplicationInsights:InstrumentationKey needs to be configured in App Service
+> as ApplicationInsights\_\_InstrumentationKey for the key name. In other words,
+> replace any : with \_\_ (double underscore). Any periods in the app setting
+> name are replaced with a _ (single underscore).
+
+Para desarrolladores ASP.NET y ASP.NET Core se recomienda usar Connection
+Strings, para todos los demás desarrolladores se recomienda usar los App
+Settings de forma normal.
+
+En caso se utilicen las Connection Strings entonces estarán disponibles como:
+
+- SQLServer: SQLCONNSTR\_
+- MySQL: MYSQLCONNSTR\_
+- SQLAzure: SQLAZURECONNSTR\_
+- Custom: CUSTOMCONNSTR\_
+- PostgreSQL: POSTGRESQLCONNSTR\_
+- Notification Hub: NOTIFICATIONHUBCONNSTR\_
+- Service Bus: SERVICEBUSCONNSTR\_
+- Event Hub: EVENTHUBCONNSTR\_
+- Document DB: DOCDBCONNSTR\_
+- Redis Cache: REDISCACHECONNSTR\_
+
+Por ejemplo si se guardó una conexión de MySQL con el nombre de SanDB:
+MYSQLCONNSTR_SanDB
+
+Si tienes un contendor custom que necesita variables de entorno externas las
+puedes agregar desde la terminal usando:
+
+```bash
+az webapp config appsettings set --resource-group <group-name> --name <app-name> --settings key1=value1 key2=value2
+```
+
+Puedes verificar variables de entorno de forma automática con la URL:
+https://<app-name>.scm.azurewebsites.net/Env
+
+### General Settings
+
+En la tab de "Configuration > General Settings" puedes editar algunas
+configuraciones más comunes, es posible que necesites cambiar pricing tier para
+configurar algunas cosas. Por ejemplo:
+
+- **Stack Settings**: Como el software que se utiliza para correr la aplicación,
+  incluyendo las versiones del SDK y el lenguaje. Para aplicaciones de Linux o
+  en contendores custom puedes incluso agregar un comando custom de inicio o
+  archivo.
+- **Platform Settings**: Te permite configurar cosas como si es de 32-64 bits
+  (solo para Windows), si se habilita o no FTP, la versión de HTTP, si utilizan
+  Websockets, si solamente se utiliza HTTPS, la versión mínima de TLS
+  - Always On: Mantiene la aplicación cargada incluso si no hay tráfico. Por
+    defecto si esta opción está desactivada la aplicación se mantiene viva por
+    20mins luego del último request. Esta opción es necesario para los Webjobs
+    continuos o para los que son iniciados por una CRON expression.
+  - ARR Affinity: Cuando se utiliza un _multi-instance deployment_ esta
+    configuración se asegura que el cliente siempre sea dirigido a la misma
+    instancia durante toda su vida de la sesión. Se puede apagar para
+    aplicaciones stateless.
+- **Debugging**: Te permite debuggear la aplicación de forma remota, solamente
+  para aplicaciones: ASP.NET, ASP.NET Core y NodeJS. Se apaga automáticamente
+  luego de 48hrs.
+- **Incoming client certificates**: Requiere autenticación mutua usando
+  certificados. Se activa para restringir el acceso a la aplicación habilitando
+  diferentes tipos de autenticación.
+
+### Path Mappings
+
+Te permite organizar o brindar contenido estático o sub-aplicaciones al mappear
+paths virtuales (las URLs que ven los usuarios) a reales (carpetas dentro del
+server).
+
+- **Windows (Uncontainerized)**: Te permite agregar scripts custom para manejar
+  requests de una extensión de archivo en específico. Cada aplicación tiene el
+  root path mapeado hacia: `D:\home\site\wwwroot`. El cual es el lugar en el que
+  el código es desplegado por defecto. Para marcar un directorio virtual como
+  una aplicación web deschequea el "Directory" check box.
+- **Linux/Containerized apps**:
