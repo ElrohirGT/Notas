@@ -311,3 +311,103 @@ server).
   - Configurar si el ambiente se pasa al deployment slot.
 
 ### Diagnostic Logging
+
+| Type                    | Platform      | Location                                      | Description                                                                                                                                                                                              |
+| ----------------------- | ------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aplication Logging      | Windows/Linux | App Services file system, Azure Storage blobs | Logs generados por el código de la aplicación                                                                                                                                                            |
+| Web Server Logging      | Windows       | App Services file system, Azure Storage blobs | Datos de request HTTP puros en el formato de W3C extendido                                                                                                                                               |
+| Detailed Error Messages | Windows       | App Service File System                       | Copias de las páginas `.html` de error que se enviaron al cliente.                                                                                                                                       |
+| Failed Request Tracing  | Windows       | App Service File System                       | Información detallada de las requests fallidas, incluye componentes IIS, una carpeta es generada por cada request fallida que incluye el XML (la data del log) y el XSL (los estilos para ver los logs). |
+| Deployment Logging      | Windows/Linux | App Service File System                       | Te ayuda a determinar por qué falló un despliegue, no se puede configurar.                                                                                                                               |
+
+#### App Logging Windows
+
+En Windows, los logs que se guardan dentro del **Filesystem** son
+**temporales**, ya que solamente regrista las 12 últimas horas luego de haberse
+activado. Si se desean logs permanentes entonces se debe usar la opción de Blob
+storage. Además se puede configurar el nivel de prioridad que debe tener el log
+para registrarse (Error, Warning, Information, Verbose).
+
+#### App Logging Linux/Container
+
+En Linux o aplicaciones contenerizadas utiliza la opción de **Filesystem**.
+Selecciona el número de días que los logs deben ser retenidos y la cantidad de
+espacio de disco que reservarás para los logs.
+
+#### Web Server Logging
+
+Elige si quieres guardarlos en el **Filesystem** o en el **Blob Storage** de
+Azure, y selecciona la cantidad de días que se guardarán los logs en el sistema.
+
+#### Acceder a los Logs
+
+Todos los archivos escritos en `/LogFiles` y que terminen en: .txt, .log, .htm
+son tomados como logs por App Service y stremeados por el serivicio.
+
+> Algunos tipos de Logs usan buffers para escribir al archivo, por lo que es
+> posible que esto resulte en eventos fuera de orden en el stream.
+
+Si tienes la herramienta de consola puedes usar el siguiente comando para
+stremear los logs:
+
+```bash
+az webapp log tail --name <appname> --resource-group <myResourceGroup>
+```
+
+Para descargar los logs puedes visitar:
+
+- Linux/Container: https://<app-name>.scm.azurewebsites.net/api/logs/docker/zip
+- Windows: https://<app-name>.scm.azurewebsites.net/api/dump
+
+Si es una aplicación de contenedor o Linux entonces se guardan logs para tanto
+el contenedor como el host del contendor, si la aplicación tiene varias
+instancias, se guardan los logs para las múltiples instancias.
+
+### Security Certificates
+
+_App Service_ te permite crear, subir o importar certificados privados a
+públicos para tu aplicación. El certificado está asociado al _Resource Group_
+del _Service Plan_ de la aplicación, así como a la región (a esto se le llama un
+**webspace**). El certificado es accesible a otras aplicaciones del mismo
+_Resource Group_ o _Region_ combinadas.
+
+Puedes:
+
+- Crear un certificado privado manejado por App Service de forma gratuita.
+- Comprar un Certificado de App Service manejado por Azure.
+- Importar un certificado del _Key Vault_
+- Subir un certificado privado.
+- Subir un certificado público.
+
+El certificado gratis/comprado de App Service ya cumple con todos los
+requerimientos, pero si quieres usar uno personalizado entonces:
+
+- Exported as a password-protected PFX file, encrypted using triple DES.
+- Contains private key at least 2,048 bits long.
+- Contains all intermediate certificates and the root certificate in the
+  certificate chain.
+
+Para crear certificados custom de TLS/SSL o habilitar certificados del cliente
+en App Service tu plan debe ser Basic, Standard, Premium o Isolated. El
+certificado gratuito es manejado completamente por Azure por lo tanto puede
+cambiar en cualquier momento el issuer de certificados que usa internamente,
+**evite depender del issuer o cualquier otra parte de la jerarquía del
+certificado**.
+
+El Certificado gratis tiene las siguientes limitantes:
+
+- No soporta certificados con wildcards.
+- No soporta el uso como un certificado de cliente.
+- No soporta DNS privadas.
+- No es exportable.
+- No es soportado en App Service Environment.
+- Solamente soporta caracteres alfanuméricos, guiones y puntos.
+- Solo dominios de hasta 64 caracteres son soportados.
+
+Si compras un certificado de Azure entonces Azure maneja:
+
+- El proceso de compra con el proveedor.
+- Verificación de dominio del certificado.
+- Mantener el certificado en Azure Key Vault.
+- Renovación del certificado.
+- Sincronización de forma automática con las copias de App Service Apps.
