@@ -300,4 +300,14 @@ server).
   root path mapeado hacia: `D:\home\site\wwwroot`. El cual es el lugar en el que
   el código es desplegado por defecto. Para marcar un directorio virtual como
   una aplicación web deschequea el "Directory" check box.
-- **Linux/Containerized apps**:
+- **Linux/Containerized apps**: Para agregar almacenamiento personalizado a las
+  aplicaciones de contenedor/Linux, seleccione **Nuevo montaje de Azure
+  Storage**. Te permite configurar:
+  - Nombre para mostrar.
+  - Si necesita configurar puntos de conexión de servicio, Azure Key Vault ,
+    endpoints privados, share name o access key, use la configuración avanzada,
+    caso contrario use la configuración básica.
+  - Configure la cuenta de almacenamiento asociada a este volumen.
+  - Configurar si el ambiente se pasa al deployment slot.
+
+### Diagnostic Logging
