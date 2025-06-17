@@ -411,3 +411,59 @@ Si compras un certificado de Azure entonces Azure maneja:
 - Mantener el certificado en Azure Key Vault.
 - Renovación del certificado.
 - Sincronización de forma automática con las copias de App Service Apps.
+
+## Scaling applications
+
+_App Service_ soporta escalado manual así como de forma automática, en caso sea
+automática soporta dos formas:
+
+- **Azure autoscale**: Defines reglas y Azure escala en base a ellas.
+- **Automatic scaling**: Defines parámetros y toma decisiones de escalamiento
+  por tí. Depende en general del tráfico HTTP.
+
+| Factor                  | Autoscale         | Automatic Scaling    |
+| ----------------------- | ----------------- | -------------------- |
+| Available Pricing tiers | Standard y arriba | PremiumV2, PremiumV3 |
+| Schedule-based scaling  | YES               | NO                   |
+| Prewarmed instsances    | YES               | YES (default 1)      |
+| Per-app maximum         | NO                | YES                  |
+
+Automatic Scaling siempre tiene al menos una instancia siempre lista para
+recibir rquests, Autoscale no.
+
+Autoscale ajusta la cantidad de servidores que tienes corriendo, pero no los
+recursos disponibles para cada una de estas copias. Ten cuidado definiendo las
+reglas porque puedes quedar vulnerable a un DoS. Filtra las request antes de que
+lleguen a tu servicio.
+
+### ¿Cuándo vale la pena usar Autoscale?
+
+Provee elasticidad, ya que reduce incrementa la carga según el uso. Mejora el
+porcentaje de disponibilidad de la aplicación así como su resistencia a fallos,
+puesto que si una instancia falla siempre se puede iniciar otra y de forma
+automática.
+
+Debido a que funciona agregando/quitando servidores, si una tarea utiliza de
+forma intensiva los recursos como el CPU/Memoria no tiene un efecto
+significativo. Además si te anticipas a la cantidad de usuarios que tendrás
+eventualmente podrías ahorrar dinero ya que monitorear si se necesita o no
+realizar un escalado consume recursos.
+
+Para utilizar el autoscaling puedes realizarlo por medio de dos parámetros
+
+### Automatic Scaling
+
+Se habilita por un Service Plan y se configura para un rango de instancias de
+aplicaciones web, monitorea la cantidad de tráfico HTTP recibido y balancea la
+carga agregando/removiendo instancias. Los recursos pueden ser compartidos
+cuando múltiples aplicaciones de un mismo Service Plan necesitan escalar para
+afuera simultáneamente.
+
+Debes usar Automatic Scaling si:
+
+- No quieres definir reglas para autoescalar en base a métricas de recursos.
+- Quieres que tus aplicaciones dentro del mismo Service Plan escalen de forma
+  distinta e independiente entre ellas.
+- Si tu aplicación depende de una base de datos o un sistema legacy, puedes
+  definir un límite de escalamiento lo que te permite evitar que sobrecargues
+  esa dependencia.
