@@ -436,7 +436,7 @@ recursos disponibles para cada una de estas copias. Ten cuidado definiendo las
 reglas porque puedes quedar vulnerable a un DoS. Filtra las request antes de que
 lleguen a tu servicio.
 
-### ¿Cuándo vale la pena usar Autoscale?
+### Autoscale
 
 Provee elasticidad, ya que reduce incrementa la carga según el uso. Mejora el
 porcentaje de disponibilidad de la aplicación así como su resistencia a fallos,
@@ -449,7 +449,94 @@ significativo. Además si te anticipas a la cantidad de usuarios que tendrás
 eventualmente podrías ahorrar dinero ya que monitorear si se necesita o no
 realizar un escalado consume recursos.
 
-Para utilizar el autoscaling puedes realizarlo por medio de dos parámetros
+Para utilizar el autoscaling puedes realizarlo por medio de dos parámetros:
+
+- Basado en una métrica como la longitud de disco o el número de solicitudes
+  HTTP en espera.
+- Escalado a un número específico de instancias según un horario.
+
+Puedes combinar cualquiera de estas dos métricas varias veces para lograr un
+escalado incremental.
+
+Las métricas que se pueden usar son:
+
+- **CPU Percentage**: Indica la cantidad de uso del CPU de todas las instancias.
+- **Memory Percentage**: Indica la cantidad de memoria que la aplicación ocupa
+  entre todas las instancias.
+- **Disk Queue Length**: Indica cuántas solicitudes de I/O están en cola entre
+  todas las instancias.
+- **HTTP Queue Length**: Indica cuántas HTTP request de los clientes están
+  esperando para ser procesadas por la aplicación.
+- **Data In**: La cantidad de bytes recibidos entre todas las instancias.
+- **Data Out**: La cantidad de bytes enviados entre todas las instancias.
+
+Autoscale funciona analizando las métricas sobre el tiempo en todas las
+instancias.
+
+1. Agrupa todos los valores recibidos para la métrica seleccionada por un
+   período de tiempo predefinido (conocido como _time grain_). Este período
+   cambia según la métrica pero generalmente es 1min. Las opciones de agregación
+   son: Promedio, Minimo, Máximo, Suma, Último, Cuenta.
+
+1. Debido a que 1min es un tiempo demasiado corto, se procede a agrupar los
+   valores previamente agrupados sobre un rango de tiempo más largo (este
+   segundo período de tiempo se conoce como _Duration_). El usuario tiene
+   control sobre el tamaño de este segundo período pero el mínimo es 5mins.
+
+El cálculo para el agrupamiento de _Duration_ puede ser distinto que para el
+_time grain_. Se puede usar promedio para el _time grain_ y máximo para el
+_duration_ por ejemplo.
+
+Una vez se ha determinado que el límite de la regla se ha superado entonces se
+ejecuta la acción de la regla, generalmente subiendo/bajando la cantidad de
+instancias disponibles. Todas las acciones tienen un _cooldown period_
+especificado en minutos. El mínimo es 5mins.
+
+Definir una regla de escalado para afuera no implica que se realize un escalado
+para abajo de forma automática, **define las reglas en parejas!**
+
+Una condición de escalado puede contener varias reglas que no necesariamente
+estén relacionadas entre sí, además la forma en la que se combinan importa. Por
+ejemplo:
+
+- Si la cola de HTTP llega a 10 o más, scale out by 1.
+- Si la utilización del CPU supera 70%, scale out by 1.
+- Si la cola de HTTP es 0, scale in by 1.
+- Si la utilización del CPU baja a 50%, scale in by 1.
+
+Cuando el sistema determina si debe hacer un **scale out**, busca hacerlo si
+**cualquiera** de las reglas se cumple. Cuando busca hacer un **scale in**,
+solamente lo hará si **todas las reglas se cumplen**. Si necesitas hacer un
+_scale in_ cuando solamente alguna de las reglas se cupmle entonces ponlas en
+distintas condiciones de escalado.
+
+> No todas las tiers soportan autoscaling, sube a las tiers S1 o P para poder
+> habilitarlo.
+
+El portal de Azure te permite visualizar el historial de cambios que las reglas
+de autoscaling realizaron en tu servicio dentro de la opción "Scale Out > run
+History".
+
+**MEJORES PRÁCTICAS**
+
+- Todos los éxitos y fallos de autoscale se envían al Activity Log, puedes
+  configurar alertas en este log para ser notificado cuando haya actividad.
+- Asegúrate que los valores máximos y mínimos son diferentes y que tienen un
+  margen adecuado entre ellos: Asegúrate de mantener un margen entre ellos pues
+  son límites inclusivos y el autoscale solo puede suceder entre estos márgenes.
+- Elige la estadística apropiada para tu métrica: La más común es promedio, pero
+  no es la única disponible.
+- Elige los límites sabiamente para cada tipo de métrica: NO UTILICES REGLAS DE
+  LA FORMA (Ya que es posible que al aplicar _scale in_ la cantidad de Threads
+  (o la métrica en cuestión) supere de nuevo el límite establecido y tenga que
+  hacer scale out de nuevo):
+  - Increase instances by on count when Thread Count >= 600
+  - Decrease instances by one when Thead Count \<= 600
+- Recuerda que si tienes varias reglas por perfil entonces para hacer scale out
+  solamente se debe cumplir alguna de todas las reglas mientras que para hacer
+  scale in, todas deben cumplirse.
+- Siempre selecciona una cantidad segura para la cuenta por defecto de tus
+  instancias.
 
 ### Automatic Scaling
 
