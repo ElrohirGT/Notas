@@ -554,3 +554,170 @@ Debes usar Automatic Scaling si:
 - Si tu aplicación depende de una base de datos o un sistema legacy, puedes
   definir un límite de escalamiento lo que te permite evitar que sobrecargues
   esa dependencia.
+
+## Deployment Slots
+
+Si utilizas la tier Standard o superior puedes usar un deployment slot separado
+del de producción (el por defecto). Los deployment slots son aplicaciones
+desplegadas con su propio host name distinto entre ellas. La configuración y el
+contenido de la aplicación puede ser intercambiado entre dos deployment slots
+incluyendo el de producción.
+
+Los beneficios son:
+
+- Te permite tener una _staging area_ para verificar que la aplicación funciona
+  antes de pasarla a producción.
+- Todas las instancias del nuevo despliegue ya fueron encendidas para el
+  deployment slot por lo tanto no hay downtime y no se pierden requests durante
+  el cambio.
+- Si algo sale mal, la aplicación que antes estaba en producción se encuentra en
+  el slot de staging, por lo que es sencillo regresar de nuevo al último estado
+  bueno.
+
+Cada tier soporta una cantidad distinta de deployment slots, no hay cargo extra
+por usar los deployment slots, visita
+[App Service Limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits).
+Si necesitas escalar tu aplicación a otra tier, asegúrate que esa otra tier
+soporta la cantidad de slots que tu aplicación ya utiliza.
+
+Puedes desplegar a un slot usando un repositorio diferente o una rama distinta
+dentro del mismo repositorio. Por defecto todos los slots nuevos inician sin
+contenido.
+
+El proceso para el swap funciona de la siguiente manera:
+
+1. Aplica las siguientes configuraciones del target slot a todos los source
+   slots:
+   - Slot-specific app settings and connection strings if applicable.
+   - CD settings if enabled.
+   - App Service Authentication settings, if enabled.
+
+Cuando cualquiera de esas configuraciones son aplicadas al source slot, el
+cambio produce un reinicio de todas las instancias del slot. Si se habilita la
+opción de realizar el swap con un previw entonces la operación se pausa y te
+permite validar que el source slot funcione correctamente con los settings del
+target slot.
+
+2. Espera a que todas las instancias del source slot terminen su reinicio, si
+   alguna falla la operación es revertida y detenida.
+1. Si se habilitó el cache local, inicia una llamada HTTP al root de la
+   acplicación en cada instancia del source slot, espera a que cada instancia
+   retorne alguna response HTTP. La inicialización del cache local causa otro
+   reinicio en cada instancia.
+1. Si auto-swap está habilitado con _custom warm-up_ se inicia la iniciación de
+   la aplicación hacinedo una request HTTP al root de la aplicación o al path
+   que indique `applicationInitialization`. Una instancia es considerada como
+   "iniciada" si retorna alguna respuesta HTTP.
+1. Si todas las instancias del source slot ya fueron iniciadas de forma
+   satisfactoria entonces realiza el swap de ambos slots cambiando las reglas de
+   enrutamiento de ambos slots. Luego de este paso el target slot (por ejemplo
+   el de producción) tiene la applicación que fue previamente inicalizada en el
+   source slot.
+
+En cualquier punto del _swap_ todo el trabajo ocurre en el source slot, el
+target slot se mantiene en línea independientemente de si falla o no el _swap_.
+Si quieres cambiar el swap de producción con algún otro entorno, asegúrate de
+que el de producción siempre sea el target así nunca lo afectas.
+
+Algunas configuraciones pueden cambiar de slot cuando se realiza el swap, otras
+no:
+
+| Swapped             | Aren't swapped                                 |
+| ------------------- | ---------------------------------------------- |
+| General Settings    | Publishing endpoints                           |
+| App Settings        | Custom Domain names                            |
+| Connection strings  | Nonpublic certificates and TLS/SSL settings    |
+| Handler Mappings    | Scale Settings                                 |
+| Public Certificates | WebJobs Schedulers                             |
+| WebJobs content     | IP restrictiones                               |
+| Hybrid connections  | Always On                                      |
+| Service endpoints   | CORS                                           |
+| Path mappings       | Virtual Network Integration                    |
+|                     | Managed identities                             |
+|                     | Seetings que terminan con: \_EXTENSION_VERSION |
+
+> Para hacer configuraciones que se puedan cambiar entre slots añade:
+> WEBSITE_OVERRIDE_PRESERVE_DEFAULT_STICKY_SLOT_SETTINGS en cada slot de la
+> aplicación y asígnale el valor de 0 (o false). Estos settings son o todos
+> _swappable_ o ninguno lo es. Managed Identities NUNCA son intercambiables y no
+> son afectadas por este setting!
+
+### Auto Swap
+
+Te permite realizar un swap con cada push de código a un determinado slot, **NO
+ESTA SOPORTADO PARA LINUX O WEB APP CONTAINERS**.
+
+### Custom WarmUp
+
+La propiedad `applicationInitialization` del `web.config` te permite especificar
+acciones de inicialización custom, como por ejemplo realizar varias request a
+varias rutas de tu misma aplicación, para así determinar con mejor exactitud
+cuando tu app está iniciada o no.
+
+También puedes configurar:
+
+- WEBSITE_SWAP_WARMUP_PING_PATH: El path a darle ping para revisar si tu sitio
+  ya funciona, por ejemplo: `/statuscheck`. El valor por defecto es `/`.
+- WEBSITE_SWAP_WARMUP_PING_STATUSES: Códigos válidos de respuesta HTTP para la
+  operación de inicialización, es una lista separada por comas. Por defecto
+  todos los códigos son válidos.
+- WEBSITE_WARMUP_PATH: El Path relativo del sitio a usar cada vez que el sitio
+  se reinicie (no solo durante slot swaps). por ejemplo: `/statuscheck` o `/`.
+
+Si la operación de swap toma demasiado tiempo, recuerda que puedes ver los logs
+en el Activity Log.
+
+### Commands
+
+Para crear un deployment slot desde la consola puedes usar:
+
+```bash
+az webapp deployment slot create -n $appName -g $resourceGroup --slot staging
+```
+
+Para desplegar código a un slot en específico:
+
+```bash
+az webapp deploy -g $resourceGroup -n $appName --src-path ./stagingcode.zip --slot staging
+```
+
+La estructura del .zip depende del proyecto, pero para una webapp sencilla:
+
+```
+|- css/
+|- fonts/
+|- img/
+|- index.html
+|- js/
+|- LICENSE
+|- README.md
+```
+
+### Routing Traffic
+
+Por defecto todas las solicitudes son llevadas a la URL de producción, es decir,
+al production slot. Es posible redirigir parte del tráfico a otro slot, por
+ejemplo si quisieras tener feedback de usuarios pero todavía no estás listo para
+un release total.
+
+**Redirección automática**
+
+Se realiza de forma aleatoria y se especifica por cada slot. Luego de que un
+cliente sea redirigido a un slot específico se queda en ese slot por toda la
+duración de su sessión. En el browser puedes ver a qué slot esta asociada tu
+sesión viendo la cookie: x-ms-routing-name. Si es producción tiene el valor de
+"self" sino el nombre del slot.
+
+**Redirección Manual**
+
+Se puede especificar que solamente ciertas requests sean redirigidas. Importante
+si quieres tener usuarios en estado beta y otros no. Para hacer un ruteo de
+forma manual utilizas el parámetro `x-ms-routing-name` dentro de tu request:
+
+```html
+<a href="<webappname>.azurewebsites.net/?x-ms-routing-name=self">Go back to production app</a>
+```
+
+Si un slot tiene un porcentaje de 0% en su traffic parameter esto significa que
+ningún cliente final es redirigido a este slot, sin embargo, por medio de routeo
+manual todavía se puede acceder a ese slot.
