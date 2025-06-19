@@ -138,3 +138,42 @@ Algunas anotaciones importantes:
   plataforma.
 - Para las _Container Apps Plan_, si el número de replicas mínimas es 0 el
   time-out por defecto depende de los triggers específicos usados en el app.
+
+## Scaling Azure Functions
+
+El comportamiento de escalado depende del plan de la Azure Function.
+
+- **Consumption Plans**: Instancias máximas dadas por Azure Function App.
+- **Premium/Dedicated**: Instancias máximas dadas por plan.
+
+### Consumption Plan
+
+Event driven. Escala de forma automática, incluso en períodos de sobrecarga.
+Escala el CPU y memoria añadiendo más instancias basado en la cantidad de
+eventos. Tiene un número máximo de instancias de 200 para windows y 100 para
+Linux. Hay un límite de 500 instancias por subscripción por hora para Linux 1.
+
+### Flex Consumption Plan
+
+Escalado por función. Event driven pero las decisiones son basadas según según
+la función, lo que permite una manera más determinista de escalar las funciones
+de la aplicación. Su límite es solamente el total de memoria usada en todas las
+instancias dentro de la región.
+
+### Premium Plan
+
+Even driven. Escala de forma automática basado en el número de eventos. Límite
+de instancias de 100 en Windows y 20-100 en Linux dependiendo de la región.
+
+### Dedicated Plan
+
+Escalado manual o autoscale. Tiene un límite de 10-30 instancias y 100 si se usa
+el App Service Environment. Para límites específicos consulta:
+[App Service plan limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits).
+
+### Container Apps
+
+Event Driven. Escala de forma automática añaidendo más instancias de la función
+host basado en el número de eventos. Tiene un límite de entre 10-300 instancias.
+Puedes setear el máximo número de replicas, el cuál se mantendrá siempre y
+cuando hayan suficientes cores.
