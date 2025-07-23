@@ -40,3 +40,23 @@ $$
 $$
 bits\ redundancia = n-D
 $$
+
+En el hamming extendido, se tiene un bit extra (pero incluido en la cuenta n)
+que realiza paridad simple sobre los bits de paridad de los bits de redundancia.
+Si este bit falla, entonces sabemos que solamente hay 1 error, si no falla
+entonces pueden haber 2+ errores. Y si todos los bits de paridad son 0 entonces
+no hubo ningún error.
+
+**CRC 32**
+
+1. Definir el polinomio.
+1. Encontrar Coeficientes.
+1. Agregar n bits de redundancia al mensaje (n = grado de redundancia).
+1. Se divide el mensaje dentro de los coeficientes encontrados anteriormente.
+   (Se utiliza XOR repetidamente).
+1. Se agrega el residuo como los bits de redundancia (los bits de redundancia
+   van hasta el final).
+
+Para decodificar, se divide el mensaje nuevamente dentro de los coeficientes del
+protocolo sucesivamente hasta que ya no pueda más. Si el residuo es 0 entonces
+no hay error!
