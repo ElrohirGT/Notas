@@ -1,6 +1,7 @@
 # Attention
 
-Es un mecanismo para decirle a una red neuronal a qué le debe dar mayor peso
+Las redes neuronales tratan las entradas normalmente como iguales. La atención
+es un mecanismo para decirle a una red neuronal a qué le debe dar mayor peso
 dentro del input.
 
 Se sigue la misma estructura en general del Encoder/Decoder, pero este agrega
@@ -20,3 +21,9 @@ $$
 $$
 
 ![](./Attention.jpg)
+
+## Self-Attention
+
+Se refiere a establecer relaciones diferentes entre palabras de la misma
+oración. Se utiliza la misma estructura de arriba pero con la misma oración de
+entrada y salida.
