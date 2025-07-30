@@ -29,3 +29,11 @@ Undo a git rebase using the reflog of the HEAD branch:
 ```bash
 git reflog
 ```
+
+______________________________________________________________________
+
+Search for a specific string in a file through all commits all files:
+
+```bash
+git log -S <search string> --source --all
+```
