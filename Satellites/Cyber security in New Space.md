@@ -123,3 +123,25 @@ met with vigorous security analysis through black-box testing techniques like:
 
 Or they can also be checked to compliance with known security guidelines (like
 STIG and OWASP Top Ten).
+
+The CubeSat Space Protocol (CSP) provides a simple design to achieve networking
+and transport services. This protocol includes encryption and integrity features
+with the use of the XTEA algorithm for encryption of packets and HMAC-SHA1 for
+message authentication. This algorithms have known cryptographic weaknesses that
+undermine these security features but are preferred for their lightweight
+operation on CubeSat's embedded systems.
+
+## Space Protocols and Their Security
+
+- **Physical**: One of the most widely used satellite services is satellite TV.
+  The majority of satellite TV broadcasts is achieved using DVB.
+- **Optical**: Not suitable to use for Earth to satellite communications. Mostly
+  used for inter-satellite communications.
+- **Data Link**: For educational missions AX.25 protocol or similar amateur
+  protocols can be successful, however organizations should adhere to a more
+  advanced protocol such as CCSDS Space Data Link Security (SDLS) protocol.
+  Still you need to protect against DDoS by jamming, traffic flow analysis and
+  data substitution attack if the encryption doens't authenticate.
+- **Networking and Transport Network**: Protocols such as Space Packet Protocol
+  (SPP) and Delay Tolerant Network Bundle Protocol (DTN BP) allow for
+  asynchronous data transfers.
