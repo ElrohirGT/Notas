@@ -145,3 +145,54 @@ operation on CubeSat's embedded systems.
 - **Networking and Transport Network**: Protocols such as Space Packet Protocol
   (SPP) and Delay Tolerant Network Bundle Protocol (DTN BP) allow for
   asynchronous data transfers.
+
+## Considerations
+
+- Introducing security into protocols adds overhead and memory usage. Depending
+  on the mission this overhead may not be tolerable, so security and missions
+  needs must be weighed in the design for an acceptable risk level.
+- The use of security controls also facilitates another risk factor. An attack
+  which aims to drain satellite's power, may lead to the satellite to turn off
+  security protocols to prioritize power-saving efforts. **Even in satellite
+  systems which use encryption, maintaining unencrypted connections for
+  emergency situations such as tumbling is important**.
+- Physical layer security achieved through information-theoretic models provides
+  computationally unbounded security as opposed to cryptographic protocols.
+- To protect the keys the satellites use we can use Physical Unclonable
+  Functions (PUFs) and True Random Number Generators (TRNGs) to generate
+  cryptographic keys and IDs used for device authentication, cloning prevention,
+  generating sessions keys, etc.
+- FGPAs and SDRs make it possible to re-program hardware and software in orbit
+  easily. However, updates to software, firmware, hardware may introduce
+  vulnerabilities, either inadvertently through a legitimate transmission of the
+  update or through an attacker using this circumstance to purposefully inject
+  flaws into the satellite. Use software attestation may be one way to resolve
+  this issue.
+- Operating Systems:
+  - Real-time On-board Dependable Operating System (RODOS) is a real-time
+    operating system for embedded systems and was designed for application
+    domains demanding high dependability.
+  - FreeRTOS achieves memory safety through an inbuilt software model checker
+    called CBMC, the program reasons every execution path through a program on
+    every input searching for assetion or memory violation.
+  - MINIX3 and KasperskyOS achieves reliability through microkernel
+    architecture. live updates, crash recovery of stateful services and
+    virtualization are still being developed.
+- Fault tolerant crypto-graphic mechanisms exist to account for Single-event
+  upsets that may flip a bit on the OBC.
+- Ground Segment attacks remain one of the easiest segments to attack, owing to
+  the use of commonplace technologies across several industries and in consumer
+  electronics, and to tried and tested CNE attacks which are successful in all
+  sectors. Network and application security, user awareness and organizational
+  security culture are ongoing problems. Phishing campaign which installed
+  backdoor Trojan programs is a common attack vector to gain a foothold into a
+  network.
+- It's paramount that all COTS components come from trusted parties who are held
+  to high security standards, including ground stations.
+- The rise of COTS and SDR products available at affordable prices and the
+  reductions of necessary specialist knowledge have increased the ease of such
+  attacks. Technologies such as spread-spectrum and frequency hopping applied at
+  the physical layer to make signals appear noisy or switch their frequency
+  usage with pseudo-random sequences.
+- An IDS or IPS should not be a replacement for secure design and development of
+  satellite systems.
