@@ -26,6 +26,9 @@ que puedan causar daños. Implica:
 
 ## Gestión de Riesgo
 
+El riesgo es la probabilidad de que una amenaza explote una vulnerabilidad en un
+activo expuesto, causando un impacto negativo en el negocio.
+
 Todo riesgo tiene:
 
 - Amenaza
@@ -36,3 +39,16 @@ Todo riesgo tiene:
 
 La gestión de riesgo reduce la exposición y vulnerabilidades, pero no elimina
 amenazas.
+
+- **Gobernar**: Decidir qué se va a hacer.
+- **Gestionar**: Verificar que se ejecute.
+
+**Gobierno de seguridad**: Es el que alinea que la estrategia de seguridad siga
+a los objetivos de negocio.
+
+## Estrategias de mitigación
+
+- Aceptar
+- Mitigar
+- Transferir
+- Evitar
