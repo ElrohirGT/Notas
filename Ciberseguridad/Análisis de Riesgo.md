@@ -29,3 +29,11 @@ El riesgo siempre existe, se tengan o no controles para mitigarlo.
 | Rápido          | Más Preciso         |
 | Subjetivo       | Depende de Datos    |
 | Prioriza        | Justifica inversión |
+
+## Glosario
+
+- SLE: Single Loss Exptectancy. Cuánto se espera que cueste cuando ocurra el
+  riesgo.
+- ARO: Annual Rate of Occurrence. Cada cuánto ocurre el riesgo al año, en
+  probabilidad.
+- ALE: Annual Loss Exptenancy. SLE * ARO.
